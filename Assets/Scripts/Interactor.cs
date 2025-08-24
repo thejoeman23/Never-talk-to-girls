@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
@@ -8,14 +9,22 @@ public class Interactor : MonoBehaviour
     [SerializeField] private float _interactRadius = 5;
     
     Interactable _nearestInteractableObject;
-    
+
+    private void Start()
+    {
+        _nearestInteractableObject = null;
+    }
+
     // Update is called once per frame
     void Update()
     {
         UpdateNearestInteractableObject();
         
+        // If you press the interact button then interact
         if (interactKey.action.triggered && _nearestInteractableObject != null)
+        { 
             _nearestInteractableObject.Interact();
+        }
     }
     
     void UpdateNearestInteractableObject()
@@ -48,7 +57,7 @@ public class Interactor : MonoBehaviour
         if (nearestInteractableObject != _nearestInteractableObject)
         {
             _nearestInteractableObject = nearestInteractableObject;
-            UIManager.Instance.ChangeInteractableObject(_nearestInteractableObject);
+            PopupManager.Instance.ChangeInteractableObject(_nearestInteractableObject);
         }
     }
 

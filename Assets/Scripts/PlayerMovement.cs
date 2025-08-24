@@ -10,10 +10,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     Vector2 _movementDirection;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() => _rb = GetComponent<Rigidbody>();
 
-    // Update is called once per frame
     void Update()
     {
         _movementDirection = movement.action.ReadValue<Vector2>();
@@ -21,6 +19,13 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        _rb.linearVelocity = new Vector3(_movementDirection.x, 0f, _movementDirection.y).normalized * moveSpeed * Time.fixedDeltaTime;
+        // Convert input into world-space movement relative to player rotation
+        Vector3 move = new Vector3(_movementDirection.x, 0f, _movementDirection.y);
+
+        // TransformDirection rotates the vector by the player's transform
+        move = transform.TransformDirection(move).normalized;
+
+        // Apply velocity (remove Time.fixedDeltaTime here — velocity is units/sec already)
+        _rb.linearVelocity = move * moveSpeed;
     }
 }

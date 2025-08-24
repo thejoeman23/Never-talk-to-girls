@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Interactable : MonoBehaviour, IInteractable // <- See how it derives?
 {
     // An event called on interacting with this object
-    [SerializeField] private UnityEvent _onInteract;
+    [SerializeField] public UnityEvent _onInteract;
     [SerializeField] public bool _canInteract = true;
 
     public void Start()
@@ -20,6 +20,8 @@ public class Interactable : MonoBehaviour, IInteractable // <- See how it derive
         // If _canInteract is false then cut the function short and dont run the rest of the code
         if (!_canInteract)
             return;
+        
+        Debug.Log("Interact Worked");
         
         _onInteract.Invoke();
     }
