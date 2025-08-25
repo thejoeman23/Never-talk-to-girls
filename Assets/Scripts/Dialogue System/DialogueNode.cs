@@ -5,6 +5,7 @@ using UnityEngine.Events;
 [System.Serializable]
 public class DialogueNode : ScriptableObject// A base class with base variables that i want all nodes to have
 {
+    [HideInInspector] public string GUID;
     public string Text;
     public AudioSource Audio;
     public UnityEvent Event;

@@ -5,5 +5,5 @@ using System.Collections.Generic;
 [CreateAssetMenu(fileName = "Prompt Node", menuName = "Dialogue Nodes/Prompt Node")]
 public class PromptNode : DialogueNode
 {
-    public List<ResponseNode> Responses;
+    [HideInInspector] public List<ResponseNode> Responses;
 }

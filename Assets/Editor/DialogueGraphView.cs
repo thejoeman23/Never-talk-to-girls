@@ -1,3 +1,4 @@
+using System;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -21,12 +22,10 @@ public class DialogueGraphView : GraphView
 
     public DialogueNodeView CreateNode(string nodeName)
     {
-        var node = new DialogueNodeView
-        {
-            title = nodeName,
-            GUID = System.Guid.NewGuid().ToString(),
-            dialogueText = "Dialogue line..."
-        };
+        var nodeData = ScriptableObject.CreateInstance<DialogueNode>();
+        nodeData.GUID = Guid.NewGuid().ToString();
+
+        var node = new DialogueNodeView(nodeData);
 
         node.SetPosition(new Rect(Vector2.zero, new Vector2(200, 150)));
 
