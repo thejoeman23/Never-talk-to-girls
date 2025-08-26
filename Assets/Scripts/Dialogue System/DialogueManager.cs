@@ -4,11 +4,11 @@ using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
-    public void StartDialogue(DialogueNode node)
+    public void StartDialogue(DialogueGraph node)
     {
         // Display UI here
         
-        DisplayNode(node);
+        //DisplayNode(node);
     }
 
     private void DisplayNode(DialogueNode node)

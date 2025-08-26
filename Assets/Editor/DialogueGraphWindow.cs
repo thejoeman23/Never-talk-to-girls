@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEditor.Experimental.GraphView;
@@ -29,9 +30,9 @@ public class DialogueGraphWindow : EditorWindow
             return;
         
         // Generate each node to its correct position
-        foreach (var node in save.nodes)
+        foreach (var nodeData in save.nodes)
         {
-            _graphView.CreateNodeFromData(node);
+            _graphView.CreateNode(nodeData);
         }
 
         // Create the connections
@@ -93,16 +94,41 @@ public class DialogueGraphWindow : EditorWindow
 
     private void SaveGraph()
     {
+        if (_currentGraph == null)
+            return;
+        
+        List<DialogueNode> oldNodes = new List<DialogueNode>(_currentGraph.nodes);        
         _currentGraph.nodes.Clear();
 
         foreach (var node in _graphView.nodes.ToList())
         {
-            if (node is DialogueNodeView nodeView)
+            if (node is not DialogueNodeView nodeView)
+                continue;
+            
+            if (oldNodes.Contains(nodeView.Data))
             {
+                oldNodes.Remove(nodeView.Data);
+                
                 nodeView.Data.Position = node.GetPosition().position;
                 _currentGraph.nodes.Add(nodeView.Data);
             }
+            else
+            {
+                nodeView.Data.Position = node.GetPosition().position;
+                _currentGraph.nodes.Add(nodeView.Data);
+                
+                AssetDatabase.AddObjectToAsset(nodeView.Data, _currentGraph);
+                EditorUtility.SetDirty(_currentGraph);
+            }
         }
+
+        foreach (var nodeData in oldNodes)
+        {
+            AssetDatabase.RemoveObjectFromAsset(nodeData);
+            DestroyImmediate(nodeData, true);
+        }
+        
+        AssetDatabase.SaveAssets();
     }
 
     private void OnDestroy()
@@ -154,18 +180,26 @@ public class DialogueGraphWindow : EditorWindow
         
         var promptNodeButton = new Button(() =>
         {
-            _graphView.CreateNode("New Prompt Node", true);
+            _graphView.CreateNode(CreateNodeData(true));
         });
         promptNodeButton.text = "Add Prompt Node";
         toolbar.Add(promptNodeButton);
         
         var responseNodeButton = new Button(() =>
         {
-            _graphView.CreateNode("New Response Node", false);
+            _graphView.CreateNode(CreateNodeData(false));
         });
         responseNodeButton.text = "Add Response Node";
         toolbar.Add(responseNodeButton);
 
         rootVisualElement.Add(toolbar);
+    }
+
+    private DialogueNode CreateNodeData(bool isPrompt)
+    {
+        DialogueNode nodeData = isPrompt ? ScriptableObject.CreateInstance<PromptNode>() : ScriptableObject.CreateInstance<ResponseNode>();
+        nodeData.GUID = Guid.NewGuid().ToString();
+        
+        return nodeData;
     }
 }

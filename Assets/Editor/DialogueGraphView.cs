@@ -22,34 +22,13 @@ public class DialogueGraphView : GraphView
         
         this.graphViewChanged = OnGraphViewChanged;
     }
-
-    public DialogueNodeView CreateNode(string nodeName, bool isPrompt)
-    {
-        DialogueNode nodeData = isPrompt ? ScriptableObject.CreateInstance<PromptNode>() : ScriptableObject.CreateInstance<ResponseNode>();
-        nodeData.GUID = Guid.NewGuid().ToString();
-
-        var node = new DialogueNodeView(nodeData);
-
-        node.SetPosition(new Rect(Vector2.zero, new Vector2(200, 150)));
-
-        var inputPort = GeneratePort(node, Direction.Input);
-        inputPort.portName = "Input";
-        node.inputContainer.Add(inputPort);
-
-        var outputPort = GeneratePort(node, Direction.Output, isPrompt ? Port.Capacity.Multi : Port.Capacity.Single);
-        outputPort.portName = "Next";
-        node.outputContainer.Add(outputPort);
-
-        node.RefreshExpandedState();
-        node.RefreshPorts();
-
-        AddElement(node);
-        return node;
-    }
     
-    public DialogueNodeView CreateNodeFromData(DialogueNode data)
+    public DialogueNodeView CreateNode(DialogueNode data)
     {
         var node = new DialogueNodeView(data);
+        
+        Debug.Log(data == null ? "null" : "not null");
+        data.Position = data.Position == null ? Vector2.zero : data.Position;
         
         node.SetPosition(new Rect(data.Position, new Vector2(200, 150)));
 
@@ -114,6 +93,7 @@ public class DialogueGraphView : GraphView
             {
                 var input = edge.input.node is DialogueNodeView inputNodeView ? inputNodeView.Data : null;
                 var output = edge.output.node is DialogueNodeView outputNodeView ? outputNodeView.Data: null;
+                
                 
                 if (output is PromptNode a && input is ResponseNode b)
                     a.Responses.Add(b);
