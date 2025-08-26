@@ -4,11 +4,21 @@ using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
-    public void StartDialogue(DialogueGraph node)
+    public void StartDialogue(DialogueGraph dialogue)
     {
         // Display UI here
+
+        foreach (var node in dialogue.nodes)
+        {
+            if (node.IsStart)
+            {
+                Debug.Log("Dialogue Start");
+                DisplayNode(node);
+                return;
+            }
+        }
         
-        //DisplayNode(node);
+        Debug.LogWarning("Dialogue start not found");
     }
 
     private void DisplayNode(DialogueNode node)
@@ -32,11 +42,15 @@ public class DialogueManager : MonoBehaviour
         else if (node is PromptNode prompt)
         {
             // Display options
+            
+            SelectOption(prompt.Responses[0]);
         }
     }
 
     private void EndDialogue()
     {
+        Debug.Log("Dialogue end");
+        
         // Hide UI
     }
     
