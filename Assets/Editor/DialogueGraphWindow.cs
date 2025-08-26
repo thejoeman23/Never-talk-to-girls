@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEditor.Experimental.GraphView;
@@ -11,15 +12,22 @@ public class DialogueGraphWindow : EditorWindow
 
     public static void OpenGraph(DialogueGraph graph)
     {
-        var window = GetWindow<DialogueGraphWindow>("Dialogue Graph");
+        var window = CreateInstance<DialogueGraphWindow>();
+        window.titleContent = new GUIContent(graph.name);
         window.LoadGraph(graph);
+        window.Show();
     }
     
     private void LoadGraph(DialogueGraph save)
     {
+        _currentGraph = save;
+
         ConstructGraphView();
         GenerateToolbar();
 
+        if (save.nodes.Count == 0)
+            return;
+        
         // Generate each node to its correct position
         foreach (var node in save.nodes)
         {
@@ -43,13 +51,22 @@ public class DialogueGraphWindow : EditorWindow
                     if (input == null)
                         continue;
                     
-                    Edge newEdge = new Edge();
-                    newEdge.input = input.inputContainer[0] as Port;
-                    newEdge.output = output.outputContainer[0] as Port;
+                    Edge newEdge = new Edge
+                    {
+                        input = input.inputContainer[0] as Port,
+                        output = output.outputContainer[0] as Port
+                    };
+
+                    newEdge.output?.Connect(newEdge);
+                    newEdge.input?.Connect(newEdge);
+
+                    _graphView.AddElement(newEdge);
                 }
                 // If its a Prompt then loop through the responses and make the connections
                 else if (nodeData is PromptNode promptNode)
                 {
+                    if (promptNode.Responses == null)
+                        continue;
                     foreach (var response in promptNode.Responses)
                     {
                         Node output = node;
@@ -58,15 +75,20 @@ public class DialogueGraphWindow : EditorWindow
                         if (input == null)
                             continue;
                         
-                        Edge newEdge = new Edge();
-                        newEdge.input = input.inputContainer[0] as Port;
-                        newEdge.output = output.outputContainer[0] as Port;
+                        Edge newEdge = new Edge
+                        {
+                            input = input.inputContainer[0] as Port,
+                            output = output.outputContainer[0] as Port
+                        };
+
+                        newEdge.output?.Connect(newEdge);
+                        newEdge.input?.Connect(newEdge);
+
+                        _graphView.AddElement(newEdge);
                     }
                 }
             }
         }
-        
-        _currentGraph = save;
     }
 
     private void SaveGraph()
@@ -77,9 +99,21 @@ public class DialogueGraphWindow : EditorWindow
         {
             if (node is DialogueNodeView nodeView)
             {
+                nodeView.Data.Position = node.GetPosition().position;
                 _currentGraph.nodes.Add(nodeView.Data);
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        SaveGraph();
+        Debug.Log("Dialogue Tree auto-saved for u :)");
+    }
+
+    private void OnLostFocus()
+    {
+        SaveGraph();
     }
 
     private Node FindNodeByData(DialogueNode targetData)
@@ -113,6 +147,7 @@ public class DialogueGraphWindow : EditorWindow
         var saveButton = new Button(() =>
         {
             SaveGraph();
+            Debug.Log("Saved Successfully");
         });
         saveButton.text = "Save";
         toolbar.Add(saveButton);

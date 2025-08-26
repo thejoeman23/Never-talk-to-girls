@@ -1,7 +1,9 @@
+using System.Drawing;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
+using Color = UnityEngine.Color;
 
 public class DialogueNodeView : Node
 {
@@ -24,6 +26,7 @@ public class DialogueNodeView : Node
         scroll.Add(inspector);
         scroll.style.height = 200; // or whatever
         scroll.style.width = 300;
+        scroll.style.backgroundColor = new StyleColor(Color.gray2);
         mainContainer.Add(scroll);
 
         RefreshExpandedState();

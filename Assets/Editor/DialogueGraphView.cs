@@ -3,6 +3,7 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class DialogueGraphView : GraphView
 {
@@ -18,11 +19,13 @@ public class DialogueGraphView : GraphView
         this.AddManipulator(new ContentDragger());
         this.AddManipulator(new SelectionDragger());
         this.AddManipulator(new RectangleSelector());
+        
+        this.graphViewChanged = OnGraphViewChanged;
     }
 
     public DialogueNodeView CreateNode(string nodeName, bool isPrompt)
     {
-        var nodeData = ScriptableObject.CreateInstance<DialogueNode>();
+        DialogueNode nodeData = isPrompt ? ScriptableObject.CreateInstance<PromptNode>() : ScriptableObject.CreateInstance<ResponseNode>();
         nodeData.GUID = Guid.NewGuid().ToString();
 
         var node = new DialogueNodeView(nodeData);
@@ -65,7 +68,6 @@ public class DialogueGraphView : GraphView
         return node;
     }
 
-
     private Port GeneratePort(DialogueNodeView node, Direction direction, Port.Capacity capacity = Port.Capacity.Single)
     {
         return node.InstantiatePort(Orientation.Horizontal, direction, capacity, typeof(float));
@@ -93,6 +95,8 @@ public class DialogueGraphView : GraphView
                     return;
                 if (startNodeView.Data is ResponseNode && portNodeView.Data is ResponseNode)
                     return;
+                if (startNodeView.Data.IsStart)
+                    return;
             }
 
             compatiblePorts.Add(port);
@@ -115,8 +119,6 @@ public class DialogueGraphView : GraphView
                     a.Responses.Add(b);
                 else if (output is ResponseNode c && input is PromptNode d)
                     c.NextPrompt = d;
-                
-                Debug.Log($"Connected {edge.output.node.title} → {edge.input.node.title}");
             }
         }
         return graphViewChange;

@@ -1,0 +1,20 @@
+{
+    "asset": "67434e74530a24d7a99bc9a17b23a7c7",
+    "fileName": "0198e404-9613-7f1f-b98c-7d6d2089143b.png",
+    "prompt": "Make the same image but white",
+    "negativePrompt": "",
+    "model": "242b56c1-2224-41c4-8949-2ba760bbfc69",
+    "modelName": "16-bit Pixel",
+    "customSeed": -1,
+    "w3CTraceId": "ecb6d09a9bf8d3be1fdd3cd890b95f2c",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
