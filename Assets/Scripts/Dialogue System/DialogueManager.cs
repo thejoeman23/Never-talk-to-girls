@@ -2,11 +2,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using System.Collections;
 
 public class DialogueManager : MonoBehaviour
 {
+    private bool _confirmed = false;
+    
     private void Start() => InstantiatePlayerCanvas();
+
+    private void Update()
+    {
+        if (_confirmAction.action.triggered)
+        {
+            _confirmed = true;
+        }
+    }
 
     public void TransmitCharacter(Transform character) => InstantiateCharacterCanvas(character);
     
@@ -17,7 +29,7 @@ public class DialogueManager : MonoBehaviour
             if (node.IsStart)
             {
                 Debug.Log("Dialogue Start");
-                DisplayNode(node);
+                StartCoroutine(DisplayNode(node));
                 return;
             }
         }
@@ -25,24 +37,31 @@ public class DialogueManager : MonoBehaviour
         Debug.LogWarning("Dialogue start not found");
     }
     
-    private void DisplayNode(DialogueNode node)
+    private IEnumerator DisplayNode(DialogueNode node)
     {
         HideAllCanvases();
+        _confirmed = false;
 
         DisplayText(node);
 
         node.Event?.Invoke();
         _audioSource.clip = node.Audio;
+        _audioSource.Play();
+
+        while (_audioSource.isPlaying == false && !_confirmed)
+        {
+            yield return new WaitForSeconds(.1f);
+        }
         
         if (node.IsEnd)
         {
             EndDialogue();
-            return;
+            yield return null;
         }
         
         if (node is ResponseNode response)
         {
-            DisplayNode(response.NextPrompt);
+            StartCoroutine(DisplayNode(response.NextPrompt));
         }
         else if (node is PromptNode prompt)
         {
@@ -61,10 +80,13 @@ public class DialogueManager : MonoBehaviour
     public void SelectOption(GameObject option)
     {
         DialogueNode optionNode = _playerOptions[option];
-        DisplayNode(optionNode);
+        StartCoroutine(DisplayNode(optionNode));
     }
     
     /////////////////////// Entering Visuals Section ///////////////////////
+    
+    [Header("Input Actions")]
+    [SerializeField] private InputActionReference _confirmAction;
     
     [Header("Visual Prefab References")]
     [SerializeField] private GameObject _optionPrefab;
@@ -148,21 +170,27 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
         else if (node.Responses.Count == 1)
         {
-            DisplayNode(node.Responses[0]);
+            StartCoroutine(DisplayNode(node.Responses[0]));
         }        
         else
         {
             _playerOptions.Clear();
             
             _playerOptionsCanvas.SetActive(true);
+            Transform optionsParent = _playerOptionsCanvas
+                .GetComponentInChildren<HorizontalLayoutGroup>()
+                .transform;
+
+            foreach (Transform child in optionsParent.transform)
+            {
+                Destroy(child.gameObject);
+            }
             
             foreach (var response in node.Responses)
             {
                 GameObject optionButton = Instantiate(
                     _optionPrefab,
-                    _playerOptionsCanvas
-                        .GetComponentInChildren<HorizontalLayoutGroup>()
-                        .transform
+                    optionsParent
                 );
                 TextMeshProUGUI optionText = optionButton.GetComponentInChildren<TextMeshProUGUI>();
                 Button optionButtonButton = optionButton.GetComponent<Button>();

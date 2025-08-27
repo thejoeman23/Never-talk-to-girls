@@ -12,16 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 1022, y: -209}
+  Position: {x: 980, y: -259}
   GUID: ca6c219b-4f84-4761-b130-afa9b58f3e52
-  Text: Text
+  Text: Wow you're young!
   Audio: {fileID: 0}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 1
-  Responses: []
+  Responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37,8 +40,9 @@ MonoBehaviour:
   nodes:
   - {fileID: 5516335025711973232}
   - {fileID: 1461539158483170875}
-  - {fileID: -4133538945387593499}
   - {fileID: 1882038795016024494}
+  - {fileID: 2482071273777778921}
+  - {fileID: -4133538945387593499}
 --- !u!114 &1461539158483170875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,8 +85,30 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 2482071273777778921}
+--- !u!114 &2482071273777778921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1014, y: 203}
+  GUID: d5030c8a-2923-4c3e-a9c0-df7d0cbef772
+  Text: MMM the perfect age :)
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
   IsEnd: 1
-  NextPrompt: {fileID: 0}
+  Responses: []
 --- !u!114 &5516335025711973232
 MonoBehaviour:
   m_ObjectHideFlags: 0

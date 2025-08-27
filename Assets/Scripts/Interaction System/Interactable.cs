@@ -22,6 +22,8 @@ public class Interactable : MonoBehaviour, IInteractable // <- See how it derive
             return;
         
         _onInteract.Invoke();
+        
+        _canInteract = false;
     }
 }
 
