@@ -8,7 +8,7 @@ public class DialogueNode : ScriptableObject// A base class with base variables 
     [HideInInspector] public Vector2 Position;
     [HideInInspector] public string GUID;
     public string Text;
-    public AudioSource Audio;
+    public AudioClip Audio;
     public UnityEvent Event;
     public bool IsStart;
     public bool IsEnd;

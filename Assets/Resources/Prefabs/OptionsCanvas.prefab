@@ -12,13 +12,14 @@ GameObject:
   - component: {fileID: 4549947264560960505}
   - component: {fileID: 6978005267078053584}
   - component: {fileID: 6486412688356767771}
+  - component: {fileID: 3545905261309296090}
   m_Layer: 5
   m_Name: OptionsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5971775118950691624
 RectTransform:
   m_ObjectHideFlags: 0
@@ -84,7 +85,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6486412688356767771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,6 +103,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3545905261309296090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3441998900427198364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 242efce963ec43a8810fb218eca593f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldCanvas
+  _scale: 0.002000001
 --- !u!1 &7656450432363222524
 GameObject:
   m_ObjectHideFlags: 0

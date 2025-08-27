@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2599590660594210512
+--- !u!114 &-4133538945387593499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,19 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
-  Position: {x: 532, y: 192}
-  GUID: 723ad350-e3bc-4b6b-a76d-4661280feb65
-  Text: no
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1022, y: -209}
+  GUID: ca6c219b-4f84-4761-b130-afa9b58f3e52
+  Text: 
   Audio: {fileID: 0}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 1
-  NextPrompt: {fileID: 0}
+  Responses: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,57 +35,11 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: Assembly-CSharp::DialogueGraph
   nodes:
-  - {fileID: 3781283195614718715}
-  - {fileID: 6329369778503876608}
-  - {fileID: -2599590660594210512}
-  - {fileID: 2901156911814521568}
---- !u!114 &2901156911814521568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 1030.5, y: -119}
-  GUID: 7a762e14-6524-4cb6-a5e1-2036735f6669
-  Text: good
-  Audio: {fileID: 0}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  IsStart: 0
-  IsEnd: 1
-  Responses: []
---- !u!114 &3781283195614718715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 110, y: 29.5}
-  GUID: df8564ba-cb98-4fd5-b589-5c6ba4347c59
-  Text: Is this test working?
-  Audio: {fileID: 0}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  IsStart: 1
-  IsEnd: 0
-  Responses:
-  - {fileID: 6329369778503876608}
-  - {fileID: -2599590660594210512}
---- !u!114 &6329369778503876608
+  - {fileID: 5516335025711973232}
+  - {fileID: 1461539158483170875}
+  - {fileID: -4133538945387593499}
+  - {fileID: 1882038795016024494}
+--- !u!114 &1461539158483170875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,13 +51,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
-  Position: {x: 522, y: -119}
-  GUID: 6bb545e2-1214-46a1-90e7-14bc333c51de
-  Text: Yes?
+  Position: {x: 583, y: -109}
+  GUID: 149389cc-e3e4-481e-a98f-3b9fbde57e30
+  Text: 15
   Audio: {fileID: 0}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
-  NextPrompt: {fileID: 2901156911814521568}
+  NextPrompt: {fileID: -4133538945387593499}
+--- !u!114 &1882038795016024494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 566, y: 168}
+  GUID: 3cea79c0-1452-4bd8-bac0-abe0bac1756c
+  Text: 16
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  NextPrompt: {fileID: 0}
+--- !u!114 &5516335025711973232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 51, y: -19}
+  GUID: 0a06e6ce-99c0-4417-9473-23e3741b79a5
+  Text: How old are you
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 1
+  IsEnd: 0
+  Responses:
+  - {fileID: 1461539158483170875}
+  - {fileID: 1882038795016024494}
