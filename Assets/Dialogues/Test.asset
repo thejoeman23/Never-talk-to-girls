@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PromptNode
   Position: {x: 1022, y: -209}
   GUID: ca6c219b-4f84-4761-b130-afa9b58f3e52
-  Text: 
+  Text: Text
   Audio: {fileID: 0}
   Event:
     m_PersistentCalls:

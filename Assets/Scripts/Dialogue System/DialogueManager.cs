@@ -27,6 +27,8 @@ public class DialogueManager : MonoBehaviour
     
     private void DisplayNode(DialogueNode node)
     {
+        HideAllCanvases();
+
         DisplayText(node);
 
         node.Event?.Invoke();
@@ -34,14 +36,12 @@ public class DialogueManager : MonoBehaviour
         
         if (node.IsEnd)
         {
-            node.Event?.Invoke();
             EndDialogue();
             return;
         }
         
         if (node is ResponseNode response)
         {
-            HideAllCanvases();
             DisplayNode(response.NextPrompt);
         }
         else if (node is PromptNode prompt)
@@ -54,13 +54,12 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("Dialogue end");
         
-        // Hide UI
+        HideAllCanvases();
+        Destroy(_characterTextBubbleCanvas);
     }
     
     public void SelectOption(GameObject option)
     {
-        HideAllCanvases();
-        
         DialogueNode optionNode = _playerOptions[option];
         DisplayNode(optionNode);
     }
@@ -89,7 +88,7 @@ public class DialogueManager : MonoBehaviour
     private GameObject _playerTextBubbleCanvas;
     private TextMeshProUGUI _playerTextBubble;
     private GameObject _playerOptionsCanvas;
-    private Dictionary<GameObject, DialogueNode> _playerOptions;
+    private Dictionary<GameObject, DialogueNode> _playerOptions = new Dictionary<GameObject, DialogueNode>();
     
     private GameObject _characterTextBubbleCanvas;
     private TextMeshProUGUI _characterTextBubble;
@@ -101,14 +100,16 @@ public class DialogueManager : MonoBehaviour
 
         _playerTextBubbleCanvas = Instantiate(_textBubbleCanvasPrefab, _playerTransform);
         _playerTextBubbleCanvas.transform.localScale = Vector3.zero;
-        _playerTextBubbleCanvas.GetComponent<RectTransform>().position = new Vector3(0, _playerTransform.localScale.y * 2, 0);
+        _playerTextBubbleCanvas.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, _playerTransform.localScale.y * 2, 0);
+        _playerTextBubbleCanvas.transform.LookAt(Camera.main?.transform);
         
         _playerTextBubble = Instantiate(_textBubblePrefab, _playerTextBubbleCanvas.transform)
             .GetComponentInChildren<TextMeshProUGUI>();
         
         _playerOptionsCanvas = Instantiate(_optionsCanvasPrefab, _playerTransform);
         _playerOptionsCanvas.transform.localScale = Vector3.zero;
-        _playerOptionsCanvas.transform.localPosition = new Vector3(0, _playerTransform.localScale.y * 2, 0);
+        _playerOptionsCanvas.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, _playerTransform.localScale.y * 2, 0);
+        _playerOptionsCanvas.transform.LookAt(Camera.main?.transform);
     }
     
     private void InstantiateCharacterCanvas(Transform character)
@@ -117,8 +118,9 @@ public class DialogueManager : MonoBehaviour
 
         _characterTextBubbleCanvas = Instantiate(_textBubbleCanvasPrefab, _characterTransform);
         _characterTextBubbleCanvas.transform.localScale = Vector3.zero;
-        _characterTextBubbleCanvas.transform.position = new Vector3(0, _characterTransform.localScale.y * 2, 0);
-
+        _characterTextBubbleCanvas.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, _characterTransform.localScale.y * 2, 0);
+        _characterTextBubbleCanvas.transform.LookAt(Camera.main?.transform);
+        
         _characterTextBubble = Instantiate(_textBubblePrefab, _characterTextBubbleCanvas.transform)
             .GetComponentInChildren<TextMeshProUGUI>();
     }
@@ -139,28 +141,34 @@ public class DialogueManager : MonoBehaviour
 
     private void DisplayOptions(PromptNode node)
     {
+        if (node.Responses == null)
+            EndDialogue();
+        
         if (node.Responses.Count == 0)
             EndDialogue();
         else if (node.Responses.Count == 1)
         {
-            HideAllCanvases();
             DisplayNode(node.Responses[0]);
         }        
         else
         {
             _playerOptions.Clear();
             
+            _playerOptionsCanvas.SetActive(true);
+            
             foreach (var response in node.Responses)
             {
-                TextMeshProUGUI optionText = Instantiate(
-                            _optionPrefab, 
-                            _playerOptionsCanvas
-                                .GetComponentInChildren<HorizontalLayoutGroup>()
-                                .transform
-                            ).GetComponent<TextMeshProUGUI>();
-                optionText.text = response.Text;
+                GameObject optionButton = Instantiate(
+                    _optionPrefab,
+                    _playerOptionsCanvas
+                        .GetComponentInChildren<HorizontalLayoutGroup>()
+                        .transform
+                );
+                TextMeshProUGUI optionText = optionButton.GetComponentInChildren<TextMeshProUGUI>();
+                Button optionButtonButton = optionButton.GetComponent<Button>();
                 
-                optionText.GetComponent<Button>().onClick.AddListener(() => SelectOption(optionText.gameObject));
+                optionText.text = response.Text;
+                optionButtonButton.onClick.AddListener(() => SelectOption(optionText.gameObject));
                 
                 _playerOptions.Add(optionText.gameObject, response);
             }
