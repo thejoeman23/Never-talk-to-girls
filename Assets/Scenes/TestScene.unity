@@ -1341,7 +1341,7 @@ MonoBehaviour:
   _textBubblePrefab: {fileID: 8138214400159047436, guid: 23c25ca19442345498a92efb3d209558, type: 3}
   _textBubbleCanvasPrefab: {fileID: 4866498215340409683, guid: c193d32fe754344458787738d29c1755, type: 3}
   _audioSource: {fileID: 2088482409}
-  _verticalCanvasOffset: 5
+  _verticalCanvasOffset: 10
   _tweenTime: 0.1
   _tweenEase: 1
 --- !u!1 &1302785426
