@@ -24,17 +24,18 @@ public class DialogueManager : MonoBehaviour
     
     public void BeginDialogue(DialogueGraph dialogue)
     {
+        
+        List<ResponseNode> starts = new List<ResponseNode>();
         foreach (var node in dialogue.nodes)
         {
-            if (node.IsStart)
+            if (node.IsStart && node is ResponseNode response)
             {
                 Debug.Log("Dialogue Start");
-                StartCoroutine(DisplayNode(node));
-                return;
+                starts.Add(response);
             }
         }
         
-        Debug.LogWarning("Dialogue start not found");
+        DisplayOptions(starts);
     }
     
     private IEnumerator DisplayNode(DialogueNode node)
@@ -65,7 +66,7 @@ public class DialogueManager : MonoBehaviour
         }
         else if (node is PromptNode prompt)
         {
-            DisplayOptions(prompt);
+            DisplayOptions(prompt.Responses);
         }
     }
 
@@ -161,16 +162,16 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private void DisplayOptions(PromptNode node)
+    private void DisplayOptions(List<ResponseNode> responses)
     {
-        if (node.Responses == null)
+        if (responses == null)
             EndDialogue();
         
-        if (node.Responses.Count == 0)
+        if (responses.Count == 0)
             EndDialogue();
-        else if (node.Responses.Count == 1)
+        else if (responses.Count == 1)
         {
-            StartCoroutine(DisplayNode(node.Responses[0]));
+            StartCoroutine(DisplayNode(responses[0]));
         }        
         else
         {
@@ -186,7 +187,7 @@ public class DialogueManager : MonoBehaviour
                 Destroy(child.gameObject);
             }
             
-            foreach (var response in node.Responses)
+            foreach (var response in responses)
             {
                 GameObject optionButton = Instantiate(
                     _optionPrefab,
