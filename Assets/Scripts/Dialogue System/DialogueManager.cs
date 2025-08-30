@@ -59,8 +59,6 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(.1f);
         }
         
-        AudioManager.Instance.UnmuteMusic();
-        
         if (node.IsEnd)
         {
             EndDialogue();

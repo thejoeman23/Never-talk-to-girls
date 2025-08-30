@@ -21,6 +21,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -8334513949752670171}
 --- !u!114 &-8893605547562023020
 MonoBehaviour:
@@ -43,6 +45,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 5272161981050323153}
 --- !u!114 &-8843439294253250735
 MonoBehaviour:
@@ -59,12 +63,14 @@ MonoBehaviour:
   Position: {x: 385, y: 484}
   GUID: e4c4c431-7f08-47fb-b52e-9f8ce227e98a
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: 5285786958904443229}
   - {fileID: 9070859519295700739}
@@ -84,7 +90,7 @@ MonoBehaviour:
   Position: {x: 2617, y: 1516}
   GUID: 38af4dc9-ead7-42f7-9e3c-390db07c2a9d
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -102,6 +108,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-8334513949752670171
 MonoBehaviour:
@@ -118,7 +126,7 @@ MonoBehaviour:
   Position: {x: 2933, y: 380}
   GUID: 7a30303a-d8ae-4704-88c9-50cffc2615f8
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -136,6 +144,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-8316300315853296274
 MonoBehaviour:
@@ -158,6 +168,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -8843439294253250735}
 --- !u!114 &-8255584627902492804
 MonoBehaviour:
@@ -174,12 +186,14 @@ MonoBehaviour:
   Position: {x: 1969, y: 1803}
   GUID: 99695498-06fa-401d-b0f8-50e3d7a7b762
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -7173576562032193830}
 --- !u!114 &-8092477072070062948
@@ -197,12 +211,14 @@ MonoBehaviour:
   Position: {x: 377, y: -356}
   GUID: b31b4c05-7b52-4565-8da6-d38931b0d073
   Text: YOU ARE CUTE TOO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 0cb9e89f602ac47b295cecdca92c2522, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -2582066336814452697}
 --- !u!114 &-7936321064016959492
@@ -220,12 +236,14 @@ MonoBehaviour:
   Position: {x: -37, y: 1352}
   GUID: 2269d2e8-2687-434d-a927-1babb0cd860a
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -4505929345164623595}
 --- !u!114 &-7803367549869255012
@@ -243,7 +261,7 @@ MonoBehaviour:
   Position: {x: 1327, y: 1233}
   GUID: 51ed1a3f-9c3e-4ae0-b9f8-b02b309c7cee
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -261,6 +279,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-7714379075321613151
 MonoBehaviour:
@@ -277,12 +297,14 @@ MonoBehaviour:
   Position: {x: 1327, y: 1516}
   GUID: 27597e22-70f6-494f-ae39-1bec336f8635
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -5041899641976126112}
   - {fileID: 2803359268461556848}
@@ -301,12 +323,14 @@ MonoBehaviour:
   Position: {x: -673, y: 1352}
   GUID: ea890074-c01c-4649-b659-8ef9801c3095
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: 439047227443954129}
 --- !u!114 &-7173576562032193830
@@ -330,6 +354,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -4183450677556563529}
 --- !u!114 &-7170077915598702788
 MonoBehaviour:
@@ -352,6 +378,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -6233679315239141321}
 --- !u!114 &-7151026548337176068
 MonoBehaviour:
@@ -374,6 +402,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 0}
 --- !u!114 &-6689368520537747763
 MonoBehaviour:
@@ -396,6 +426,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -1873139888983194066}
 --- !u!114 &-6366790399204600699
 MonoBehaviour:
@@ -412,7 +444,7 @@ MonoBehaviour:
   Position: {x: 2944, y: 960}
   GUID: 3e8fd7bf-f32c-488c-9756-e30cb3c4e58f
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -430,6 +462,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-6233679315239141321
 MonoBehaviour:
@@ -446,7 +480,7 @@ MonoBehaviour:
   Position: {x: -33, y: 1924}
   GUID: d3d3f244-4467-4280-b578-ecb554797896
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -464,6 +498,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-6180337336997917107
 MonoBehaviour:
@@ -486,6 +522,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 1987303354484228152}
 --- !u!114 &-5979321481483391606
 MonoBehaviour:
@@ -508,6 +546,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Responses:
   - {fileID: 2142670431052460169}
   - {fileID: 7612326117311771391}
@@ -527,7 +567,7 @@ MonoBehaviour:
   Position: {x: 2301, y: 667}
   GUID: cd8bdc29-a023-46d7-addf-6f137b0fd3ac
   Text: I LIKE TRAINS
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -545,6 +585,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-5295078810592990493
 MonoBehaviour:
@@ -561,12 +603,14 @@ MonoBehaviour:
   Position: {x: -667, y: 1927}
   GUID: 30671f21-37d0-4a21-8cb0-e22368e4d820
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -8893605547562023020}
   - {fileID: -7170077915598702788}
@@ -591,6 +635,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 4219043881337184700}
 --- !u!114 &-4925099929981062824
 MonoBehaviour:
@@ -607,7 +653,7 @@ MonoBehaviour:
   Position: {x: 601, y: 1639}
   GUID: fe1e3f81-8969-4fa4-adea-824f7a25045e
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -625,6 +671,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-4505929345164623595
 MonoBehaviour:
@@ -647,6 +695,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 2802144029954899961}
 --- !u!114 &-4183450677556563529
 MonoBehaviour:
@@ -663,7 +713,7 @@ MonoBehaviour:
   Position: {x: 2617, y: 1805}
   GUID: 99749779-452e-48cc-b45a-eac712b026d2
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -681,6 +731,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-3809821861389352194
 MonoBehaviour:
@@ -697,12 +749,14 @@ MonoBehaviour:
   Position: {x: 2301, y: 378}
   GUID: 8a78451f-c748-4187-a11a-dd8584f4f6ee
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -9197762124055845525}
 --- !u!114 &-3138424780701550602
@@ -726,6 +780,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 1760243263177675873}
 --- !u!114 &-3109583620058694901
 MonoBehaviour:
@@ -748,6 +804,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 4405602293739326638}
 --- !u!114 &-3033670493052784329
 MonoBehaviour:
@@ -770,6 +828,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -5979321481483391606}
 --- !u!114 &-2944488673366361625
 MonoBehaviour:
@@ -792,6 +852,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -6366790399204600699}
 --- !u!114 &-2861995938611849086
 MonoBehaviour:
@@ -814,6 +876,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -8092477072070062948}
 --- !u!114 &-2695809856392656511
 MonoBehaviour:
@@ -836,6 +900,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 9165987150997936826}
 --- !u!114 &-2582066336814452697
 MonoBehaviour:
@@ -858,6 +924,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 5032814845671858581}
 --- !u!114 &-2055727284286026981
 MonoBehaviour:
@@ -880,6 +948,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 243189557770844362}
 --- !u!114 &-1873139888983194066
 MonoBehaviour:
@@ -896,7 +966,7 @@ MonoBehaviour:
   Position: {x: 2297, y: 91}
   GUID: bbbff21c-1fd8-4b2b-a8e8-49c4eaad1b00
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -914,6 +984,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-1827423266616921032
 MonoBehaviour:
@@ -936,6 +1008,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 5782463425576912611}
 --- !u!114 &-1403429750977923776
 MonoBehaviour:
@@ -958,6 +1032,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 8670887043023767073}
 --- !u!114 &-638092169380669887
 MonoBehaviour:
@@ -974,7 +1050,7 @@ MonoBehaviour:
   Position: {x: 1972, y: 1242}
   GUID: 2309e1ce-72af-4a63-86de-df3cfebc4447
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -992,6 +1068,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-377931216936003484
 MonoBehaviour:
@@ -1014,6 +1092,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -8255584627902492804}
 --- !u!114 &-249440344647445376
 MonoBehaviour:
@@ -1030,7 +1110,7 @@ MonoBehaviour:
   Position: {x: 597, y: 1925}
   GUID: a30edd83-f230-42c7-bf87-f44be9d7aef6
   Text: '*gasp* I LOVE TRAINS! WE ARE GOING TO BE THE BEST TRAIN FRIENDS.'
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 6dba99ff67b4c40abbfc32fee432be42, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -1048,6 +1128,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-236524633887070262
 MonoBehaviour:
@@ -1070,6 +1152,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -7714379075321613151}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -1098,7 +1182,6 @@ MonoBehaviour:
   - {fileID: -6180337336997917107}
   - {fileID: 1987303354484228152}
   - {fileID: 6129488095848993550}
-  - {fileID: 5623312835472699694}
   - {fileID: -1403429750977923776}
   - {fileID: -8843439294253250735}
   - {fileID: -8316300315853296274}
@@ -1128,7 +1211,6 @@ MonoBehaviour:
   - {fileID: -236524633887070262}
   - {fileID: -7714379075321613151}
   - {fileID: -7803367549869255012}
-  - {fileID: 7642298664996604833}
   - {fileID: -5041899641976126112}
   - {fileID: 2803359268461556848}
   - {fileID: -638092169380669887}
@@ -1161,6 +1243,7 @@ MonoBehaviour:
   - {fileID: 4148262261349025015}
   - {fileID: -4925099929981062824}
   - {fileID: -249440344647445376}
+  - {fileID: 5623312835472699694}
 --- !u!114 &185960463189461740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1182,6 +1265,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 7996553273361045449}
 --- !u!114 &243189557770844362
 MonoBehaviour:
@@ -1198,7 +1283,7 @@ MonoBehaviour:
   Position: {x: 1969, y: 2083}
   GUID: e627e0e7-8bad-47ae-b8c4-996112d302c4
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -1216,6 +1301,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &439047227443954129
 MonoBehaviour:
@@ -1238,6 +1325,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -7936321064016959492}
 --- !u!114 &1760243263177675873
 MonoBehaviour:
@@ -1254,7 +1343,7 @@ MonoBehaviour:
   Position: {x: 1657, y: -514}
   GUID: 007e42d4-eef8-4459-b634-ce535d4f1685
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -1272,6 +1361,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &1987303354484228152
 MonoBehaviour:
@@ -1288,7 +1379,7 @@ MonoBehaviour:
   Position: {x: 1004, y: -77}
   GUID: 9a4ed7d6-b86a-4637-8bb1-b64914689922
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -1306,6 +1397,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &2142670431052460169
 MonoBehaviour:
@@ -1328,6 +1421,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -7274955419845175224}
 --- !u!114 &2533100962761741767
 MonoBehaviour:
@@ -1350,6 +1445,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 1
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 5623312835472699694}
 --- !u!114 &2802144029954899961
 MonoBehaviour:
@@ -1366,7 +1463,7 @@ MonoBehaviour:
   Position: {x: 595, y: 1351}
   GUID: 39d11a1b-bdb4-438b-962e-1215a5f0c27f
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -1384,6 +1481,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &2803359268461556848
 MonoBehaviour:
@@ -1406,6 +1505,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -638092169380669887}
 --- !u!114 &2863350393073697647
 MonoBehaviour:
@@ -1422,12 +1523,14 @@ MonoBehaviour:
   Position: {x: 1648, y: 371}
   GUID: f9f31bcb-4dd6-465b-9a96-8ca585eb4beb
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: 7984128039849106733}
   - {fileID: -6689368520537747763}
@@ -1452,6 +1555,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -7803367549869255012}
 --- !u!114 &3136073325938925747
 MonoBehaviour:
@@ -1474,6 +1579,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -5882290060468340829}
 --- !u!114 &3624354509555373497
 MonoBehaviour:
@@ -1496,6 +1603,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -4925099929981062824}
 --- !u!114 &3890165719521946181
 MonoBehaviour:
@@ -1512,7 +1621,7 @@ MonoBehaviour:
   Position: {x: 1646, y: 84}
   GUID: 043e7f44-3764-46a8-b277-fada1da19322
   Text: I LIKE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -1529,7 +1638,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   IsStart: 0
-  IsEnd: 1
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &4148262261349025015
 MonoBehaviour:
@@ -1552,6 +1663,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -249440344647445376}
 --- !u!114 &4219043881337184700
 MonoBehaviour:
@@ -1568,12 +1681,14 @@ MonoBehaviour:
   Position: {x: 1974, y: 1520}
   GUID: c2682c72-4d7d-4ba0-b2c7-aa1e080fcff4
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: 6742626493269966954}
 --- !u!114 &4405602293739326638
@@ -1591,7 +1706,7 @@ MonoBehaviour:
   Position: {x: -669, y: 1643}
   GUID: 80affab5-77c0-4bbe-829c-c9002cbad36b
   Text: I LIKE TRAINS
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -1609,6 +1724,8 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &4604120822398183209
 MonoBehaviour:
@@ -1625,12 +1742,14 @@ MonoBehaviour:
   Position: {x: 2301, y: 959}
   GUID: 21f88227-e85f-4ab3-a5e0-90ecace2a1b6
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -2944488673366361625}
 --- !u!114 &5032814845671858581
@@ -1648,12 +1767,14 @@ MonoBehaviour:
   Position: {x: 1003, y: -354}
   GUID: 764163d8-5808-46cd-b76a-f13a19f97410
   Text: I DON'T LIKE BOYS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: effb68cb6001f4ec98892f01490d4c26, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -3138424780701550602}
   - {fileID: -7151026548337176068}
@@ -1672,12 +1793,14 @@ MonoBehaviour:
   Position: {x: -35, y: 1641}
   GUID: f7b4b7c2-94d7-4717-846a-795bf1cb0b17
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: 4148262261349025015}
   - {fileID: 3624354509555373497}
@@ -1702,6 +1825,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 3890165719521946181}
 --- !u!114 &5623312835472699694
 MonoBehaviour:
@@ -1718,12 +1843,14 @@ MonoBehaviour:
   Position: {x: -279, y: 342}
   GUID: f1566e3b-dd83-4091-83a4-6f1db47674ce
   Text: THANK YOU.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: eadf96353b6f54117bc567a496b7367b, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -8316300315853296274}
   - {fileID: -1403429750977923776}
@@ -1743,12 +1870,14 @@ MonoBehaviour:
   Position: {x: 376, y: -78}
   GUID: 1a343a87-33fc-4833-b9a3-a3382a0a4f2e
   Text: I LIKE MY EYES TOO. THEY HELP ME SEE TRAINS.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b0be733dd2aa449d58bbb98ecc54bb21, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -6180337336997917107}
 --- !u!114 &5892015466302695478
@@ -1772,6 +1901,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 4604120822398183209}
 --- !u!114 &6129488095848993550
 MonoBehaviour:
@@ -1794,6 +1925,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 0}
 --- !u!114 &6448286332790435426
 MonoBehaviour:
@@ -1810,12 +1943,14 @@ MonoBehaviour:
   Position: {x: -279, y: 56}
   GUID: 200e3f29-475f-4db5-a4ab-7148ed98a4cd
   Text: HELLO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 70d336eca53b749adba7892cbb7b3260, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -2861995938611849086}
   - {fileID: -1827423266616921032}
@@ -1841,6 +1976,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -8343607802266090970}
 --- !u!114 &6887109147279934344
 MonoBehaviour:
@@ -1863,6 +2000,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 1
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 6448286332790435426}
 --- !u!114 &7612326117311771391
 MonoBehaviour:
@@ -1885,29 +2024,9 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -5295078810592990493}
---- !u!114 &7642298664996604833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
-  Position: {x: 1644, y: 961}
-  GUID: 036f8ff4-7f3f-4fd3-8d30-b1cde61fe6fe
-  Text: 
-  Audio: {fileID: 0}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  IsStart: 0
-  IsEnd: 0
-  NextPrompt: {fileID: 0}
 --- !u!114 &7984128039849106733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1929,6 +2048,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: -3809821861389352194}
 --- !u!114 &7996553273361045449
 MonoBehaviour:
@@ -1945,12 +2066,14 @@ MonoBehaviour:
   Position: {x: 1648, y: 664}
   GUID: af22fa55-18c3-402f-b049-0ce6cba508f7
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: 5892015466302695478}
   - {fileID: 3136073325938925747}
@@ -1969,12 +2092,14 @@ MonoBehaviour:
   Position: {x: 389, y: 791}
   GUID: 3a91885a-b9b1-4460-bfd5-1e4f712be932
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: 185960463189461740}
   - {fileID: 185960463189461740}
@@ -2002,6 +2127,8 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   NextPrompt: {fileID: 2863350393073697647}
 --- !u!114 &9165987150997936826
 MonoBehaviour:
@@ -2018,12 +2145,14 @@ MonoBehaviour:
   Position: {x: 1328, y: 1802}
   GUID: 3a69f11b-7e69-41c7-837c-535a53fc7499
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
   Responses:
   - {fileID: -377931216936003484}
   - {fileID: -2055727284286026981}

@@ -38,7 +38,7 @@ public class AudioManager : MonoBehaviour
         if (!_musicSource.isPlaying)
             SwitchSong();
         
-        _musicSource.volume = _musicVolume;
+        //_musicSource.volume = _musicVolume;
     }
 
     private void SwitchSong()
@@ -60,7 +60,7 @@ public class AudioManager : MonoBehaviour
 
     public void UnmuteMusic()
     {
-        _musicSource.volume = _musicVolume;
+        _musicSource.mute = false;
     }
 
     public void PlayDialogueClip(AudioClip clip)
