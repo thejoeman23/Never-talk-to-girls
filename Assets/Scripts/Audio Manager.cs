@@ -14,8 +14,10 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private float _musicVolume;
     [SerializeField] private float _mutedMusicVolume;
     
+    [Header("Audio Sources")]
     [SerializeField] private AudioSource _musicSource;
     [SerializeField] private AudioSource _dialogueSource;
+    [SerializeField] private AudioSource _sfxSource;
     
     private AudioClip _currentSong;
     private bool _canSwitch = false;
@@ -65,6 +67,12 @@ public class AudioManager : MonoBehaviour
     {
         _dialogueSource.clip = clip;
         _dialogueSource.Play();
+    }
+
+    public void PlaySfxClip(AudioClip clip)
+    {
+        _sfxSource.clip = clip;
+        _sfxSource.Play();
     }
     
     public bool IsDialogueClipFinished()

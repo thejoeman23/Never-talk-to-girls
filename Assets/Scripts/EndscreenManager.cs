@@ -4,39 +4,65 @@ using DG.Tweening;
 
 public class EndscreenManager : MonoBehaviour
 {
+    [SerializeField] private AudioClip clip;
     [SerializeField] private GameObject endscreenCanvas;
     [SerializeField] private GameObject endscreenPrefab;
+
     [Header("Tween Settings")]
-    [SerializeField] private float tweenDuration = 0.8f;
-    [SerializeField] private float fadeDuration = 0.45f;
+    [SerializeField] private float overshootScale = 2.5f;
+
+    [Tooltip("How long it takes to slam from oversized down to near 1x scale")]
+    [SerializeField] private float slamDuration = 0.7f;
+
+    [Tooltip("How long the shake impact lasts")]
+    [SerializeField] private float shakeDuration = 0.3f;
+
+    [Tooltip("Strength of the shake on impact")]
+    [SerializeField] private float shakeStrength = 40f;
+
+    [Tooltip("How much time the endscreen takes to settle into perfect scale")]
+    [SerializeField] private float settleDuration = 0.15f;
 
     public void DisplayNewEndscreen(Sprite endscreenSprite)
     {
         endscreenCanvas.SetActive(true);
 
-        // Instantiate a preview endscreen (we'll animate this in)
         GameObject preview = Instantiate(endscreenPrefab, endscreenCanvas.transform);
         RectTransform rect = preview.GetComponent<RectTransform>();
-        if (rect == null) { Debug.LogError("Prefab missing RectTransform"); return; }
+        if (rect == null)
+        {
+            Debug.LogError("Prefab missing RectTransform");
+            return;
+        }
 
-        // Ensure there's a CanvasGroup to fade the whole thing
-        CanvasGroup cg = preview.GetComponent<CanvasGroup>();
-        if (cg == null) cg = preview.AddComponent<CanvasGroup>();
-        cg.alpha = 0f; // start invisible
-
-        // if you want to set the sprite immediately (or at reveal), try:
+        // Apply sprite
         Image img = preview.GetComponentInChildren<Image>();
-        if (img != null && endscreenSprite != null) img.sprite = endscreenSprite;
+        if (img != null && endscreenSprite != null)
+            img.sprite = endscreenSprite;
 
-        // Start tiny
-        rect.localScale = Vector3.zero;
+        // Start oversized (like it's dropping in)
+        rect.localScale = Vector3.one * overshootScale;
 
-        // Sequence: pop -> shake -> settle, fade with CanvasGroup
         Sequence s = DOTween.Sequence();
-        s.Append(rect.DOScale(1.1f, tweenDuration * 0.8f).SetEase(Ease.OutBack));
-        s.Join(cg.DOFade(1f, fadeDuration).SetEase(Ease.OutSine));
-        s.Append(rect.DOShakeAnchorPos(0.25f, 30f, vibrato: 30, randomness: 90f));
-        s.Append(rect.DOScale(1f, tweenDuration * 0.2f).SetEase(Ease.OutSine));
+
+        // Slam down
+        s.Append(rect.DOScale(1f, slamDuration).SetEase(Ease.InQuad));
+
+        // Shake impact
+        s.Append(rect.DOShakeAnchorPos(
+            duration: shakeDuration,
+            strength: shakeStrength,
+            vibrato: 50,
+            randomness: 90f,
+            snapping: false,
+            fadeOut: true
+        ));
+
+        // Settle
+        s.Append(rect.DOScale(1f, settleDuration).SetEase(Ease.OutSine));
+
+        AudioManager.Instance.PlaySfxClip(clip);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("IsDead", true);
         s.Play();
     }
 }

@@ -12,4 +12,6 @@ public class DialogueNode : ScriptableObject// A base class with base variables 
     public UnityEvent Event;
     public bool IsStart;
     public bool IsEnd;
+    public Sprite EndSprite;
+    public AudioClip EndClip;
 }
