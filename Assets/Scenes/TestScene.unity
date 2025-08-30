@@ -1193,7 +1193,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 497d243d4f6a948ddbb3c37544084e8f, type: 3}
   - {fileID: 8300000, guid: ba74a331f2b924053bc9d46012c3f299, type: 3}
   _musicVolume: 1
-  _mutedMusicVolume: 0.5
+  _mutedMusicVolume: 0.01
   _musicSource: {fileID: 605201177}
   _dialogueSource: {fileID: 605201175}
   _sfxSource: {fileID: 605201178}
