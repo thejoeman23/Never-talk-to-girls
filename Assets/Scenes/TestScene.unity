@@ -352,7 +352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34529328}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30706042, y: -0.007228939, z: 0.0023324736, w: 0.95165974}
+  m_LocalRotation: {x: 0.30704796, y: -0.0112058, z: 0.0036156385, w: 0.95162123}
   m_LocalPosition: {x: 8.536514, y: 6.0730033, z: -6.618592}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -683,7 +683,7 @@ MonoBehaviour:
         m_MethodName: BeginDialogue
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: e4296a3ac864445dc873e7cb8c0950d3, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 5d5cfcb9d132f8c42971211a5fc06bbd, type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueGraph, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -964,6 +964,78 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &666378309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8404759147457433890, guid: 7ad3ff7234b1c514baf81a00c5c3ed27, type: 3}
+  m_PrefabInstance: {fileID: 1490814023131199478}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &666378310 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1265813572932975224, guid: 7ad3ff7234b1c514baf81a00c5c3ed27, type: 3}
+  m_PrefabInstance: {fileID: 1490814023131199478}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &666378312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666378309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0243b8386c1cc4aa59592aab83e6df75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  _onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1285478908}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: TransmitCharacter
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 666378310}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1285478908}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: BeginDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e38913d82b03862438c22d259f021787, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueGraph, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _canInteract: 1
+--- !u!64 &666378313
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666378309}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1197,78 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &906870007 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2071103042305121731, guid: e6f591345ca3494428097427a596dace, type: 3}
+  m_PrefabInstance: {fileID: 966984210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &906870008 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5237738856392263212, guid: e6f591345ca3494428097427a596dace, type: 3}
+  m_PrefabInstance: {fileID: 966984210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &906870010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906870007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0243b8386c1cc4aa59592aab83e6df75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  _onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1285478908}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: TransmitCharacter
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 906870008}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1285478908}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: BeginDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 7dbd2d9dfdf40844cbbacfcf022f5f5f, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueGraph, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _canInteract: 1
+--- !u!64 &906870011
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906870007}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &966984210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1180,7 +1324,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2071103042305121731, guid: e6f591345ca3494428097427a596dace, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 906870011}
+    - targetCorrespondingSourceObject: {fileID: 2071103042305121731, guid: e6f591345ca3494428097427a596dace, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 906870010}
   m_SourcePrefab: {fileID: 100100000, guid: e6f591345ca3494428097427a596dace, type: 3}
 --- !u!1 &1050670398
 GameObject:
@@ -1291,6 +1441,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8846965149293054428, guid: 7facd8db87d9dcc448c0d16a8b43b445, type: 3}
   m_PrefabInstance: {fileID: 1166053714}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1283364168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2850123154731802247, guid: 81b688e1ee9dced4688e85fb285f140a, type: 3}
+  m_PrefabInstance: {fileID: 3956665612311721385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1283364169 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9157931818119809149, guid: 81b688e1ee9dced4688e85fb285f140a, type: 3}
+  m_PrefabInstance: {fileID: 3956665612311721385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1283364171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283364168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0243b8386c1cc4aa59592aab83e6df75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  _onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1285478908}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: TransmitCharacter
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1283364169}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1285478908}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: BeginDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 9551f6e8002eb6a4b806dbdca9958270, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueGraph, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _canInteract: 1
+--- !u!64 &1283364172
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283364168}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1285478906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,6 +1566,78 @@ MonoBehaviour:
   _verticalCanvasOffset: 10
   _tweenTime: 0.1
   _tweenEase: 1
+--- !u!1 &1287587414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1181030191577443593, guid: 35321be56b14f6c48ac5e34afa8a96a6, type: 3}
+  m_PrefabInstance: {fileID: 5093043172140276107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1287587415 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3800321699247035269, guid: 35321be56b14f6c48ac5e34afa8a96a6, type: 3}
+  m_PrefabInstance: {fileID: 5093043172140276107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1287587417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287587414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0243b8386c1cc4aa59592aab83e6df75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  _onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1285478908}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: TransmitCharacter
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1287587415}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1285478908}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: BeginDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: bdbbb4f38e5f70645ab78a4fc976677b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueGraph, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _canInteract: 1
+--- !u!64 &1287587418
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287587414}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1302785426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,7 +1891,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088482403}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30706045, y: -0.007228939, z: 0.0023324736, w: 0.95165974}
+  m_LocalRotation: {x: 0.30704802, y: -0.011205802, z: 0.0036156382, w: 0.95162123}
   m_LocalPosition: {x: 0.039050706, y: 2.9496353, z: -3.982471}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2226,7 +2520,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8404759147457433890, guid: 7ad3ff7234b1c514baf81a00c5c3ed27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 666378313}
+    - targetCorrespondingSourceObject: {fileID: 8404759147457433890, guid: 7ad3ff7234b1c514baf81a00c5c3ed27, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 666378312}
   m_SourcePrefab: {fileID: 100100000, guid: 7ad3ff7234b1c514baf81a00c5c3ed27, type: 3}
 --- !u!1 &1499229937016980556
 GameObject:
@@ -2738,7 +3038,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2850123154731802247, guid: 81b688e1ee9dced4688e85fb285f140a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1283364172}
+    - targetCorrespondingSourceObject: {fileID: 2850123154731802247, guid: 81b688e1ee9dced4688e85fb285f140a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1283364171}
   m_SourcePrefab: {fileID: 100100000, guid: 81b688e1ee9dced4688e85fb285f140a, type: 3}
 --- !u!4 &4051051337245590214
 Transform:
@@ -2995,7 +3301,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1181030191577443593, guid: 35321be56b14f6c48ac5e34afa8a96a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1287587418}
+    - targetCorrespondingSourceObject: {fileID: 1181030191577443593, guid: 35321be56b14f6c48ac5e34afa8a96a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1287587417}
   m_SourcePrefab: {fileID: 100100000, guid: 35321be56b14f6c48ac5e34afa8a96a6, type: 3}
 --- !u!1 &5196728993696496086
 GameObject:

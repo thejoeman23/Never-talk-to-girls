@@ -1,0 +1,406 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8213664068134982295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 343, y: 378}
+  GUID: 6bf0b4ec-a97f-49ef-afa2-da559b3f7afe
+  Text: Well, so you could meet me of course.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -7003213564771922501}
+--- !u!114 &-7003213564771922501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 656, y: 375}
+  GUID: 049ba8b6-b2c9-401b-9add-9ba87e189d2e
+  Text: Yeah I doubt it. You look like my little brother.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-6923976921864145293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 344, y: -182}
+  GUID: a858c3ee-008b-457c-a7c5-e010f3e8dea1
+  Text: Are you ok?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -4881523297016919536}
+--- !u!114 &-5595037545345012681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 972, y: 375}
+  GUID: 1d8c4fa6-4d8d-4c43-8fd0-a5ae4ecb2f34
+  Text: Hah, got you.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 8586654013722657307}
+--- !u!114 &-4881523297016919536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 654, y: -182}
+  GUID: 38f967ba-0ddf-4183-affa-a18848776a62
+  Text: No... I wish it were raining. Then when I walk home alone I will be cold
+    and wet as well.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -4328620942464043439}
+  - {fileID: 8649167987619708392}
+--- !u!114 &-4328620942464043439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 965, y: -181}
+  GUID: c267f4b6-846f-4f8b-af60-f9d842473ca4
+  Text: Well, I could help you with the alone part...
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 0}
+--- !u!114 &-4243845887432703778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1593, y: 99}
+  GUID: 86e4adb3-6071-44f6-9e32-7463680b7ca4
+  Text: Oh, you know... looking for a pretty girl like you.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30528c463be3439b9a930e7d2c08bbc, type: 3}
+  m_Name: Sarah
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGraph
+  nodes:
+  - {fileID: 6811035295408848327}
+  - {fileID: -6923976921864145293}
+  - {fileID: -4881523297016919536}
+  - {fileID: 2026902467016593821}
+  - {fileID: 6266195344446932400}
+  - {fileID: -8213664068134982295}
+  - {fileID: 4388054400963742002}
+  - {fileID: 2057017877475785228}
+  - {fileID: -7003213564771922501}
+  - {fileID: -5595037545345012681}
+  - {fileID: 8586654013722657307}
+  - {fileID: 7631538083694900843}
+  - {fileID: 8350793111923981426}
+  - {fileID: -4243845887432703778}
+  - {fileID: -4328620942464043439}
+  - {fileID: 8649167987619708392}
+--- !u!114 &2026902467016593821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 344, y: 95}
+  GUID: bb9d60d8-8b1f-446b-b400-8726ae4beed6
+  Text: Not having fun?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 6266195344446932400}
+--- !u!114 &2057017877475785228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1282, y: 98}
+  GUID: 777d2e31-5be9-4d0c-ad21-710442b6c4b5
+  Text: Sarcasm. If you can't handle it, you should talk to someone else.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &4388054400963742002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 971, y: 97}
+  GUID: d3f80ac4-baf7-41a7-9b70-0c027129da5d
+  Text: Really? I'm having a lot of fun too.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 2057017877475785228}
+--- !u!114 &6266195344446932400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 654, y: 95}
+  GUID: 670a1a59-fbe4-482c-8566-9ad3f410f73c
+  Text: Oh, tons.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -5595037545345012681}
+  - {fileID: 4388054400963742002}
+--- !u!114 &6811035295408848327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 8, y: 96}
+  GUID: d591d1ee-6c9a-4360-bf1d-14fa250af56d
+  Text: I don't even know why I come to these things...
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 1
+  IsEnd: 0
+  Responses:
+  - {fileID: -6923976921864145293}
+  - {fileID: 2026902467016593821}
+  - {fileID: -8213664068134982295}
+--- !u!114 &7631538083694900843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1588, y: 375}
+  GUID: cf47a3df-7bc0-4297-9ba8-7e58c1181df1
+  Text: Cause watching other people be happy brings me SO much joy.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 0}
+--- !u!114 &8350793111923981426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1588, y: 652}
+  GUID: 70d06d1b-95b6-40f5-94f4-92313249da13
+  Text: 
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 0}
+--- !u!114 &8586654013722657307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1281, y: 375}
+  GUID: 3138c940-e524-4767-99e3-dd565cf9ad18
+  Text: So what brings you here?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -4243845887432703778}
+  - {fileID: 7631538083694900843}
+  - {fileID: 8350793111923981426}
+--- !u!114 &8649167987619708392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 968, y: -460}
+  GUID: af0f3982-da5e-40f0-8986-7fa795e4a397
+  Text: 
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 0}

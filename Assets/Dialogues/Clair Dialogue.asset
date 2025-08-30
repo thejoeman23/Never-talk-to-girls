@@ -1,0 +1,389 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8637954261900834551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 971, y: -743}
+  GUID: 0ccf1b38-0a51-4a5a-b40b-5d8407d6dca0
+  Text: '*giggles* Tell them I''m taken.'
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-7682290885494900722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 0, y: 282}
+  GUID: bc61d2d8-12cd-457c-aaab-05efa485b0ed
+  Text: Hey
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 1
+  IsEnd: 0
+  NextPrompt: {fileID: -5972786671223744214}
+--- !u!114 &-6905698276236255204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 0, y: -280}
+  GUID: addbc9eb-116b-4d40-8071-d6fbc83628c6
+  Text: Are you single?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 1
+  IsEnd: 0
+  NextPrompt: {fileID: -6696213518939241153}
+--- !u!114 &-6696213518939241153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 310, y: -280}
+  GUID: 8d8b9eab-1a98-49ad-b833-15f67dc169d2
+  Text: Why are you asking?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: 5275184905606705154}
+  - {fileID: -1918880698737846271}
+  - {fileID: -299176186667236301}
+--- !u!114 &-5972786671223744214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 310, y: 281}
+  GUID: 59987a85-8ead-4fc2-b852-aff3c6380bbf
+  Text: I have a boyfriend.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-1918880698737846271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 652, y: -170}
+  GUID: 77a8d04a-04b2-4bcb-9d30-3772ccd1ef08
+  Text: Oh no reason... END
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  NextPrompt: {fileID: -8637954261900834551}
+--- !u!114 &-1897070176258908983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 0, y: 0}
+  GUID: c26a428a-4f79-4e9a-8245-33e7cabe07ad
+  Text: Do you like rasins? How do you feel about a date?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 1
+  IsEnd: 0
+  NextPrompt: {fileID: 8926956105781796652}
+--- !u!114 &-1653337629494229367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 309, y: 562}
+  GUID: 26042f74-d69c-470a-8110-67ff6c15a6af
+  Text: I have a boyfriend.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-299176186667236301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 659, y: -743}
+  GUID: ffdaf6f7-843e-4769-85ef-fcd3dbce7e61
+  Text: My friend over there likes you.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -8637954261900834551}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30528c463be3439b9a930e7d2c08bbc, type: 3}
+  m_Name: Clair Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGraph
+  nodes:
+  - {fileID: -7682290885494900722}
+  - {fileID: 8859774706057310}
+  - {fileID: -1653337629494229367}
+  - {fileID: -5972786671223744214}
+  - {fileID: -1897070176258908983}
+  - {fileID: 8926956105781796652}
+  - {fileID: -6905698276236255204}
+  - {fileID: -6696213518939241153}
+  - {fileID: 5275184905606705154}
+  - {fileID: -299176186667236301}
+  - {fileID: 1072183742192624820}
+  - {fileID: -1918880698737846271}
+  - {fileID: -8637954261900834551}
+--- !u!114 &8859774706057310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: -1, y: 561}
+  GUID: 1debcced-8096-43f7-84c2-600b8aff540f
+  Text: You look very pretty.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 1
+  IsEnd: 0
+  NextPrompt: {fileID: -1653337629494229367}
+--- !u!114 &1072183742192624820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 970, y: -458}
+  GUID: 1f4306a3-e095-4a4f-b71d-7efd4200ee1b
+  Text: I have a boyfriend.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &5275184905606705154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 654, y: -457}
+  GUID: 7b2788a8-be32-4d6b-9e59-04cd2db21ec7
+  Text: Because I like you.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 1072183742192624820}
+--- !u!114 &8926956105781796652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 307, y: -1}
+  GUID: a21546b7-878d-45c4-9c8b-694eb8f09f8e
+  Text: I have a boyfriend.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []

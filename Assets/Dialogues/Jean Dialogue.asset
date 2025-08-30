@@ -1,0 +1,2029 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9197762124055845525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 2617, y: 378}
+  GUID: e7bc9f41-bb94-4811-b858-9c64c5b79e5a
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -8334513949752670171}
+--- !u!114 &-8893605547562023020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: -349, y: 1640}
+  GUID: 07730054-5478-4b30-9baf-2473e1ee5796
+  Text: Do you play sports?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 5272161981050323153}
+--- !u!114 &-8843439294253250735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 385, y: 484}
+  GUID: e4c4c431-7f08-47fb-b52e-9f8ce227e98a
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: 5285786958904443229}
+  - {fileID: 9070859519295700739}
+  - {fileID: 185960463189461740}
+--- !u!114 &-8343607802266090970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2617, y: 1516}
+  GUID: 38af4dc9-ead7-42f7-9e3c-390db07c2a9d
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 0
+  Responses: []
+--- !u!114 &-8334513949752670171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2933, y: 380}
+  GUID: 7a30303a-d8ae-4704-88c9-50cffc2615f8
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-8316300315853296274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 64, y: 487}
+  GUID: 72106add-6e3f-4515-8863-7661a505a3d2
+  Text: Do you dance?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -8843439294253250735}
+--- !u!114 &-8255584627902492804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1969, y: 1803}
+  GUID: 99695498-06fa-401d-b0f8-50e3d7a7b762
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -7173576562032193830}
+--- !u!114 &-8092477072070062948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 377, y: -356}
+  GUID: b31b4c05-7b52-4565-8da6-d38931b0d073
+  Text: YOU ARE CUTE TOO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -2582066336814452697}
+--- !u!114 &-7936321064016959492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: -37, y: 1352}
+  GUID: 2269d2e8-2687-434d-a927-1babb0cd860a
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -4505929345164623595}
+--- !u!114 &-7803367549869255012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1327, y: 1233}
+  GUID: 51ed1a3f-9c3e-4ae0-b9f8-b02b309c7cee
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-7714379075321613151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1327, y: 1516}
+  GUID: 27597e22-70f6-494f-ae39-1bec336f8635
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -5041899641976126112}
+  - {fileID: 2803359268461556848}
+--- !u!114 &-7274955419845175224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: -673, y: 1352}
+  GUID: ea890074-c01c-4649-b659-8ef9801c3095
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: 439047227443954129}
+--- !u!114 &-7173576562032193830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 2295, y: 1802}
+  GUID: e083de1e-c328-436f-bad2-efa14e1b23b0
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -4183450677556563529}
+--- !u!114 &-7170077915598702788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: -352, y: 1925}
+  GUID: c909f509-7db4-4b7b-88e3-3c8649409e12
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -6233679315239141321}
+--- !u!114 &-7151026548337176068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1336, y: -229}
+  GUID: 13ec7cc7-121c-4e8b-abc8-5d408620983a
+  Text: Oh, that's too bad. END
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  NextPrompt: {fileID: 0}
+--- !u!114 &-6689368520537747763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1970, y: 90}
+  GUID: 2070755b-ec33-491d-9a39-b61690c5ed39
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -1873139888983194066}
+--- !u!114 &-6366790399204600699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2944, y: 960}
+  GUID: 3e8fd7bf-f32c-488c-9756-e30cb3c4e58f
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-6233679315239141321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: -33, y: 1924}
+  GUID: d3d3f244-4467-4280-b578-ecb554797896
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-6180337336997917107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 692, y: -79}
+  GUID: ea161aa5-4f7a-4351-84ae-efab7c9294d1
+  Text: What about trains?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 1987303354484228152}
+--- !u!114 &-5979321481483391606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: -1308, y: 1353}
+  GUID: 2006c557-524e-4c2c-b7f0-4b0723e4c708
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: 2142670431052460169}
+  - {fileID: 7612326117311771391}
+  - {fileID: -3109583620058694901}
+--- !u!114 &-5882290060468340829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2301, y: 667}
+  GUID: cd8bdc29-a023-46d7-addf-6f137b0fd3ac
+  Text: I LIKE TRAINS
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-5295078810592990493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: -667, y: 1927}
+  GUID: 30671f21-37d0-4a21-8cb0-e22368e4d820
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -8893605547562023020}
+  - {fileID: -7170077915598702788}
+--- !u!114 &-5041899641976126112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1645, y: 1519}
+  GUID: b0c5c33a-8a51-4efb-b0c0-4458316e257b
+  Text: Do you make art?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 4219043881337184700}
+--- !u!114 &-4925099929981062824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 601, y: 1639}
+  GUID: fe1e3f81-8969-4fa4-adea-824f7a25045e
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-4505929345164623595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 281, y: 1352}
+  GUID: 3f784d2a-d4d1-45d5-9fa9-a2bc1931ea64
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 2802144029954899961}
+--- !u!114 &-4183450677556563529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2617, y: 1805}
+  GUID: 99749779-452e-48cc-b45a-eac712b026d2
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 0
+  Responses: []
+--- !u!114 &-3809821861389352194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2301, y: 378}
+  GUID: 8a78451f-c748-4187-a11a-dd8584f4f6ee
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -9197762124055845525}
+--- !u!114 &-3138424780701550602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1334, y: -514}
+  GUID: d57661f9-3798-498a-aea7-00399f8dc16c
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 1760243263177675873}
+--- !u!114 &-3109583620058694901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: -989, y: 1641}
+  GUID: 4490970d-a79b-4bd0-9672-83ecc4c180a9
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 4405602293739326638}
+--- !u!114 &-3033670493052784329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: -1629, y: 1353}
+  GUID: 8322d973-1a0c-4ff1-a47a-c21d8ab2bb63
+  Text: Do you make art?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -5979321481483391606}
+--- !u!114 &-2944488673366361625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 2628, y: 960}
+  GUID: 2358e553-7340-4dd1-8641-2dff4845f790
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -6366790399204600699}
+--- !u!114 &-2861995938611849086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 58, y: -356}
+  GUID: fb9d6687-42d0-4b90-823f-2911363d5bfa
+  Text: I think you're cute.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -8092477072070062948}
+--- !u!114 &-2695809856392656511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1015, y: 1801}
+  GUID: e072528e-f5c4-4711-a73c-d77d65352315
+  Text: Do you make art?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 9165987150997936826}
+--- !u!114 &-2582066336814452697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 691, y: -356}
+  GUID: bef60f9b-f50d-4254-b327-83233f134168
+  Text: You... like me?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 5032814845671858581}
+--- !u!114 &-2055727284286026981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1645, y: 2084}
+  GUID: c268c758-913a-40b6-a39a-9c3734d222fb
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 243189557770844362}
+--- !u!114 &-1873139888983194066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2297, y: 91}
+  GUID: bbbff21c-1fd8-4b2b-a8e8-49c4eaad1b00
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-1827423266616921032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 57, y: -77}
+  GUID: 4c3c4f47-031e-405f-807c-417b0148c94f
+  Text: I like your eyes.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 5782463425576912611}
+--- !u!114 &-1403429750977923776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 64, y: 781}
+  GUID: 29a72518-b715-4a0a-a5c2-3e60ddb0bb06
+  Text: Do you play sports?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 8670887043023767073}
+--- !u!114 &-638092169380669887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1972, y: 1242}
+  GUID: 2309e1ce-72af-4a63-86de-df3cfebc4447
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 0
+  Responses: []
+--- !u!114 &-377931216936003484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1646, y: 1805}
+  GUID: 92f27fe4-a721-40f7-be4d-ff2533ee2f68
+  Text: Do you dance?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -8255584627902492804}
+--- !u!114 &-249440344647445376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 597, y: 1925}
+  GUID: a30edd83-f230-42c7-bf87-f44be9d7aef6
+  Text: '*gasp* I LOVE TRAINS! WE ARE GOING TO BE THE BEST TRAIN FRIENDS.'
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &-236524633887070262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1015, y: 1517}
+  GUID: a6430119-fb7b-4d84-9616-5b6b79854973
+  Text: Do you dance?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -7714379075321613151}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30528c463be3439b9a930e7d2c08bbc, type: 3}
+  m_Name: Jean Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGraph
+  nodes:
+  - {fileID: 2533100962761741767}
+  - {fileID: 6887109147279934344}
+  - {fileID: 6448286332790435426}
+  - {fileID: -2861995938611849086}
+  - {fileID: -8092477072070062948}
+  - {fileID: -2582066336814452697}
+  - {fileID: 5032814845671858581}
+  - {fileID: -7151026548337176068}
+  - {fileID: -3138424780701550602}
+  - {fileID: 1760243263177675873}
+  - {fileID: 5782463425576912611}
+  - {fileID: -6180337336997917107}
+  - {fileID: 1987303354484228152}
+  - {fileID: 6129488095848993550}
+  - {fileID: 5623312835472699694}
+  - {fileID: -1403429750977923776}
+  - {fileID: -8843439294253250735}
+  - {fileID: -8316300315853296274}
+  - {fileID: 185960463189461740}
+  - {fileID: 5285786958904443229}
+  - {fileID: 3890165719521946181}
+  - {fileID: 9070859519295700739}
+  - {fileID: 2863350393073697647}
+  - {fileID: 7996553273361045449}
+  - {fileID: 3136073325938925747}
+  - {fileID: -6689368520537747763}
+  - {fileID: 7984128039849106733}
+  - {fileID: -1873139888983194066}
+  - {fileID: -3809821861389352194}
+  - {fileID: -5882290060468340829}
+  - {fileID: 4604120822398183209}
+  - {fileID: -9197762124055845525}
+  - {fileID: -2944488673366361625}
+  - {fileID: -8334513949752670171}
+  - {fileID: -6366790399204600699}
+  - {fileID: -1827423266616921032}
+  - {fileID: 8670887043023767073}
+  - {fileID: 5892015466302695478}
+  - {fileID: 3057062193186365417}
+  - {fileID: -2695809856392656511}
+  - {fileID: 9165987150997936826}
+  - {fileID: -236524633887070262}
+  - {fileID: -7714379075321613151}
+  - {fileID: -7803367549869255012}
+  - {fileID: 7642298664996604833}
+  - {fileID: -5041899641976126112}
+  - {fileID: 2803359268461556848}
+  - {fileID: -638092169380669887}
+  - {fileID: 4219043881337184700}
+  - {fileID: -377931216936003484}
+  - {fileID: -2055727284286026981}
+  - {fileID: 243189557770844362}
+  - {fileID: -8255584627902492804}
+  - {fileID: -8343607802266090970}
+  - {fileID: -4183450677556563529}
+  - {fileID: 6742626493269966954}
+  - {fileID: -7173576562032193830}
+  - {fileID: -5979321481483391606}
+  - {fileID: -3033670493052784329}
+  - {fileID: 2142670431052460169}
+  - {fileID: 439047227443954129}
+  - {fileID: -7936321064016959492}
+  - {fileID: -4505929345164623595}
+  - {fileID: 2802144029954899961}
+  - {fileID: -7274955419845175224}
+  - {fileID: -3109583620058694901}
+  - {fileID: 7612326117311771391}
+  - {fileID: 4405602293739326638}
+  - {fileID: -5295078810592990493}
+  - {fileID: -8893605547562023020}
+  - {fileID: -7170077915598702788}
+  - {fileID: 5272161981050323153}
+  - {fileID: -6233679315239141321}
+  - {fileID: 3624354509555373497}
+  - {fileID: 4148262261349025015}
+  - {fileID: -4925099929981062824}
+  - {fileID: -249440344647445376}
+--- !u!114 &185960463189461740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1322, y: 665}
+  GUID: 5cfb2f98-a590-48f7-a260-6197fec14eb8
+  Text: Do you make art?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 7996553273361045449}
+--- !u!114 &243189557770844362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1969, y: 2083}
+  GUID: e627e0e7-8bad-47ae-b8c4-996112d302c4
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &439047227443954129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: -352, y: 1350}
+  GUID: e914a907-88d2-4354-8f34-a6a9cdf8e25a
+  Text: Do you dance?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -7936321064016959492}
+--- !u!114 &1760243263177675873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1657, y: -514}
+  GUID: 007e42d4-eef8-4459-b634-ce535d4f1685
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &1987303354484228152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1004, y: -77}
+  GUID: 9a4ed7d6-b86a-4637-8bb1-b64914689922
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &2142670431052460169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: -988, y: 1354}
+  GUID: 219393aa-c2dc-4bc6-8aa3-387c18ecd9ab
+  Text: Do you play sports?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -7274955419845175224}
+--- !u!114 &2533100962761741767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: -593, y: 340}
+  GUID: 8c598248-cb2e-41b4-9c7f-04403f45d249
+  Text: Hey, just wanted to say that you look absolutely stunning tonight.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 1
+  IsEnd: 0
+  NextPrompt: {fileID: 5623312835472699694}
+--- !u!114 &2802144029954899961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 595, y: 1351}
+  GUID: 39d11a1b-bdb4-438b-962e-1215a5f0c27f
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &2803359268461556848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1647, y: 1241}
+  GUID: 17b72c2a-b516-4b06-96f0-7251a52e2798
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -638092169380669887}
+--- !u!114 &2863350393073697647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1648, y: 371}
+  GUID: f9f31bcb-4dd6-465b-9a96-8ca585eb4beb
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: 7984128039849106733}
+  - {fileID: -6689368520537747763}
+--- !u!114 &3057062193186365417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1014, y: 1233}
+  GUID: 6aa97cc4-f545-4d21-a34c-db54eb1745ed
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -7803367549869255012}
+--- !u!114 &3136073325938925747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1974, y: 669}
+  GUID: 5f5dbc66-0c24-4991-8338-07bad68de6c3
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -5882290060468340829}
+--- !u!114 &3624354509555373497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 279, y: 1641}
+  GUID: 66fc2a98-014e-4147-99a9-7078eff51178
+  Text: ' What do you like?'
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -4925099929981062824}
+--- !u!114 &3890165719521946181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1646, y: 84}
+  GUID: 043e7f44-3764-46a8-b277-fada1da19322
+  Text: I LIKE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &4148262261349025015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 284, y: 1924}
+  GUID: 9a4c1bb5-ec1b-4b12-9621-ef000b84c534
+  Text: Do you like trains?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -249440344647445376}
+--- !u!114 &4219043881337184700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1974, y: 1520}
+  GUID: c2682c72-4d7d-4ba0-b2c7-aa1e080fcff4
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: 6742626493269966954}
+--- !u!114 &4405602293739326638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: -669, y: 1643}
+  GUID: 80affab5-77c0-4bbe-829c-c9002cbad36b
+  Text: I LIKE TRAINS
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  IsStart: 0
+  IsEnd: 1
+  Responses: []
+--- !u!114 &4604120822398183209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2301, y: 959}
+  GUID: 21f88227-e85f-4ab3-a5e0-90ecace2a1b6
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -2944488673366361625}
+--- !u!114 &5032814845671858581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1003, y: -354}
+  GUID: 764163d8-5808-46cd-b76a-f13a19f97410
+  Text: I DON'T LIKE BOYS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -3138424780701550602}
+  - {fileID: -7151026548337176068}
+--- !u!114 &5272161981050323153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: -35, y: 1641}
+  GUID: f7b4b7c2-94d7-4717-846a-795bf1cb0b17
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: 4148262261349025015}
+  - {fileID: 3624354509555373497}
+--- !u!114 &5285786958904443229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1324, y: 84}
+  GUID: c7005b55-a6fb-49d7-b9df-0ef446af360a
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 3890165719521946181}
+--- !u!114 &5623312835472699694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: -279, y: 342}
+  GUID: f1566e3b-dd83-4091-83a4-6f1db47674ce
+  Text: THANK YOU.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -8316300315853296274}
+  - {fileID: -1403429750977923776}
+  - {fileID: -3033670493052784329}
+--- !u!114 &5782463425576912611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 376, y: -78}
+  GUID: 1a343a87-33fc-4833-b9a3-a3382a0a4f2e
+  Text: I LIKE MY EYES TOO. THEY HELP ME SEE TRAINS.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -6180337336997917107}
+--- !u!114 &5892015466302695478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1972, y: 960}
+  GUID: 679ec166-69e7-42a7-8759-1c362438724e
+  Text: Do you play sports?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 4604120822398183209}
+--- !u!114 &6129488095848993550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 63, y: 201}
+  GUID: 6f75dee1-0eba-456a-98b2-7e1a518a6afd
+  Text: Goodbye. END
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  NextPrompt: {fileID: 0}
+--- !u!114 &6448286332790435426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: -279, y: 56}
+  GUID: 200e3f29-475f-4db5-a4ab-7148ed98a4cd
+  Text: HELLO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -2861995938611849086}
+  - {fileID: -1827423266616921032}
+  - {fileID: 6129488095848993550}
+--- !u!114 &6742626493269966954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 2293, y: 1520}
+  GUID: 247b5125-f89b-40f3-ad06-c9cc39418280
+  Text: What do you like?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -8343607802266090970}
+--- !u!114 &6887109147279934344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: -596, y: 55}
+  GUID: 3ce99cd7-93ea-4b86-8078-0c7bb27e426a
+  Text: Hey
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 1
+  IsEnd: 0
+  NextPrompt: {fileID: 6448286332790435426}
+--- !u!114 &7612326117311771391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: -992, y: 1930}
+  GUID: a9ff5697-df25-41c4-8e95-7ccf1ab882fd
+  Text: Do you dance?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -5295078810592990493}
+--- !u!114 &7642298664996604833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1644, y: 961}
+  GUID: 036f8ff4-7f3f-4fd3-8d30-b1cde61fe6fe
+  Text: 
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 0}
+--- !u!114 &7984128039849106733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1969, y: 375}
+  GUID: 452e4a15-cb27-4c7d-bb6c-14db4415da0b
+  Text: Do you make art?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: -3809821861389352194}
+--- !u!114 &7996553273361045449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1648, y: 664}
+  GUID: af22fa55-18c3-402f-b049-0ce6cba508f7
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: 5892015466302695478}
+  - {fileID: 3136073325938925747}
+--- !u!114 &8670887043023767073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 389, y: 791}
+  GUID: 3a91885a-b9b1-4460-bfd5-1e4f712be932
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: 185960463189461740}
+  - {fileID: 185960463189461740}
+  - {fileID: 3057062193186365417}
+  - {fileID: -236524633887070262}
+  - {fileID: -2695809856392656511}
+--- !u!114 &9070859519295700739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1322, y: 369}
+  GUID: 68efd868-6e0e-46cc-974e-87eda8403077
+  Text: Do you play sports?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  NextPrompt: {fileID: 2863350393073697647}
+--- !u!114 &9165987150997936826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1328, y: 1802}
+  GUID: 3a69f11b-7e69-41c7-837c-535a53fc7499
+  Text: NO.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  Responses:
+  - {fileID: -377931216936003484}
+  - {fileID: -2055727284286026981}
