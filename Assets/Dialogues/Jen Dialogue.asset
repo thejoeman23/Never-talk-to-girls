@@ -57,7 +57,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: bf024b827a1ec12428f098468314254d, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-8080599498417676797
@@ -93,7 +93,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 1ad82e98eabef4a4e994b50d8103687c, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-7948954139491131887
@@ -227,7 +227,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 921ff387d65dd6b4d9b94f5316a6595f, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-6123528395446498476
@@ -359,7 +359,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: afcce48429fc81b4f86e1b0d5d8a32a8, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-4022546585675616460
@@ -419,7 +419,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: a7caa07353b0b664c9689f0b83efa667, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-3241629202131606340
@@ -593,7 +593,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 1ad82e98eabef4a4e994b50d8103687c, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-2018480339945067611
@@ -653,7 +653,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: c1a4036972812934482d7caf9d3a5545, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-1168012100076890452
@@ -747,7 +747,6 @@ MonoBehaviour:
   - {fileID: 6253295638891476701}
   - {fileID: -2732213380081307010}
   - {fileID: 5032644705703624107}
-  - {fileID: 8910548667029452529}
   - {fileID: -8968362690673882891}
   - {fileID: 1973604819501190815}
   - {fileID: -2313192382152376071}
@@ -758,7 +757,6 @@ MonoBehaviour:
   - {fileID: 8962208042611437408}
   - {fileID: -1312089463716796122}
   - {fileID: -4119279872004953609}
-  - {fileID: 7248398531808271897}
   - {fileID: 4330476983764057479}
   - {fileID: 2128852627947622613}
   - {fileID: 299718867328629693}
@@ -787,11 +785,13 @@ MonoBehaviour:
   - {fileID: -1168012100076890452}
   - {fileID: 50343394425058795}
   - {fileID: -6163437802323316453}
-  - {fileID: 7929153032612349563}
   - {fileID: -8080599498417676797}
   - {fileID: -2552690326642956602}
   - {fileID: -2194011113413475864}
   - {fileID: 3670111680337217575}
+  - {fileID: 7248398531808271897}
+  - {fileID: 8910548667029452529}
+  - {fileID: 7929153032612349563}
 --- !u!114 &50343394425058795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,7 +825,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 5f11f8725c6c33c4ba8b626761b29ff3, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &52333580884104215
@@ -959,7 +959,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 1ad82e98eabef4a4e994b50d8103687c, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &2604579029295420532
@@ -1046,7 +1046,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 921ff387d65dd6b4d9b94f5316a6595f, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &3691438405943240476
@@ -1237,7 +1237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 1578, y: -1726}
+  Position: {x: 1578, y: -1730}
   GUID: 368e1771-f724-494e-8353-94a702436c6e
   Text: Ah, thank you.
   Audio: {fileID: 8300000, guid: 814f49db8614540a48366310f180dbd2, type: 3}
@@ -1306,7 +1306,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 5f11f8725c6c33c4ba8b626761b29ff3, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &8661246289428878014
@@ -1345,7 +1345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
-  Position: {x: 1235, y: -1727}
+  Position: {x: 1242, y: -1727}
   GUID: 78996ed2-5645-4a0e-a9c8-862e664fa330
   Text: I said, I like your outfit.
   Audio: {fileID: 0}
@@ -1390,6 +1390,6 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: c1a4036972812934482d7caf9d3a5545, type: 3}
   EndClip: {fileID: 0}
   Responses: []
