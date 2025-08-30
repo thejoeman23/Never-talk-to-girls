@@ -93,22 +93,10 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
-  IsEnd: 0
-  EndSprite: {fileID: 0}
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-8334513949752670171
@@ -123,28 +111,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 2933, y: 380}
+  Position: {x: 2933, y: 381}
   GUID: 7a30303a-d8ae-4704-88c9-50cffc2615f8
   Text: I LIKE TRAINS.
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-8316300315853296274
@@ -258,28 +234,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 1327, y: 1233}
+  Position: {x: 1324, y: 1235}
   GUID: 51ed1a3f-9c3e-4ae0-b9f8-b02b309c7cee
   Text: I LIKE TRAINS.
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-7714379075321613151
@@ -447,22 +411,10 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-6233679315239141321
@@ -498,7 +450,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-6180337336997917107
@@ -570,22 +522,10 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-5295078810592990493
@@ -650,28 +590,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 601, y: 1639}
+  Position: {x: 601, y: 1641}
   GUID: fe1e3f81-8969-4fa4-adea-824f7a25045e
   Text: I LIKE TRAINS.
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-4505929345164623595
@@ -716,22 +644,10 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
-  IsEnd: 0
-  EndSprite: {fileID: 0}
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-3809821861389352194
@@ -969,22 +885,10 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-1827423266616921032
@@ -1047,28 +951,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 1972, y: 1242}
+  Position: {x: 1970, y: 1242}
   GUID: 2309e1ce-72af-4a63-86de-df3cfebc4447
   Text: I LIKE TRAINS.
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
-  IsEnd: 0
-  EndSprite: {fileID: 0}
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-377931216936003484
@@ -1113,22 +1005,10 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: 6dba99ff67b4c40abbfc32fee432be42, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: f5ef251c60a45434b9e2237569fbb57e, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-236524633887070262
@@ -1187,7 +1067,6 @@ MonoBehaviour:
   - {fileID: -8316300315853296274}
   - {fileID: 185960463189461740}
   - {fileID: 5285786958904443229}
-  - {fileID: 3890165719521946181}
   - {fileID: 9070859519295700739}
   - {fileID: 2863350393073697647}
   - {fileID: 7996553273361045449}
@@ -1196,12 +1075,9 @@ MonoBehaviour:
   - {fileID: 7984128039849106733}
   - {fileID: -1873139888983194066}
   - {fileID: -3809821861389352194}
-  - {fileID: -5882290060468340829}
   - {fileID: 4604120822398183209}
   - {fileID: -9197762124055845525}
   - {fileID: -2944488673366361625}
-  - {fileID: -8334513949752670171}
-  - {fileID: -6366790399204600699}
   - {fileID: -1827423266616921032}
   - {fileID: 8670887043023767073}
   - {fileID: 5892015466302695478}
@@ -1210,17 +1086,14 @@ MonoBehaviour:
   - {fileID: 9165987150997936826}
   - {fileID: -236524633887070262}
   - {fileID: -7714379075321613151}
-  - {fileID: -7803367549869255012}
   - {fileID: -5041899641976126112}
   - {fileID: 2803359268461556848}
-  - {fileID: -638092169380669887}
   - {fileID: 4219043881337184700}
   - {fileID: -377931216936003484}
   - {fileID: -2055727284286026981}
   - {fileID: 243189557770844362}
   - {fileID: -8255584627902492804}
   - {fileID: -8343607802266090970}
-  - {fileID: -4183450677556563529}
   - {fileID: 6742626493269966954}
   - {fileID: -7173576562032193830}
   - {fileID: -5979321481483391606}
@@ -1241,9 +1114,16 @@ MonoBehaviour:
   - {fileID: -6233679315239141321}
   - {fileID: 3624354509555373497}
   - {fileID: 4148262261349025015}
+  - {fileID: 5623312835472699694}
+  - {fileID: 3890165719521946181}
+  - {fileID: -8334513949752670171}
+  - {fileID: -5882290060468340829}
+  - {fileID: -6366790399204600699}
+  - {fileID: -7803367549869255012}
+  - {fileID: -638092169380669887}
+  - {fileID: -4183450677556563529}
   - {fileID: -4925099929981062824}
   - {fileID: -249440344647445376}
-  - {fileID: 5623312835472699694}
 --- !u!114 &185960463189461740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1286,22 +1166,10 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &439047227443954129
@@ -1346,22 +1214,10 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &1987303354484228152
@@ -1382,22 +1238,10 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &2142670431052460169
@@ -1481,7 +1325,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &2803359268461556848
@@ -1624,22 +1468,10 @@ MonoBehaviour:
   Audio: {fileID: 8300000, guid: 69fa773d4fe9d4e4c9508ed3249ef7ec, type: 3}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   IsStart: 0
-  IsEnd: 0
-  EndSprite: {fileID: 0}
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &4148262261349025015
@@ -1724,7 +1556,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 4e74b57199ee37342b5e0e374d524f6a, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &4604120822398183209

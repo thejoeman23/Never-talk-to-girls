@@ -1,0 +1,859 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8786589379585116930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 2252, y: -426}
+  GUID: 4d40685a-ce6e-4c50-9759-897487480a1d
+  Text: How much do you weigh?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 3031199342611377456}
+--- !u!114 &-8651751391995676612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1621, y: 696}
+  GUID: 4ec944d2-05ba-49ff-8f71-0004ff28bfb9
+  Text: Um hi?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 4846833051290555317}
+--- !u!114 &-6976353320134080754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 371, y: 693}
+  GUID: 102a4af0-adc4-460f-91f3-991a6d6e5674
+  Text: Hi
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: -565783918048130866}
+--- !u!114 &-6623262710462485271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 2245, y: 981}
+  GUID: ca6da140-2c4b-4a78-8c0a-746e30901d7c
+  Text: LEAVE. JUST LEAVE.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 0}
+--- !u!114 &-6555057767429531078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 2251, y: 132}
+  GUID: dd1f2f1b-9884-42af-b05c-504849332313
+  Text: 5'9"
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 6997216782214927505}
+--- !u!114 &-6542498573841579907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 2245, y: 416}
+  GUID: bdd302a4-194c-4391-98c0-25fbb6ecf418
+  Text: 5'4"
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 4579563231033989655}
+--- !u!114 &-3619002281228624564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 2242, y: 697}
+  GUID: 31d2b0cf-9a92-4af0-8143-36fd4f68dfc4
+  Text: HELLO!
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 1559378791196935512}
+--- !u!114 &-3609542898594424320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 990, y: 416}
+  GUID: aff988b7-119b-46bf-abc1-6ab7999804b8
+  Text: Do you like rasins? How about a date?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 8250556670717047028}
+--- !u!114 &-2709691997757764591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 679, y: 415}
+  GUID: 70abad7f-6aff-4b2c-9246-e0791fbdf182
+  Text: Hello charming.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  Responses:
+  - {fileID: -3609542898594424320}
+  - {fileID: 0}
+--- !u!114 &-1329679288388681565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1622, y: 973}
+  GUID: ed50bcad-8ffb-4914-bf84-443e7eb5bcf4
+  Text: END
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 0}
+--- !u!114 &-606367231530654494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 370, y: 414}
+  GUID: 3639e18c-54f6-4f97-800a-e55cbc00e26d
+  Text: Hello beautiful.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 1
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: -2709691997757764591}
+--- !u!114 &-565783918048130866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 678, y: 694}
+  GUID: 41e9a7dd-54f8-4a4c-8151-6e7af872abac
+  Text: '*silence*'
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  Responses:
+  - {fileID: 7708197004063591285}
+  - {fileID: 2480920593478757776}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30528c463be3439b9a930e7d2c08bbc, type: 3}
+  m_Name: Anna Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGraph
+  nodes:
+  - {fileID: 4158977620276845887}
+  - {fileID: -606367231530654494}
+  - {fileID: -2709691997757764591}
+  - {fileID: -6976353320134080754}
+  - {fileID: -565783918048130866}
+  - {fileID: 2480920593478757776}
+  - {fileID: -1329679288388681565}
+  - {fileID: 4846833051290555317}
+  - {fileID: -8651751391995676612}
+  - {fileID: -3619002281228624564}
+  - {fileID: -6623262710462485271}
+  - {fileID: 1559378791196935512}
+  - {fileID: -3609542898594424320}
+  - {fileID: 7708197004063591285}
+  - {fileID: 6174938830114916020}
+  - {fileID: 8250556670717047028}
+  - {fileID: 607616617417525062}
+  - {fileID: 40069211958341934}
+  - {fileID: 2726865731785771569}
+  - {fileID: 5997928054523445185}
+  - {fileID: 3783663767195569334}
+  - {fileID: 145976733245265082}
+  - {fileID: -6555057767429531078}
+  - {fileID: 3802204998591832717}
+  - {fileID: -8786589379585116930}
+  - {fileID: 2573250744901832909}
+  - {fileID: 3031199342611377456}
+  - {fileID: 6997216782214927505}
+  - {fileID: 8826521549156568061}
+  - {fileID: 1954266076587460989}
+  - {fileID: 9032637601866200873}
+  - {fileID: -6542498573841579907}
+  - {fileID: 4579563231033989655}
+--- !u!114 &40069211958341934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1624, y: 414}
+  GUID: 1758cb5c-65a7-4fd9-89d5-692a567c752d
+  Text: 100,000
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 145976733245265082}
+--- !u!114 &145976733245265082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1936, y: 416}
+  GUID: 9998be90-a8aa-4103-94f8-2cccd40e2550
+  Text: Girl, that's my kind of man. How tall are you?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  Responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: -6542498573841579907}
+  - {fileID: -6555057767429531078}
+  - {fileID: 3802204998591832717}
+  - {fileID: -8786589379585116930}
+--- !u!114 &607616617417525062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1625, y: 133}
+  GUID: 17347b60-2ba3-49fc-9eae-47369396c526
+  Text: 12,000
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 3783663767195569334}
+--- !u!114 &1559378791196935512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2552, y: 697}
+  GUID: b19552c2-5f9d-4cb0-b31e-bc1a37b30cff
+  Text: '*silence*'
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 50ede0b1f0de25441a14d377a3d2a3c4, type: 3}
+  EndClip: {fileID: 0}
+  Responses: []
+--- !u!114 &1954266076587460989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 3186, y: 132}
+  GUID: d5b998ec-abb5-4700-85f5-4d536378b482
+  Text: 15
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 233267095413bb34d8610bbe3f18e763, type: 3}
+  EndClip: {fileID: 0}
+  Responses: []
+--- !u!114 &2480920593478757776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 995, y: 972}
+  GUID: d98ecbd1-2fe2-4afc-8cb3-60fb5d1ba303
+  Text: END
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 0}
+--- !u!114 &2573250744901832909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2558, y: -143}
+  GUID: 42f244bd-69a0-451e-bd4b-e792cf933fba
+  Text: Yeah right, and I'm 7ft.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 7d7e90e73254c5a41bd5235d6b8aeb03, type: 3}
+  EndClip: {fileID: 0}
+  Responses: []
+--- !u!114 &2726865731785771569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 1624, y: -146}
+  GUID: 07d84d2f-6bc6-48ae-93e7-66c138bc03ce
+  Text: 1,000,000
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 5997928054523445185}
+--- !u!114 &3031199342611377456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2561, y: -425}
+  GUID: 767ce634-6ceb-439d-ad57-72f794d88a3a
+  Text: '*gasp* HEY!'
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 0920cb0da9c708e4eada33dff64b37f9, type: 3}
+  EndClip: {fileID: 0}
+  Responses: []
+--- !u!114 &3783663767195569334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1940, y: 132}
+  GUID: ec88c1a1-bdc0-48d2-a3e8-fc3b592404dd
+  Text: Hah hah!
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  Responses: []
+--- !u!114 &3802204998591832717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 2251, y: -143}
+  GUID: 712b41c3-2069-453d-bf90-ccc51510ab75
+  Text: 6'3"
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 2573250744901832909}
+--- !u!114 &4158977620276845887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 370, y: 137}
+  GUID: ab6d9cf9-49bd-42dd-bd21-a160136956ec
+  Text: Hey wassup?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 1
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 9032637601866200873}
+--- !u!114 &4579563231033989655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2553, y: 417}
+  GUID: aeeb3a00-2a37-4099-a984-ba90b380c7a6
+  Text: Ew, you're like a short king. No thanks.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 59ee530a91228804ebe5db6a6576b7c6, type: 3}
+  EndClip: {fileID: 0}
+  Responses: []
+--- !u!114 &4846833051290555317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1929, y: 697}
+  GUID: 5ef5295e-862a-4391-8c5c-5565c3bb5eff
+  Text: '*silence*'
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  Responses:
+  - {fileID: -3619002281228624564}
+  - {fileID: -6623262710462485271}
+--- !u!114 &5997928054523445185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1936, y: -147}
+  GUID: 4a86ac22-313d-409b-9c23-48d004c874f2
+  Text: Hah hah, go back to your mother's basement brokie.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 7d7e90e73254c5a41bd5235d6b8aeb03, type: 3}
+  EndClip: {fileID: 0}
+  Responses: []
+--- !u!114 &6174938830114916020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1302, y: 695}
+  GUID: 0b78ef0c-a801-4f4d-97a7-af50a3df625c
+  Text: '*silence*'
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  Responses:
+  - {fileID: -8651751391995676612}
+  - {fileID: -1329679288388681565}
+--- !u!114 &6997216782214927505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 2561, y: 134}
+  GUID: 04f32622-b693-427d-ad27-6f0c1871a347
+  Text: Oh, so cute, you're just taller than me. How old are you?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  Responses:
+  - {fileID: 8826521549156568061}
+--- !u!114 &7708197004063591285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 991, y: 694}
+  GUID: 0afda13a-2570-4c87-a0b9-1c10112a731d
+  Text: Hi?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 6174938830114916020}
+--- !u!114 &8250556670717047028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1302, y: 416}
+  GUID: 0d533ca5-431f-485e-8ec0-31e3694a765e
+  Text: You look look a little like a hobo, how much money do you make?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  Responses:
+  - {fileID: 40069211958341934}
+  - {fileID: 607616617417525062}
+  - {fileID: 2726865731785771569}
+--- !u!114 &8826521549156568061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
+  Position: {x: 2874, y: 133}
+  GUID: 7aa46820-8980-4635-b2e5-f7ea435df4b2
+  Text: 18, how old are you?
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 0
+  EndSprite: {fileID: 0}
+  EndClip: {fileID: 0}
+  NextPrompt: {fileID: 1954266076587460989}
+--- !u!114 &9032637601866200873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 680, y: 136}
+  GUID: 98ec0720-67d6-401c-b461-5151882e7119
+  Text: Ew.
+  Audio: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 6582547d3cab2804cab4a7e49b8530dd, type: 3}
+  EndClip: {fileID: 0}
+  Responses: []
