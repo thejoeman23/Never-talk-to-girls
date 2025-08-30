@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] InputActionReference movement;
     private Rigidbody _rb;
-    
+
+    public bool canMove = true;
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float rotationSpeed = 0.001f;
     Vector2 _movementDirection;
@@ -21,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (!canMove)
+            return;
+        
         _movementDirection = movement.action.ReadValue<Vector2>();
 
         SetAnimations();

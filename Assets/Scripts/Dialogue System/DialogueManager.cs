@@ -5,10 +5,12 @@ using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
     private bool _confirmed = false;
+    [SerializeField] private UnityEvent _onDialogueEnd;
     
     private void Start() => InstantiatePlayerCanvas();
 
@@ -18,6 +20,8 @@ public class DialogueManager : MonoBehaviour
         {
             _confirmed = true;
         }
+        
+        _playerTextBubbleCanvas.transform.LookAt(_cameraTransform);
     }
 
     public void TransmitCharacter(Transform character) => InstantiateCharacterCanvas(character);
@@ -76,6 +80,8 @@ public class DialogueManager : MonoBehaviour
         
         HideAllCanvases();
         Destroy(_characterTextBubbleCanvas);
+        
+        _onDialogueEnd?.Invoke();
     }
     
     public void SelectOption(GameObject option)
@@ -91,9 +97,11 @@ public class DialogueManager : MonoBehaviour
     
     [Header("Visual Prefab References")]
     [SerializeField] private GameObject _optionPrefab;
-    [SerializeField] private GameObject _optionsCanvasPrefab;
     [SerializeField] private GameObject _textBubblePrefab;
     [SerializeField] private GameObject _textBubbleCanvasPrefab;
+    
+    [Header("Player Dialogue Options Canvas")]
+    [SerializeField] private GameObject _optionsCanvas;
     
     [Header("Audio")]
     [SerializeField] private AudioSource _audioSource;
@@ -110,29 +118,27 @@ public class DialogueManager : MonoBehaviour
 
     private GameObject _playerTextBubbleCanvas;
     private TextMeshProUGUI _playerTextBubble;
-    private GameObject _playerOptionsCanvas;
     private Dictionary<GameObject, DialogueNode> _playerOptions = new Dictionary<GameObject, DialogueNode>();
     
     private GameObject _characterTextBubbleCanvas;
     private TextMeshProUGUI _characterTextBubble;
+    
+    private Transform _cameraTransform;
 
     private void InstantiatePlayerCanvas()
     {
+        _cameraTransform = Camera.main?.transform;
+        
         if (_playerTransform == null)
             _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
 
         _playerTextBubbleCanvas = Instantiate(_textBubbleCanvasPrefab, _playerTransform);
         _playerTextBubbleCanvas.transform.localScale = Vector3.zero;
-        _playerTextBubbleCanvas.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, _playerTransform.localScale.y * 2, 0);
+        _playerTextBubbleCanvas.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, GetMeshTopY(_playerTransform.gameObject) * 3, 0);
         _playerTextBubbleCanvas.transform.LookAt(Camera.main?.transform);
         
         _playerTextBubble = Instantiate(_textBubblePrefab, _playerTextBubbleCanvas.transform)
             .GetComponentInChildren<TextMeshProUGUI>();
-        
-        _playerOptionsCanvas = Instantiate(_optionsCanvasPrefab, _playerTransform);
-        _playerOptionsCanvas.transform.localScale = Vector3.zero;
-        _playerOptionsCanvas.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, _playerTransform.localScale.y * 2, 0);
-        _playerOptionsCanvas.transform.LookAt(Camera.main?.transform);
     }
     
     private void InstantiateCharacterCanvas(Transform character)
@@ -141,7 +147,7 @@ public class DialogueManager : MonoBehaviour
 
         _characterTextBubbleCanvas = Instantiate(_textBubbleCanvasPrefab, _characterTransform);
         _characterTextBubbleCanvas.transform.localScale = Vector3.zero;
-        _characterTextBubbleCanvas.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, _characterTransform.localScale.y * 2, 0);
+        _characterTextBubbleCanvas.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, 0, 1);
         _characterTextBubbleCanvas.transform.LookAt(Camera.main?.transform);
         
         _characterTextBubble = Instantiate(_textBubblePrefab, _characterTextBubbleCanvas.transform)
@@ -177,8 +183,8 @@ public class DialogueManager : MonoBehaviour
         {
             _playerOptions.Clear();
             
-            _playerOptionsCanvas.SetActive(true);
-            Transform optionsParent = _playerOptionsCanvas
+            _optionsCanvas.SetActive(true);
+            Transform optionsParent = _optionsCanvas
                 .GetComponentInChildren<HorizontalLayoutGroup>()
                 .transform;
 
@@ -208,7 +214,7 @@ public class DialogueManager : MonoBehaviour
     {
         HideCanvas(_playerTextBubbleCanvas);
         HideCanvas(_characterTextBubbleCanvas);
-        HideCanvas(_playerOptionsCanvas);
+        HideCanvas(_optionsCanvas);
     }
 
     private void HideCanvas(GameObject canvas)
@@ -220,5 +226,26 @@ public class DialogueManager : MonoBehaviour
             worldCanvas.Hide();
         else
             canvas.SetActive(false); // fallback if component missing
+    }
+    
+    public float GetMeshTopY(GameObject go)
+    {
+        SkinnedMeshRenderer mf = go.GetComponentInChildren<SkinnedMeshRenderer>();
+        if (mf == null || mf.sharedMesh == null)
+        {
+            Debug.LogWarning("GameObject has no MeshFilter or mesh.");
+            return go.transform.position.y; // fallback to pivot position
+        }
+
+        Mesh mesh = mf.sharedMesh;
+        Bounds bounds = mesh.bounds;
+
+        // Top of mesh in local space
+        Vector3 localTop = new Vector3(0f, bounds.max.y, 0f);
+
+        // Convert to world space
+        Vector3 worldTop = go.transform.TransformPoint(localTop);
+
+        return worldTop.y;
     }
 }
