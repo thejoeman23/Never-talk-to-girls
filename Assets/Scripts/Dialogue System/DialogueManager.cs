@@ -54,7 +54,7 @@ public class DialogueManager : MonoBehaviour
         AudioManager.Instance.MuteMusic();
         AudioManager.Instance.PlayDialogueClip(node.Audio);
 
-        while (!AudioManager.Instance.IsDialogueClipFinished())
+        while (!AudioManager.Instance.IsDialogueClipFinished() && !_confirmed)
         {
             yield return new WaitForSeconds(.1f);
         }
