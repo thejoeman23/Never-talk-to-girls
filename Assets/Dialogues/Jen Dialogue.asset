@@ -15,7 +15,7 @@ MonoBehaviour:
   Position: {x: 869, y: -1561}
   GUID: 9ff2470f-5d9e-4be0-b469-4fe99ea8cfac
   Text: can you be my girlfriend?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: ddde097acc031a945a9f233c67073076, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -111,7 +111,7 @@ MonoBehaviour:
   Position: {x: 1561, y: -1433}
   GUID: 6c450f9c-d922-4711-838d-0dcad11d67e5
   Text: What's your name?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 42075e1925e91e246bd74aad22b5727c, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -135,7 +135,7 @@ MonoBehaviour:
   Position: {x: 2887, y: 598}
   GUID: cd05bc46-a599-43e8-9699-8dbc57091ad9
   Text: Will you be my friend?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 82ea46f4049b0264ea0b29cbd6762032, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -159,7 +159,7 @@ MonoBehaviour:
   Position: {x: 3074, y: -1539}
   GUID: c4736b4d-7416-4a26-9a6f-24a6b2a2150b
   Text: Yes.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: c8ddb70f86dc3344a8e91e9ae6634494, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -245,7 +245,7 @@ MonoBehaviour:
   Position: {x: 2888, y: 43}
   GUID: 673ad404-e576-457f-920c-cb0ac117369c
   Text: Would you date me?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 96e65bc82182ea54c95a5e64c5a23c05, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -269,7 +269,7 @@ MonoBehaviour:
   Position: {x: 1549, y: 154}
   GUID: d08de211-5c8d-46a6-9e74-3a465ccbf359
   Text: Ah... goodbye.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 2993131b9a0638849b2c1603a22999b5, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -293,7 +293,7 @@ MonoBehaviour:
   Position: {x: 894, y: 44}
   GUID: de4493ab-e7bf-4843-bcd6-c4ccaf8954e2
   Text: You want a closer look at this handsome face?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 01ea33630b91571429963828011eacbe, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -317,7 +317,7 @@ MonoBehaviour:
   Position: {x: 2319, y: -1346}
   GUID: 3a93eb52-b1bc-4626-bd90-85f6cafaf476
   Text: Frank.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: aef25e401ca306040bead3962eb6bfa5, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -377,7 +377,7 @@ MonoBehaviour:
   Position: {x: 2225, y: 43}
   GUID: fe8ee47a-a0ac-4ddf-b02a-71346248b6cd
   Text: No actually, it looks good.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1c9aafca67ce8a1499b77a07036ca5d1, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -473,7 +473,7 @@ MonoBehaviour:
   Position: {x: 893, y: -237}
   GUID: 27c5dc79-011f-4ee6-90c9-b8eb064806fa
   Text: I'm sorry that was terrible.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 808edbbc59f882f4b95737b2eac89738, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -497,7 +497,7 @@ MonoBehaviour:
   Position: {x: 1236, y: -2016}
   GUID: 95258f3c-2b8c-4ce6-ae50-43bd9adeec0b
   Text: I said, can you be my girlfriend?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: cfa9c14b53531b6499b756b844780bb0, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -611,7 +611,7 @@ MonoBehaviour:
   Position: {x: 2888, y: 319}
   GUID: d66d2233-35a6-43ec-a4b4-3b3f823085ec
   Text: Am I handsome?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 6516d6a425aac9042a5972cae7926325, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -671,7 +671,7 @@ MonoBehaviour:
   Position: {x: 56, y: -114}
   GUID: 78bd9d40-7cad-464d-b9d4-5aeebfe26a01
   Text: Sup baby girl
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 03d341ab374cbe040a82f2b68a0f37e7, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -695,7 +695,7 @@ MonoBehaviour:
   Position: {x: 1553, y: -422}
   GUID: bb2225f5-afc3-4e82-894d-5f676cdb5b95
   Text: Sooo... dinner on monday?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: c6603dcc1f7f3b843b049c6f5b49473d, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -843,7 +843,7 @@ MonoBehaviour:
   Position: {x: 2226, y: 321}
   GUID: 998489a1-8b02-4cf7-8afa-600168a5fd68
   Text: I'm sorry, I'm trying.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 175735745e2bef54c82fc140c9a7c9ee, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -867,7 +867,7 @@ MonoBehaviour:
   Position: {x: 2325, y: -1644}
   GUID: 38905fb4-4d32-40e7-9c72-4105abf3923a
   Text: Frank. Would you like to dance with me?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 028d4d8f981a4c14caebb77e9300e5db, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -917,7 +917,7 @@ MonoBehaviour:
   Position: {x: 867, y: -1259}
   GUID: cfc8c511-3c88-44fe-aa2b-914f83187cdf
   Text: I like your outfit.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 871c37af27ecbf049b0d16412a176348, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -977,7 +977,7 @@ MonoBehaviour:
   Position: {x: 2226, y: -235}
   GUID: 87ff65b7-2b28-4f7f-b258-e8e2437ba3ba
   Text: Do you have a soul?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 464a579aa5fae11409b6f93dd7db0d95, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1090,8 +1090,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
   Position: {x: 869, y: -943}
   GUID: 2dc17c62-cc9f-45b8-a545-bb628312d378
-  Text: uh, nevermind.
-  Audio: {fileID: 0}
+  Text: uh, nevermind. END
+  Audio: {fileID: 8300000, guid: 2944d445d64e78a4db9f3d122a1e451d, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1115,7 +1115,7 @@ MonoBehaviour:
   Position: {x: 50, y: -433}
   GUID: 5d755888-3db4-4a01-8a12-aa4b2f54af16
   Text: Hey
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 56db2711a9244984281b0f2204d2da2b, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1165,7 +1165,7 @@ MonoBehaviour:
   Position: {x: 1561, y: -1147}
   GUID: 47090ed3-eaa7-4174-885d-1a6ba04e6a99
   Text: Do you like bread?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9af4921b82918b547815020635898583, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1216,7 +1216,7 @@ MonoBehaviour:
   Position: {x: 1560, y: -860}
   GUID: 13539dfd-d5d1-46ae-a9bf-0bf97a937861
   Text: So... marriage?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: cdf5addc1f0e7e94485f277edc4ec38b, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1264,7 +1264,7 @@ MonoBehaviour:
   Position: {x: 1554, y: -139}
   GUID: 35874156-899f-4ccf-b2d3-866e92a13c99
   Text: I like your hair it is very orange.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: c23f3d1041c93e7499e2dc12f54709de, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1324,7 +1324,7 @@ MonoBehaviour:
   Position: {x: 3072, y: -1261}
   GUID: 23c0303d-0778-4f9a-b371-6c221b2099db
   Text: No.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 29b96c5c75b01b143accdce5cd0e2e24, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1348,7 +1348,7 @@ MonoBehaviour:
   Position: {x: 1242, y: -1727}
   GUID: 78996ed2-5645-4a0e-a9c8-862e664fa330
   Text: I said, I like your outfit.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: a71fff91a5c80e44b9c8024d8aac1d2e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []

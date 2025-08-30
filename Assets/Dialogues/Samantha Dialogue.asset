@@ -15,7 +15,7 @@ MonoBehaviour:
   Position: {x: 856, y: 465}
   GUID: 65d41a71-cba3-43af-88d8-60eaa8340794
   Text: Oh sorry, I'll leave. END
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: c921a1da3d1d9624fb07eb045ec5ac52, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -83,7 +83,7 @@ MonoBehaviour:
   Position: {x: 860, y: 175}
   GUID: a64e62ec-4c6a-4525-a362-98d76f5e5b04
   Text: You're missing out...
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1bd1de23321b24e40ab69e492628ecb4, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -107,7 +107,7 @@ MonoBehaviour:
   Position: {x: 211, y: 325}
   GUID: 642afd47-0486-48e0-8401-1965bd6e12e2
   Text: Hi
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: ea75841c14b52684098f2442e2fb3baa, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []

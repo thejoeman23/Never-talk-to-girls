@@ -15,7 +15,7 @@ MonoBehaviour:
   Position: {x: 2617, y: 378}
   GUID: e7bc9f41-bb94-4811-b858-9c64c5b79e5a
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -39,7 +39,7 @@ MonoBehaviour:
   Position: {x: -349, y: 1640}
   GUID: 07730054-5478-4b30-9baf-2473e1ee5796
   Text: Do you play sports?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 6288467d5f7253746a23bc2a9b2a3284, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -138,7 +138,7 @@ MonoBehaviour:
   Position: {x: 64, y: 487}
   GUID: 72106add-6e3f-4515-8863-7661a505a3d2
   Text: Do you dance?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 77b68a25a7a467f4badb1707c3ab80e0, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -312,7 +312,7 @@ MonoBehaviour:
   Position: {x: 2295, y: 1802}
   GUID: e083de1e-c328-436f-bad2-efa14e1b23b0
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -336,7 +336,7 @@ MonoBehaviour:
   Position: {x: -352, y: 1925}
   GUID: c909f509-7db4-4b7b-88e3-3c8649409e12
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -360,7 +360,7 @@ MonoBehaviour:
   Position: {x: 1336, y: -229}
   GUID: 13ec7cc7-121c-4e8b-abc8-5d408620983a
   Text: Oh, that's too bad. END
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 96b094769086daa4cb05c99fae5bcf9b, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -384,7 +384,7 @@ MonoBehaviour:
   Position: {x: 1970, y: 90}
   GUID: 2070755b-ec33-491d-9a39-b61690c5ed39
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -468,7 +468,7 @@ MonoBehaviour:
   Position: {x: 692, y: -79}
   GUID: ea161aa5-4f7a-4351-84ae-efab7c9294d1
   Text: What about trains?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 65f927b3a74073148bcc3deb3d9f7f8b, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -569,7 +569,7 @@ MonoBehaviour:
   Position: {x: 1645, y: 1519}
   GUID: b0c5c33a-8a51-4efb-b0c0-4458316e257b
   Text: Do you make art?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b54281a2e1ed3774ca05479f1d1c446c, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -617,7 +617,7 @@ MonoBehaviour:
   Position: {x: 281, y: 1352}
   GUID: 3f784d2a-d4d1-45d5-9fa9-a2bc1931ea64
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -690,7 +690,7 @@ MonoBehaviour:
   Position: {x: 1334, y: -514}
   GUID: d57661f9-3798-498a-aea7-00399f8dc16c
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: c4801ffdb31a0d142ab111beddc8c916, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -714,7 +714,7 @@ MonoBehaviour:
   Position: {x: -989, y: 1641}
   GUID: 4490970d-a79b-4bd0-9672-83ecc4c180a9
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -738,7 +738,7 @@ MonoBehaviour:
   Position: {x: -1629, y: 1353}
   GUID: 8322d973-1a0c-4ff1-a47a-c21d8ab2bb63
   Text: Do you make art?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b54281a2e1ed3774ca05479f1d1c446c, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -762,7 +762,7 @@ MonoBehaviour:
   Position: {x: 2628, y: 960}
   GUID: 2358e553-7340-4dd1-8641-2dff4845f790
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -786,7 +786,7 @@ MonoBehaviour:
   Position: {x: 58, y: -356}
   GUID: fb9d6687-42d0-4b90-823f-2911363d5bfa
   Text: I think you're cute.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: a2e2170bab95eab41941aabb49be1454, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -810,7 +810,7 @@ MonoBehaviour:
   Position: {x: 1015, y: 1801}
   GUID: e072528e-f5c4-4711-a73c-d77d65352315
   Text: Do you make art?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b54281a2e1ed3774ca05479f1d1c446c, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -834,7 +834,7 @@ MonoBehaviour:
   Position: {x: 691, y: -356}
   GUID: bef60f9b-f50d-4254-b327-83233f134168
   Text: You... like me?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 72045192eb9f2714ea7ed1cc47039660, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -858,7 +858,7 @@ MonoBehaviour:
   Position: {x: 1645, y: 2084}
   GUID: c268c758-913a-40b6-a39a-9c3734d222fb
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -906,7 +906,7 @@ MonoBehaviour:
   Position: {x: 57, y: -77}
   GUID: 4c3c4f47-031e-405f-807c-417b0148c94f
   Text: I like your eyes.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: dac85ec387d494b4686016d61548de04, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -930,7 +930,7 @@ MonoBehaviour:
   Position: {x: 64, y: 781}
   GUID: 29a72518-b715-4a0a-a5c2-3e60ddb0bb06
   Text: Do you play sports?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 6288467d5f7253746a23bc2a9b2a3284, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -978,7 +978,7 @@ MonoBehaviour:
   Position: {x: 1646, y: 1805}
   GUID: 92f27fe4-a721-40f7-be4d-ff2533ee2f68
   Text: Do you dance?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 77b68a25a7a467f4badb1707c3ab80e0, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   Position: {x: 1015, y: 1517}
   GUID: a6430119-fb7b-4d84-9616-5b6b79854973
   Text: Do you dance?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 77b68a25a7a467f4badb1707c3ab80e0, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1113,7 +1113,6 @@ MonoBehaviour:
   - {fileID: 5272161981050323153}
   - {fileID: -6233679315239141321}
   - {fileID: 3624354509555373497}
-  - {fileID: 4148262261349025015}
   - {fileID: 5623312835472699694}
   - {fileID: 3890165719521946181}
   - {fileID: -8334513949752670171}
@@ -1124,6 +1123,7 @@ MonoBehaviour:
   - {fileID: -4183450677556563529}
   - {fileID: -4925099929981062824}
   - {fileID: -249440344647445376}
+  - {fileID: 4148262261349025015}
 --- !u!114 &185960463189461740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,7 +1139,7 @@ MonoBehaviour:
   Position: {x: 1322, y: 665}
   GUID: 5cfb2f98-a590-48f7-a260-6197fec14eb8
   Text: Do you make art?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b54281a2e1ed3774ca05479f1d1c446c, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1187,7 +1187,7 @@ MonoBehaviour:
   Position: {x: -352, y: 1350}
   GUID: e914a907-88d2-4354-8f34-a6a9cdf8e25a
   Text: Do you dance?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 77b68a25a7a467f4badb1707c3ab80e0, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1259,7 +1259,7 @@ MonoBehaviour:
   Position: {x: -988, y: 1354}
   GUID: 219393aa-c2dc-4bc6-8aa3-387c18ecd9ab
   Text: Do you play sports?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 6288467d5f7253746a23bc2a9b2a3284, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1283,7 +1283,7 @@ MonoBehaviour:
   Position: {x: -593, y: 340}
   GUID: 8c598248-cb2e-41b4-9c7f-04403f45d249
   Text: Hey, just wanted to say that you look absolutely stunning tonight.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: ded1b26f46a09c647a44614333364b75, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1343,7 +1343,7 @@ MonoBehaviour:
   Position: {x: 1647, y: 1241}
   GUID: 17b72c2a-b516-4b06-96f0-7251a52e2798
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1393,7 +1393,7 @@ MonoBehaviour:
   Position: {x: 1014, y: 1233}
   GUID: 6aa97cc4-f545-4d21-a34c-db54eb1745ed
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1417,7 +1417,7 @@ MonoBehaviour:
   Position: {x: 1974, y: 669}
   GUID: 5f5dbc66-0c24-4991-8338-07bad68de6c3
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1441,7 +1441,7 @@ MonoBehaviour:
   Position: {x: 279, y: 1641}
   GUID: 66fc2a98-014e-4147-99a9-7078eff51178
   Text: ' What do you like?'
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1486,10 +1486,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
-  Position: {x: 284, y: 1924}
+  Position: {x: 287, y: 1927}
   GUID: 9a4c1bb5-ec1b-4b12-9621-ef000b84c534
-  Text: Do you like trains?
-  Audio: {fileID: 0}
+  Text: What about trains?
+  Audio: {fileID: 8300000, guid: 65f927b3a74073148bcc3deb3d9f7f8b, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1651,7 +1651,7 @@ MonoBehaviour:
   Position: {x: 1324, y: 84}
   GUID: c7005b55-a6fb-49d7-b9df-0ef446af360a
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1727,7 +1727,7 @@ MonoBehaviour:
   Position: {x: 1972, y: 960}
   GUID: 679ec166-69e7-42a7-8759-1c362438724e
   Text: Do you play sports?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 6288467d5f7253746a23bc2a9b2a3284, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1751,7 +1751,7 @@ MonoBehaviour:
   Position: {x: 63, y: 201}
   GUID: 6f75dee1-0eba-456a-98b2-7e1a518a6afd
   Text: Goodbye. END
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: f4ba6f946671bf54d9ef27289d903c41, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1802,7 +1802,7 @@ MonoBehaviour:
   Position: {x: 2293, y: 1520}
   GUID: 247b5125-f89b-40f3-ad06-c9cc39418280
   Text: What do you like?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 7c359c9d2b200084287dd3caf738811e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1826,7 +1826,7 @@ MonoBehaviour:
   Position: {x: -596, y: 55}
   GUID: 3ce99cd7-93ea-4b86-8078-0c7bb27e426a
   Text: Hey
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 56db2711a9244984281b0f2204d2da2b, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1850,7 +1850,7 @@ MonoBehaviour:
   Position: {x: -992, y: 1930}
   GUID: a9ff5697-df25-41c4-8e95-7ccf1ab882fd
   Text: Do you dance?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 77b68a25a7a467f4badb1707c3ab80e0, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1874,7 +1874,7 @@ MonoBehaviour:
   Position: {x: 1969, y: 375}
   GUID: 452e4a15-cb27-4c7d-bb6c-14db4415da0b
   Text: Do you make art?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b54281a2e1ed3774ca05479f1d1c446c, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -1953,7 +1953,7 @@ MonoBehaviour:
   Position: {x: 1322, y: 369}
   GUID: 68efd868-6e0e-46cc-974e-87eda8403077
   Text: Do you play sports?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 6288467d5f7253746a23bc2a9b2a3284, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
