@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
         }
         
         _playerTextBubbleCanvas.transform.LookAt(_cameraTransform);
+        _characterTextBubbleCanvas?.transform.LookAt(_cameraTransform);
     }
 
     public void TransmitCharacter(Transform character) => InstantiateCharacterCanvas(character);
