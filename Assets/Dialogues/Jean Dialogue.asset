@@ -540,7 +540,7 @@ MonoBehaviour:
   Position: {x: -1308, y: 1353}
   GUID: 2006c557-524e-4c2c-b7f0-4b0723e4c708
   Text: NO.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1739970b36592441faa2edb591710166, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
