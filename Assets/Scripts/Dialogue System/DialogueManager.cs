@@ -50,13 +50,16 @@ public class DialogueManager : MonoBehaviour
         DisplayText(node);
 
         node.Event?.Invoke();
-        _audioSource.clip = node.Audio;
-        _audioSource.Play();
+        
+        AudioManager.Instance.MuteMusic();
+        AudioManager.Instance.PlayDialogueClip(node.Audio);
 
-        while (_audioSource.isPlaying == false && !_confirmed)
+        while (!AudioManager.Instance.IsDialogueClipFinished())
         {
             yield return new WaitForSeconds(.1f);
         }
+        
+        AudioManager.Instance.UnmuteMusic();
         
         if (node.IsEnd)
         {
@@ -102,9 +105,6 @@ public class DialogueManager : MonoBehaviour
     
     [Header("Player Dialogue Options Canvas")]
     [SerializeField] private GameObject _optionsCanvas;
-    
-    [Header("Audio")]
-    [SerializeField] private AudioSource _audioSource;
 
     [Header("UI Positioning")] 
     [SerializeField] private float _verticalCanvasOffset = 5;
