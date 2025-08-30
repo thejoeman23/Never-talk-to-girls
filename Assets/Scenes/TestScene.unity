@@ -352,7 +352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34529328}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.3070604, y: -0.0072289375, z: 0.0023324715, w: 0.9516598}
+  m_LocalRotation: {x: 0.307056, y: -0.008838307, z: 0.0028517481, w: 0.95164615}
   m_LocalPosition: {x: 7.925514, y: 6.0730033, z: -2.3225915}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2724,7 +2724,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088482403}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30706042, y: -0.0072289384, z: 0.0023324732, w: 0.95165974}
+  m_LocalRotation: {x: 0.307056, y: -0.008838308, z: 0.0028517484, w: 0.95164615}
   m_LocalPosition: {x: 0.039050467, y: 2.9496353, z: -3.982471}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3979,6 +3979,10 @@ PrefabInstance:
       propertyPath: _onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1285478908}
+    - target: {fileID: 7184148911640620475, guid: 12e42975017bc4350b9941c1f185db41, type: 3}
+      propertyPath: _onInteract.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 5de501e7a60ec9d46985074ce185b5df, type: 2}
     - target: {fileID: 7854148987672060570, guid: 12e42975017bc4350b9941c1f185db41, type: 3}
       propertyPath: m_Name
       value: Samantha
