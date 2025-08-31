@@ -79,6 +79,6 @@ public class EndscreenManager : MonoBehaviour
 
     private void Reset()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
