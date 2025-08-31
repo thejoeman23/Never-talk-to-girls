@@ -217,7 +217,6 @@ MonoBehaviour:
   EndClip: {fileID: 0}
   Responses:
   - {fileID: -3609542898594424320}
-  - {fileID: 0}
 --- !u!114 &-1329679288388681565
 MonoBehaviour:
   m_ObjectHideFlags: 0

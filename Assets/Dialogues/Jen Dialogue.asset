@@ -455,7 +455,7 @@ MonoBehaviour:
         m_CallState: 2
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 5f11f8725c6c33c4ba8b626761b29ff3, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &-3012360057462479931

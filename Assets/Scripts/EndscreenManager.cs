@@ -1,9 +1,12 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class EndscreenManager : MonoBehaviour
 {
+    public static EndscreenManager Instance;
     [SerializeField] private AudioClip clip;
     [SerializeField] private GameObject endscreenCanvas;
     [SerializeField] private GameObject endscreenPrefab;
@@ -22,6 +25,11 @@ public class EndscreenManager : MonoBehaviour
 
     [Tooltip("How much time the endscreen takes to settle into perfect scale")]
     [SerializeField] private float settleDuration = 0.15f;
+
+    private void Start()
+    {
+        Instance = this;
+    }
 
     public void DisplayNewEndscreen(Sprite endscreenSprite)
     {
@@ -64,5 +72,13 @@ public class EndscreenManager : MonoBehaviour
         AudioManager.Instance.PlaySfxClip(clip);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("IsDead", true);
         s.Play();
+        
+        // Add listener
+        img.transform.GetComponentInChildren<Button>().onClick.AddListener(Reset);
+    }
+
+    private void Reset()
+    {
+        SceneManager.LoadScene(0);
     }
 }

@@ -15,7 +15,7 @@ MonoBehaviour:
   Position: {x: 1283, y: -190}
   GUID: ca6feb00-ea3b-4aa2-a3cd-7edf11fdcf0b
   Text: Ew.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 8c440e4c3f1bd43a88372f4d81a1a00f, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -63,7 +63,7 @@ MonoBehaviour:
   Position: {x: 657, y: 378}
   GUID: 049ba8b6-b2c9-401b-9add-9ba87e189d2e
   Text: Yeah I doubt it. You look like my little brother.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: b1ad56c1c91604d99a2407c003b9d3b0, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -135,7 +135,7 @@ MonoBehaviour:
   Position: {x: 2542, y: 371}
   GUID: 6007c12a-5c54-4f9a-ada2-506eb7556456
   Text: Sure, you seem like a nice guy.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 78fe971f7e9c940ef8307392eda28251, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -160,7 +160,7 @@ MonoBehaviour:
   GUID: 38f967ba-0ddf-4183-affa-a18848776a62
   Text: No... I wish it were raining. Then when I walk home alone I will be cold
     and wet as well.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e223bd2e0ba434d83b388df591f1e966, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -186,7 +186,7 @@ MonoBehaviour:
   Position: {x: 1910, y: 93}
   GUID: 4d566dc4-22df-47fc-b5de-acd43d0df1b9
   Text: No thanks.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: eecc79b1480e5497fbaacef6a1ab273b, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -368,7 +368,7 @@ MonoBehaviour:
   Position: {x: 1282, y: 98}
   GUID: 777d2e31-5be9-4d0c-ad21-710442b6c4b5
   Text: Sarcasm. If you can't handle it, you should talk to someone else.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 49069fdb1b72a48e0893fddf01c37fa4, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -404,7 +404,7 @@ MonoBehaviour:
   Position: {x: 2541, y: 88}
   GUID: 1612afdc-e43e-4854-87e3-90733d214f40
   Text: No thanks.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: eecc79b1480e5497fbaacef6a1ab273b, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -452,7 +452,7 @@ MonoBehaviour:
   Position: {x: 1899, y: 653}
   GUID: 94379641-ccd1-4a02-8ad7-8f9eda20c282
   Text: Ew.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 8c440e4c3f1bd43a88372f4d81a1a00f, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -500,7 +500,7 @@ MonoBehaviour:
   Position: {x: 654, y: 95}
   GUID: 670a1a59-fbe4-482c-8566-9ad3f410f73c
   Text: Oh, tons.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 500a8d36ec6ba496fa9c20d08b68ab95, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -526,7 +526,7 @@ MonoBehaviour:
   Position: {x: 8, y: 96}
   GUID: d591d1ee-6c9a-4360-bf1d-14fa250af56d
   Text: I don't even know why I come to these things...
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 2eba3c17415574f839b996faf8d7b20f, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -553,7 +553,7 @@ MonoBehaviour:
   Position: {x: 1902, y: 374}
   GUID: 2280a6f3-c309-4393-b2cd-d0e709bc3440
   Text: Hah! Thats fair.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 231f299b20e384eb2b00a2e5ec3ba1fc, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -580,7 +580,7 @@ MonoBehaviour:
   Position: {x: 2547, y: 653}
   GUID: b176f4b1-b413-4377-9838-02e6c56bcf99
   Text: I'm actually busy then.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: f9746a475551942409072210d9c7a8ac, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -652,7 +652,7 @@ MonoBehaviour:
   Position: {x: 1281, y: 375}
   GUID: 3138c940-e524-4767-99e3-dd565cf9ad18
   Text: So what brings you here?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: e37b7c3149f0440afbc727b82ecf40cd, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []

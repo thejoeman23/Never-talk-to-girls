@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
   Position: {x: 856, y: 465}
   GUID: 65d41a71-cba3-43af-88d8-60eaa8340794
-  Text: Oh sorry, I'll leave. END
+  Text: 'Oh sorry, I''ll leave. '
   Audio: {fileID: 8300000, guid: c921a1da3d1d9624fb07eb045ec5ac52, type: 3}
   Event:
     m_PersistentCalls:
@@ -39,7 +39,7 @@ MonoBehaviour:
   Position: {x: 520, y: 326}
   GUID: aaec235e-1a89-4923-94d2-e11a6f525ad5
   Text: I'm working.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 37f1ee5051cc44d56b9e5cf19572dbaf, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -111,7 +111,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls: []
-  IsStart: 0
+  IsStart: 1
   IsEnd: 0
   EndSprite: {fileID: 0}
   EndClip: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
   Position: {x: 1182, y: 175}
   GUID: a1fea282-615d-48f5-9704-b43d8600eca3
   Text: No I'm not.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 0eae5b3a566e348b9adb4d6e3dd3da20, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []

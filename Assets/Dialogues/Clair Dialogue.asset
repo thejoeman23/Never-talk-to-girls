@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 971, y: -743}
+  Position: {x: 970, y: -757}
   GUID: 0ccf1b38-0a51-4a5a-b40b-5d8407d6dca0
-  Text: '*giggles* Tell them I''m taken.'
-  Audio: {fileID: 0}
+  Text: '*giggles* Tell him I''m taken.'
+  Audio: {fileID: 8300000, guid: 346820fc7645d4f7f8a6ecd363ddb252, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -111,7 +111,7 @@ MonoBehaviour:
   Position: {x: 310, y: -280}
   GUID: 8d8b9eab-1a98-49ad-b833-15f67dc169d2
   Text: Why are you asking?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: fd07f4e46a8c44de893bafba7ae54017, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -138,7 +138,7 @@ MonoBehaviour:
   Position: {x: 310, y: 281}
   GUID: 59987a85-8ead-4fc2-b852-aff3c6380bbf
   Text: I have a boyfriend.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d6152ac036a8450399204d07a89786c, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -207,10 +207,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 309, y: 562}
+  Position: {x: 310, y: 561}
   GUID: 26042f74-d69c-470a-8110-67ff6c15a6af
   Text: I have a boyfriend.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d6152ac036a8450399204d07a89786c, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -270,7 +270,6 @@ MonoBehaviour:
   nodes:
   - {fileID: -7682290885494900722}
   - {fileID: 8859774706057310}
-  - {fileID: -1653337629494229367}
   - {fileID: -5972786671223744214}
   - {fileID: -1897070176258908983}
   - {fileID: 8926956105781796652}
@@ -278,9 +277,10 @@ MonoBehaviour:
   - {fileID: -6696213518939241153}
   - {fileID: -299176186667236301}
   - {fileID: 1072183742192624820}
-  - {fileID: -8637954261900834551}
   - {fileID: -1918880698737846271}
   - {fileID: 5275184905606705154}
+  - {fileID: -8637954261900834551}
+  - {fileID: -1653337629494229367}
 --- !u!114 &8859774706057310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +320,7 @@ MonoBehaviour:
   Position: {x: 970, y: -458}
   GUID: 1f4306a3-e095-4a4f-b71d-7efd4200ee1b
   Text: I have a boyfriend.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d6152ac036a8450399204d07a89786c, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls:
@@ -380,7 +380,7 @@ MonoBehaviour:
   Position: {x: 307, y: -1}
   GUID: a21546b7-878d-45c4-9c8b-694eb8f09f8e
   Text: I have a boyfriend.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1d6152ac036a8450399204d07a89786c, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
