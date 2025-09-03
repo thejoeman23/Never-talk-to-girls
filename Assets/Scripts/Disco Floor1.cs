@@ -65,12 +65,15 @@ public class DiscoFloor : MonoBehaviour
                 _tiles[x, z] = newTile;
             }
         }
+        
+        // Light up floor so that its lit instantly before the player loads in
+        RandomizeColors();
     }
 
     private void Update()
     {
         if (_materials == null) return;
-
+        
         _timer += Time.deltaTime;
         if (_timer >= colorChangeInterval)
         {

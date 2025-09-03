@@ -6849,11 +6849,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3441998900427198364, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464794824320897849, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1522.881
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464794824320897849, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 210.171
       objectReference: {fileID: 0}
     - target: {fileID: 4464794824320897849, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464794824320897849, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 121.254
       objectReference: {fileID: 0}
     - target: {fileID: 4549947264560960505, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
       propertyPath: m_Camera
@@ -6946,6 +6958,26 @@ PrefabInstance:
     - target: {fileID: 5971775118950691624, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479712889317487870, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
+      propertyPath: m_ChildAlignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6479712889317487870, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
+      propertyPath: m_ChildControlHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978005267078053584, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978005267078053584, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978005267078053584, guid: 75a92a31bbe52eb4195ae4e2c1685746, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
