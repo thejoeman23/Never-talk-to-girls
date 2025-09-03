@@ -164,6 +164,8 @@ public class DialogueManager : MonoBehaviour
         _playerTextBubbleCanvas.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, GetMeshTopY(_playerTransform.gameObject) * 3, 0);
         _playerTextBubbleCanvas.transform.LookAt(Camera.main?.transform);
         
+        _playerTextBubbleCanvas.GetComponent<Canvas>().worldCamera = GameObject.FindGameObjectWithTag("RenderCamera").GetComponent<Camera>();
+        
         _playerTextBubble = Instantiate(_textBubblePrefab, _playerTextBubbleCanvas.transform)
             .GetComponentInChildren<TextMeshProUGUI>();
     }

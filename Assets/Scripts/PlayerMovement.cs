@@ -23,8 +23,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if (!canMove)
+        {
+            _rb.linearVelocity = Vector3.zero;
+            _animator.SetBool("IsWalking", false);
             return;
-        
+        }
+
         _movementDirection = movement.action.ReadValue<Vector2>();
 
         SetAnimations();
