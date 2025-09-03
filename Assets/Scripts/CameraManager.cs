@@ -37,6 +37,8 @@ public class CameraManager : MonoBehaviour
         _camera.transform.DOMove(target.position, 0.5f).Play();
         _camera.transform.DORotateQuaternion(target.rotation, .5f).Play();
         _player.transform.DOMove(playerTarget.position, .5f).Play();
+        _player.transform.DORotateQuaternion(playerTarget.rotation, .5f).Play();
+
         _player.GetComponent<PlayerMovement>().canMove = false;
     }
 

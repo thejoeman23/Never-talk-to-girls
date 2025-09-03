@@ -55,7 +55,7 @@ public class PopupManager : MonoBehaviour
     private GameObject CreateInteractButton(Interactable interactable)
     {
         GameObject button = Instantiate(_interactButtonPrefab, transform.parent);
-        button.transform.position = interactable.transform.position + new Vector3(0, (interactable.transform.localScale.y / 2) + _heightOffset, 0);
+        button.transform.position = interactable.transform.position + new Vector3(0, interactable.interactButtonHeight + _heightOffset, 0);
         button.transform.localScale = Vector3.zero;
         
         return button;

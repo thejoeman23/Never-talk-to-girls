@@ -15,7 +15,7 @@ MonoBehaviour:
   Position: {x: 2252, y: -426}
   GUID: 4d40685a-ce6e-4c50-9759-897487480a1d
   Text: How much do you weigh?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9ae9ba7f9859a554f9377d810ae3fe8d, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -39,7 +39,7 @@ MonoBehaviour:
   Position: {x: 1621, y: 696}
   GUID: 4ec944d2-05ba-49ff-8f71-0004ff28bfb9
   Text: Um hi?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: d5d0e51e2172f2944a05482f2ff9a4e0, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -63,11 +63,11 @@ MonoBehaviour:
   Position: {x: 371, y: 693}
   GUID: 102a4af0-adc4-460f-91f3-991a6d6e5674
   Text: Hi
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: fe8fe09faf490a342878264483f9a162, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
-  IsStart: 0
+  IsStart: 1
   IsEnd: 0
   EndSprite: {fileID: 0}
   EndClip: {fileID: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
   Position: {x: 2251, y: 132}
   GUID: dd1f2f1b-9884-42af-b05c-504849332313
   Text: 5'9"
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 39732d63d28f0004b9bdc766da7b1bb0, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -132,10 +132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
-  Position: {x: 2251, y: 416}
+  Position: {x: 2253, y: 417}
   GUID: bdd302a4-194c-4391-98c0-25fbb6ecf418
   Text: 5'4"
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 025a8568f2bbe8b4da6355f5759406ad, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -159,7 +159,7 @@ MonoBehaviour:
   Position: {x: 2242, y: 697}
   GUID: 31d2b0cf-9a92-4af0-8143-36fd4f68dfc4
   Text: HELLO!
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: f4fecf82aa3527d4f9a100947fe53649, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -182,8 +182,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
   Position: {x: 990, y: 416}
   GUID: aff988b7-119b-46bf-abc1-6ab7999804b8
-  Text: Do you like rasins? How about a date?
-  Audio: {fileID: 0}
+  Text: Do you like rasins? How do you feel about a date?
+  Audio: {fileID: 8300000, guid: e99832723fb6ecd4e988ab680f409d03, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -207,7 +207,7 @@ MonoBehaviour:
   Position: {x: 679, y: 415}
   GUID: 70abad7f-6aff-4b2c-9246-e0791fbdf182
   Text: Hello charming.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 4133105dc49a04ee492dfb8131f286e5, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -217,7 +217,6 @@ MonoBehaviour:
   EndClip: {fileID: 0}
   Responses:
   - {fileID: -3609542898594424320}
-  - {fileID: 0}
 --- !u!114 &-1329679288388681565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,7 +256,7 @@ MonoBehaviour:
   Position: {x: 370, y: 414}
   GUID: 3639e18c-54f6-4f97-800a-e55cbc00e26d
   Text: Hello beautiful.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 6e045aaa2e89af94f930c0686b10de2a, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -307,7 +306,6 @@ MonoBehaviour:
   nodes:
   - {fileID: 4158977620276845887}
   - {fileID: -606367231530654494}
-  - {fileID: 9032637601866200873}
   - {fileID: -2709691997757764591}
   - {fileID: -6976353320134080754}
   - {fileID: -565783918048130866}
@@ -326,18 +324,19 @@ MonoBehaviour:
   - {fileID: 40069211958341934}
   - {fileID: 2726865731785771569}
   - {fileID: 5997928054523445185}
-  - {fileID: 3783663767195569334}
   - {fileID: 145976733245265082}
-  - {fileID: -6542498573841579907}
   - {fileID: -6555057767429531078}
   - {fileID: 3802204998591832717}
-  - {fileID: 4579563231033989655}
   - {fileID: -8786589379585116930}
   - {fileID: 2573250744901832909}
   - {fileID: 3031199342611377456}
   - {fileID: 6997216782214927505}
   - {fileID: 8826521549156568061}
   - {fileID: 1954266076587460989}
+  - {fileID: 9032637601866200873}
+  - {fileID: 4579563231033989655}
+  - {fileID: 3783663767195569334}
+  - {fileID: -6542498573841579907}
 --- !u!114 &40069211958341934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,7 +352,7 @@ MonoBehaviour:
   Position: {x: 1624, y: 414}
   GUID: 1758cb5c-65a7-4fd9-89d5-692a567c752d
   Text: 100,000
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 8ad2aed5c5c686f4cb3c1de9d6e997fe, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -377,7 +376,7 @@ MonoBehaviour:
   Position: {x: 1936, y: 416}
   GUID: 9998be90-a8aa-4103-94f8-2cccd40e2550
   Text: Girl, that's my kind of man. How tall are you?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: c6ea4e91aabae45b6ac47c5aa896ab6e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -408,7 +407,7 @@ MonoBehaviour:
   Position: {x: 1625, y: 133}
   GUID: 17347b60-2ba3-49fc-9eae-47369396c526
   Text: 12,000
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 88bff79d34273854885d52f74eb717ba, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -438,7 +437,7 @@ MonoBehaviour:
       m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 50ede0b1f0de25441a14d377a3d2a3c4, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &1954266076587460989
@@ -456,13 +455,13 @@ MonoBehaviour:
   Position: {x: 3186, y: 132}
   GUID: d5b998ec-abb5-4700-85f5-4d536378b482
   Text: 15
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: d5b1e0761dca3471ab3d1d201b7638a1, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 233267095413bb34d8610bbe3f18e763, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &2480920593478757776
@@ -504,13 +503,13 @@ MonoBehaviour:
   Position: {x: 2558, y: -143}
   GUID: 42f244bd-69a0-451e-bd4b-e792cf933fba
   Text: Yeah right, and I'm 7ft.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1776e2d39105e4dceb9006fdac045f42, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 7d7e90e73254c5a41bd5235d6b8aeb03, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &2726865731785771569
@@ -528,7 +527,7 @@ MonoBehaviour:
   Position: {x: 1624, y: -146}
   GUID: 07d84d2f-6bc6-48ae-93e7-66c138bc03ce
   Text: 1,000,000
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 62cebcb666082fa44aa66ca36a10a44e, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -552,13 +551,13 @@ MonoBehaviour:
   Position: {x: 2561, y: -425}
   GUID: 767ce634-6ceb-439d-ad57-72f794d88a3a
   Text: '*gasp* HEY!'
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 2da976a5bd15d4321b2aba2eeca2ff8a, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 0920cb0da9c708e4eada33dff64b37f9, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &3783663767195569334
@@ -573,10 +572,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 1940, y: 132}
+  Position: {x: 1932, y: 140}
   GUID: ec88c1a1-bdc0-48d2-a3e8-fc3b592404dd
   Text: Hah hah!
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 8041ebd96a84746b8aae25fdbc2956e6, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -600,7 +599,7 @@ MonoBehaviour:
   Position: {x: 2251, y: -143}
   GUID: 712b41c3-2069-453d-bf90-ccc51510ab75
   Text: 6'3"
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 3b3b3eb04606e0440ac407c6e1fcc564, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -624,7 +623,7 @@ MonoBehaviour:
   Position: {x: 370, y: 137}
   GUID: ab6d9cf9-49bd-42dd-bd21-a160136956ec
   Text: Hey wassup?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 39499afeed479654e900267404ef9f68, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -645,16 +644,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 2558, y: 418}
+  Position: {x: 2553, y: 417}
   GUID: aeeb3a00-2a37-4099-a984-ba90b380c7a6
   Text: Ew, you're like a short king. No thanks.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 8ce80b45d95c74b98b44b1c56caa5b2a, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 59ee530a91228804ebe5db6a6576b7c6, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &4846833051290555317
@@ -698,13 +697,13 @@ MonoBehaviour:
   Position: {x: 1936, y: -147}
   GUID: 4a86ac22-313d-409b-9c23-48d004c874f2
   Text: Hah hah, go back to your mother's basement brokie.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 1494310c07cad4c7ca5b7bb60dd08bc3, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 7d7e90e73254c5a41bd5235d6b8aeb03, type: 3}
   EndClip: {fileID: 0}
   Responses: []
 --- !u!114 &6174938830114916020
@@ -748,7 +747,7 @@ MonoBehaviour:
   Position: {x: 2561, y: 134}
   GUID: 04f32622-b693-427d-ad27-6f0c1871a347
   Text: Oh, so cute, you're just taller than me. How old are you?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 32cf91f8b60334a4da0fef82c3e7e4b8, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -773,7 +772,7 @@ MonoBehaviour:
   Position: {x: 991, y: 694}
   GUID: 0afda13a-2570-4c87-a0b9-1c10112a731d
   Text: Hi?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 9984106cc8095844b908260324c1ba39, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -797,7 +796,7 @@ MonoBehaviour:
   Position: {x: 1302, y: 416}
   GUID: 0d533ca5-431f-485e-8ec0-31e3694a765e
   Text: You look look a little like a hobo, how much money do you make?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 3e77a82746d5247d698cafa844623b44, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -824,7 +823,7 @@ MonoBehaviour:
   Position: {x: 2874, y: 133}
   GUID: 7aa46820-8980-4635-b2e5-f7ea435df4b2
   Text: 18, how old are you?
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 52a41784e516f734282c1250eba11858, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -848,12 +847,12 @@ MonoBehaviour:
   Position: {x: 680, y: 136}
   GUID: 98ec0720-67d6-401c-b461-5151882e7119
   Text: Ew.
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: eb16480fc91a74811b25b7769ed9061b, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
   IsEnd: 1
-  EndSprite: {fileID: 0}
+  EndSprite: {fileID: 21300000, guid: 6582547d3cab2804cab4a7e49b8530dd, type: 3}
   EndClip: {fileID: 0}
   Responses: []

@@ -9,6 +9,8 @@ public class Interactable : MonoBehaviour, IInteractable // <- See how it derive
     [SerializeField] public UnityEvent _onInteract = new UnityEvent();
     [SerializeField] public bool _canInteract = true;
 
+    public float interactButtonHeight;
+
     public void Start()
     {
         gameObject.tag = "Interactable";
@@ -24,6 +26,11 @@ public class Interactable : MonoBehaviour, IInteractable // <- See how it derive
         _onInteract.Invoke();
         
         _canInteract = false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, interactButtonHeight, 0));
     }
 }
 

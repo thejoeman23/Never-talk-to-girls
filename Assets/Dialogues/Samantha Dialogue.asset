@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3881196158529705318
+--- !u!114 &-8020195753121111757
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
-  Position: {x: 178, y: 386}
-  GUID: 766cf733-7623-4553-b3de-6b762acb3d0b
-  Text: Sup baby girl.
-  Audio: {fileID: 0}
+  Position: {x: 856, y: 465}
+  GUID: 65d41a71-cba3-43af-88d8-60eaa8340794
+  Text: 'Oh sorry, I''ll leave. '
+  Audio: {fileID: 8300000, guid: c921a1da3d1d9624fb07eb045ec5ac52, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
   IsStart: 0
-  IsEnd: 0
+  IsEnd: 1
   EndSprite: {fileID: 0}
   EndClip: {fileID: 0}
-  NextPrompt: {fileID: 4351737387183207621}
---- !u!114 &-1764573358674987816
+  NextPrompt: {fileID: 0}
+--- !u!114 &-902010468146418245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33,13 +33,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
-  Position: {x: 800, y: -179}
-  GUID: 476f6af4-5eaa-4e9c-bba3-778895370677
-  Text: You're missing out...
-  Audio: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 520, y: 326}
+  GUID: aaec235e-1a89-4923-94d2-e11a6f525ad5
+  Text: I'm working.
+  Audio: {fileID: 8300000, guid: 37f1ee5051cc44d56b9e5cf19572dbaf, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -47,7 +47,9 @@ MonoBehaviour:
   IsEnd: 0
   EndSprite: {fileID: 0}
   EndClip: {fileID: 0}
-  NextPrompt: {fileID: 3242244524539035404}
+  Responses:
+  - {fileID: 1516225907365293110}
+  - {fileID: -8020195753121111757}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,41 +63,12 @@ MonoBehaviour:
   m_Name: Samantha Dialogue
   m_EditorClassIdentifier: Assembly-CSharp::DialogueGraph
   nodes:
-  - {fileID: -3881196158529705318}
-  - {fileID: 4351737387183207621}
-  - {fileID: 6798772028101285784}
-  - {fileID: 884159139607618966}
-  - {fileID: -1764573358674987816}
-  - {fileID: 3242244524539035404}
-  - {fileID: 2216749674827770735}
---- !u!114 &884159139607618966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 487, y: 105}
-  GUID: b4ed0e0f-b881-4983-9f54-a7304c031066
-  Text: Working.
-  Audio: {fileID: 0}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  IsStart: 0
-  IsEnd: 0
-  EndSprite: {fileID: 0}
-  EndClip: {fileID: 0}
-  Responses:
-  - {fileID: 6798772028101285784}
-  - {fileID: 2216749674827770735}
-  - {fileID: -1764573358674987816}
---- !u!114 &2216749674827770735
+  - {fileID: 2943093852665492993}
+  - {fileID: -902010468146418245}
+  - {fileID: 1516225907365293110}
+  - {fileID: -8020195753121111757}
+  - {fileID: 6130570757975713658}
+--- !u!114 &1516225907365293110
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,34 +80,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
-  Position: {x: 796, y: 105}
-  GUID: 87f5c797-8e7d-49e2-8d23-6ba899966837
-  Text: Oh my bad, I'll leave.
-  Audio: {fileID: 0}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  IsStart: 0
-  IsEnd: 1
-  EndSprite: {fileID: 0}
-  EndClip: {fileID: 0}
-  NextPrompt: {fileID: 0}
---- !u!114 &3242244524539035404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 1113, y: -179}
-  GUID: b8c3089b-ba21-43b1-a300-2727df9eea77
-  Text: No I'm not.
-  Audio: {fileID: 0}
+  Position: {x: 860, y: 175}
+  GUID: a64e62ec-4c6a-4525-a362-98d76f5e5b04
+  Text: You're missing out...
+  Audio: {fileID: 8300000, guid: 1bd1de23321b24e40ab69e492628ecb4, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -142,32 +91,8 @@ MonoBehaviour:
   IsEnd: 0
   EndSprite: {fileID: 0}
   EndClip: {fileID: 0}
-  Responses: []
---- !u!114 &4351737387183207621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
-  Position: {x: 488, y: 386}
-  GUID: 10b9d50d-d372-4c69-a4b8-daf43b71cf41
-  Text: Yeah go waste your time on someone who cares.
-  Audio: {fileID: 0}
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  IsStart: 0
-  IsEnd: 1
-  EndSprite: {fileID: 0}
-  EndClip: {fileID: 0}
-  Responses: []
---- !u!114 &6798772028101285784
+  NextPrompt: {fileID: 6130570757975713658}
+--- !u!114 &2943093852665492993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,10 +104,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cbada268be4cd7a9d223a2e0c9567d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResponseNode
-  Position: {x: 177, y: 103}
-  GUID: 817dc637-7f53-4f5e-8f12-c0a71e1c31fa
-  Text: Hey.
-  Audio: {fileID: 0}
+  Position: {x: 211, y: 325}
+  GUID: 642afd47-0486-48e0-8401-1965bd6e12e2
+  Text: Hi
+  Audio: {fileID: 8300000, guid: ea75841c14b52684098f2442e2fb3baa, type: 3}
   Event:
     m_PersistentCalls:
       m_Calls: []
@@ -190,4 +115,28 @@ MonoBehaviour:
   IsEnd: 0
   EndSprite: {fileID: 0}
   EndClip: {fileID: 0}
-  NextPrompt: {fileID: 884159139607618966}
+  NextPrompt: {fileID: -902010468146418245}
+--- !u!114 &6130570757975713658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e4d1117db634c95b21a1aebd269919b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PromptNode
+  Position: {x: 1182, y: 175}
+  GUID: a1fea282-615d-48f5-9704-b43d8600eca3
+  Text: No I'm not.
+  Audio: {fileID: 8300000, guid: 0eae5b3a566e348b9adb4d6e3dd3da20, type: 3}
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  IsStart: 0
+  IsEnd: 1
+  EndSprite: {fileID: 21300000, guid: 5963a37560cf2924e97fa83683d9af71, type: 3}
+  EndClip: {fileID: 0}
+  Responses: []

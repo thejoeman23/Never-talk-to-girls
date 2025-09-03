@@ -131,17 +131,6 @@ public class DialogueGraphWindow : EditorWindow
         AssetDatabase.SaveAssets();
     }
 
-    private void OnDestroy()
-    {
-        SaveGraph();
-        Debug.Log("Dialogue Tree auto-saved for u :)");
-    }
-
-    private void OnLostFocus()
-    {
-        SaveGraph();
-    }
-
     private Node FindNodeByData(DialogueNode targetData)
     {
         if (targetData == null)

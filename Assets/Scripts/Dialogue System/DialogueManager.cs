@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
@@ -11,8 +12,13 @@ public class DialogueManager : MonoBehaviour
 {
     private bool _confirmed = false;
     [SerializeField] private UnityEvent _onDialogueEnd;
-    
-    private void Start() => InstantiatePlayerCanvas();
+    AudioSource _dialogueSource;
+
+    private void Start()
+    {
+        InstantiatePlayerCanvas();
+        _dialogueSource = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -22,13 +28,15 @@ public class DialogueManager : MonoBehaviour
         }
         
         _playerTextBubbleCanvas.transform.LookAt(_cameraTransform);
+        
+        if (_characterTextBubbleCanvas != null)
+            _characterTextBubbleCanvas.transform.LookAt(_cameraTransform);
     }
 
     public void TransmitCharacter(Transform character) => InstantiateCharacterCanvas(character);
     
     public void BeginDialogue(DialogueGraph dialogue)
     {
-        
         List<ResponseNode> starts = new List<ResponseNode>();
         foreach (var node in dialogue.nodes)
         {
@@ -36,6 +44,11 @@ public class DialogueManager : MonoBehaviour
             {
                 Debug.Log("Dialogue Start");
                 starts.Add(response);
+            }
+            else if (node.IsStart)
+            {
+                StartCoroutine(DisplayNode(node));
+                return;
             }
         }
         
@@ -52,17 +65,31 @@ public class DialogueManager : MonoBehaviour
         node.Event?.Invoke();
         
         AudioManager.Instance.MuteMusic();
-        AudioManager.Instance.PlayDialogueClip(node.Audio);
 
-        while (!AudioManager.Instance.IsDialogueClipFinished() && !_confirmed)
+        if (node.Audio == null)
         {
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(2);
         }
+        else
+        {
+            _dialogueSource.clip = node.Audio;
+            _dialogueSource.Play();
         
-        AudioManager.Instance.UnmuteMusic();
+            while (_dialogueSource.isPlaying)
+            {
+                yield return new WaitForSeconds(.1f);
+            }
+            
+            yield return new WaitForSeconds(.5f);
+        }
         
         if (node.IsEnd)
         {
+            if (node.EndSprite != null)
+            {
+                EndscreenManager.Instance.DisplayNewEndscreen(node.EndSprite);
+            }
+
             EndDialogue();
             yield return null;
         }
@@ -84,7 +111,7 @@ public class DialogueManager : MonoBehaviour
         HideAllCanvases();
         Destroy(_characterTextBubbleCanvas);
         
-        _onDialogueEnd?.Invoke();
+        _onDialogueEnd.Invoke();
     }
     
     public void SelectOption(GameObject option)
@@ -136,6 +163,8 @@ public class DialogueManager : MonoBehaviour
         _playerTextBubbleCanvas.transform.localScale = Vector3.zero;
         _playerTextBubbleCanvas.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(0, GetMeshTopY(_playerTransform.gameObject) * 3, 0);
         _playerTextBubbleCanvas.transform.LookAt(Camera.main?.transform);
+        
+        _playerTextBubbleCanvas.GetComponent<Canvas>().worldCamera = GameObject.FindGameObjectWithTag("RenderCamera").GetComponent<Camera>();
         
         _playerTextBubble = Instantiate(_textBubblePrefab, _playerTextBubbleCanvas.transform)
             .GetComponentInChildren<TextMeshProUGUI>();
@@ -195,6 +224,9 @@ public class DialogueManager : MonoBehaviour
             
             foreach (var response in responses)
             {
+                if (response == null)
+                    continue;
+                
                 GameObject optionButton = Instantiate(
                     _optionPrefab,
                     optionsParent

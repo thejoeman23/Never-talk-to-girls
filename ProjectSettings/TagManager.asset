@@ -7,6 +7,7 @@ TagManager:
   - Interactable
   - camerapos
   - playerpos
+  - RenderCamera
   layers:
   - Default
   - TransparentFX
