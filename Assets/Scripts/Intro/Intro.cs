@@ -20,7 +20,7 @@ public class Intro : MonoBehaviour
     [SerializeField] private Button startGameButton;
 
     [Header("Timings")]
-    [SerializeField] private float fadeDuration = 0.5f;
+    [SerializeField] private float fadeDuration = 1f;
     [SerializeField] private float waitBetween = 0.5f;
 
     private AudioSource _audioSource;
@@ -79,7 +79,10 @@ public class Intro : MonoBehaviour
 
     IEnumerator ContinueSequence()
     {
-        continueButton.interactable = false;
+        continueButton.gameObject.SetActive(false);
+        
+        // Play audio
+        if (_audioSource != null) _audioSource.Pause();
         
         yield return FadeRecursive(instructionText.gameObject, 0, fadeDuration);
         
