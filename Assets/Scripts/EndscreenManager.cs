@@ -79,6 +79,6 @@ public class EndscreenManager : MonoBehaviour
 
     private void Reset()
     {
-        SceneManager.LoadScene(1);
+        GameManager.Instance.ChangeState(GameManager.GameState.Game);
     }
 }

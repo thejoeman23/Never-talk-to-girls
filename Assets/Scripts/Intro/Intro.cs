@@ -103,7 +103,7 @@ public class Intro : MonoBehaviour
         // Fade in Start Game Button
         startGameButton.interactable = true;
         yield return FadeRecursive(startGameButton.gameObject, 1, fadeDuration);
-        startGameButton.onClick.AddListener(() => SceneManager.LoadScene(1));
+        startGameButton.onClick.AddListener(() => GameManager.Instance.ChangeState(GameManager.GameState.Game));
     }
 
     // --- Helpers ---

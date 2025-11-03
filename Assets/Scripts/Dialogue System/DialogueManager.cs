@@ -37,12 +37,13 @@ public class DialogueManager : MonoBehaviour
     
     public void BeginDialogue(DialogueGraph dialogue)
     {
+        GameManager.Instance.ChangeState(GameManager.GameState.Rizzing);
+        
         List<ResponseNode> starts = new List<ResponseNode>();
         foreach (var node in dialogue.nodes)
         {
             if (node.IsStart && node is ResponseNode response)
             {
-                Debug.Log("Dialogue Start");
                 starts.Add(response);
             }
             else if (node.IsStart)
@@ -83,15 +84,20 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(.5f);
         }
         
-        if (node.IsEnd)
+        if (CheckIsNodeEnd(node))
         {
             if (node.EndSprite != null)
             {
+                GameManager.Instance.ChangeState(GameManager.GameState.GameOver);
                 EndscreenManager.Instance.DisplayNewEndscreen(node.EndSprite);
+            }
+            else
+            {
+                GameManager.Instance.ChangeState(GameManager.GameState.Game);
             }
 
             EndDialogue();
-            yield return null;
+            yield break;
         }
         
         if (node is ResponseNode response)
@@ -106,8 +112,6 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
-        Debug.Log("Dialogue end");
-        
         HideAllCanvases();
         Destroy(_characterTextBubbleCanvas);
         
@@ -118,6 +122,20 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueNode optionNode = _playerOptions[option];
         StartCoroutine(DisplayNode(optionNode));
+    }
+
+    private bool CheckIsNodeEnd(DialogueNode node)
+    {
+        if (node.IsEnd)
+            return true;
+        if (node is ResponseNode response)
+            if (response.NextPrompt == null)
+                return true;
+        if (node is PromptNode prompt)
+            if (prompt.Responses.Count == 0)
+                return true;
+        
+        return false;
     }
     
     /////////////////////// Entering Visuals Section ///////////////////////
@@ -200,7 +218,10 @@ public class DialogueManager : MonoBehaviour
     private void DisplayOptions(List<ResponseNode> responses)
     {
         if (responses == null)
+        {
             EndDialogue();
+            return;
+        }
         
         if (responses.Count == 0)
             EndDialogue();
