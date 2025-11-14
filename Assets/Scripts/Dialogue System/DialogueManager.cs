@@ -33,47 +33,63 @@ public class DialogueManager : MonoBehaviour
             _characterTextBubbleCanvas.transform.LookAt(_cameraTransform);
     }
 
+    // Called by Interactables alongside a BeginDialogue() call. Spawns character canvas ahead of time.
     public void TransmitCharacter(Transform character) => InstantiateCharacterCanvas(character);
     
     public void BeginDialogue(DialogueGraph dialogue)
     {
-        GameManager.Instance.ChangeState(GameManager.GameState.Rizzing);
-        
-        List<ResponseNode> starts = new List<ResponseNode>();
-        foreach (var node in dialogue.nodes)
+        if (dialogue.start == null)
         {
-            if (node.IsStart && node is ResponseNode response)
-            {
-                starts.Add(response);
-            }
-            else if (node.IsStart)
-            {
-                StartCoroutine(DisplayNode(node));
-                return;
-            }
+            Debug.LogWarning("Dialogue tree does not contain a start node.");
+            return;
+        }
+
+        if (dialogue.start.NextNodes.Count == 0)
+        {
+            Debug.LogWarning("Dialogue start node is not connected to anything.");
+            return;
+        }
+
+        // If start node is connected to only one other node, assume player is not talking
+        if (dialogue.start.NextNodes.Count == 1)
+        {
+            StartCoroutine(DisplayNode(dialogue.start.NextNodes[0]));
+        }
+        else // Else give player options on how to begin the conversation
+        {
+            DisplayOptions(dialogue.start.NextNodes);
         }
         
-        DisplayOptions(starts);
+        GameManager.Instance.ChangeState(GameManager.GameState.Rizzing);
     }
     
-    private IEnumerator DisplayNode(DialogueNode node)
+    private IEnumerator DisplayNode(BaseNode baseNode)
     {
-        HideAllCanvases();
-        _confirmed = false;
-
+        if (baseNode == null)
+        {
+            Debug.LogWarning("Node is null. Ending Dialogue.");
+            EndDialogue();
+            yield break;
+        }
+        
+        if (baseNode is EndNode endNode)
+        {
+            EndDialogue(endNode);
+            yield break;
+        }
+        
+        DialogueNode node = baseNode as DialogueNode;
         DisplayText(node);
-
-        node.Event?.Invoke();
         
         AudioManager.Instance.MuteMusic();
 
-        if (node.Audio == null)
+        if (node.AudioClip == null)
         {
             yield return new WaitForSeconds(2);
         }
         else
         {
-            _dialogueSource.clip = node.Audio;
+            _dialogueSource.clip = node.AudioClip;
             _dialogueSource.Play();
         
             while (_dialogueSource.isPlaying)
@@ -84,36 +100,30 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(.5f);
         }
         
-        if (CheckIsNodeEnd(node))
+        if (node.NextNodes.Count == 0)
         {
-            if (node.EndSprite != null)
-            {
-                GameManager.Instance.ChangeState(GameManager.GameState.GameOver);
-                EndscreenManager.Instance.DisplayNewEndscreen(node.EndSprite);
-            }
-            else
-            {
-                GameManager.Instance.ChangeState(GameManager.GameState.Game);
-            }
-
+            Debug.LogWarning("Dialogue node is not connected to anything. Ending Dialogue.");
             EndDialogue();
-            yield break;
         }
-        
-        if (node is ResponseNode response)
+        else if (node.NextNodes.Count == 1)
         {
-            StartCoroutine(DisplayNode(response.NextPrompt));
+            DisplayNode(node.NextNodes[0]);
         }
-        else if (node is PromptNode prompt)
+        else
         {
-            DisplayOptions(prompt.Responses);
+            DisplayOptions(node.NextNodes);
         }
     }
 
-    private void EndDialogue()
+    private void EndDialogue(EndNode endNode = null)
     {
         HideAllCanvases();
         Destroy(_characterTextBubbleCanvas);
+        
+        GameManager.Instance.ChangeState(GameManager.GameState.GameOver);
+        
+        if (endNode != null)
+            EndscreenManager.Instance.DisplayNewEndscreen(endNode);
         
         _onDialogueEnd.Invoke();
     }
@@ -122,20 +132,17 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueNode optionNode = _playerOptions[option];
         StartCoroutine(DisplayNode(optionNode));
-    }
-
-    private bool CheckIsNodeEnd(DialogueNode node)
-    {
-        if (node.IsEnd)
-            return true;
-        if (node is ResponseNode response)
-            if (response.NextPrompt == null)
-                return true;
-        if (node is PromptNode prompt)
-            if (prompt.Responses.Count == 0)
-                return true;
         
-        return false;
+        // Clear UI Options
+        foreach (var pair in _playerOptions)
+        {
+            Destroy(pair.Key.gameObject);
+        }
+        
+        // Clear option variables
+        _playerOptions.Clear();
+        
+        HideAllCanvases();
     }
     
     /////////////////////// Entering Visuals Section ///////////////////////
@@ -203,63 +210,57 @@ public class DialogueManager : MonoBehaviour
 
     private void DisplayText(DialogueNode node)
     {
-        if (node is ResponseNode response)
-        {
-            _playerTextBubbleCanvas.SetActive(true);
-            _playerTextBubble.text = response.Text;
-        }
-        else
+        // If node contains multiple next node, that means the player will have options on how to respond
+        // therefore we can deduce it is the character speaking
+        if (node.NextNodes.Count > 1)
         {
             _characterTextBubbleCanvas.SetActive(true);
             _characterTextBubble.text = node.Text;
         }
+        else
+        {
+            _playerTextBubbleCanvas.SetActive(true);
+            _playerTextBubble.text = node.Text;
+        }
     }
 
-    private void DisplayOptions(List<ResponseNode> responses)
+    private void DisplayOptions(List<DialogueNode> options)
     {
-        if (responses == null)
+        if (_optionsCanvas == null)
         {
-            EndDialogue();
+            Debug.LogWarning("Options canvas is null.");
             return;
         }
         
-        if (responses.Count == 0)
-            EndDialogue();
-        else if (responses.Count == 1)
+        // Get object in which options will be spawned
+        Transform optionsParent = _optionsCanvas
+            .GetComponentInChildren<HorizontalLayoutGroup>()
+            .transform;
+        
+        // Enable options canvas
+        _optionsCanvas.SetActive(true);
+        
+        foreach (var option in options)
         {
-            StartCoroutine(DisplayNode(responses[0]));
-        }        
-        else
-        {
-            _playerOptions.Clear();
+            if (option == null)
+                continue;
             
-            _optionsCanvas.SetActive(true);
-            Transform optionsParent = _optionsCanvas
-                .GetComponentInChildren<HorizontalLayoutGroup>()
-                .transform;
-
-            foreach (Transform child in optionsParent.transform)
-            {
-                Destroy(child.gameObject);
-            }
+            // Spawn option
+            GameObject optionButton = Instantiate(
+                _optionPrefab,
+                optionsParent
+            );
             
-            foreach (var response in responses)
-            {
-                if (response == null)
-                    continue;
-                
-                GameObject optionButton = Instantiate(
-                    _optionPrefab,
-                    optionsParent
-                );
-                TextMeshProUGUI optionText = optionButton.GetComponentInChildren<TextMeshProUGUI>();
-                Button optionButtonButton = optionButton.GetComponent<Button>();
-                
-                optionText.text = response.Text;
-                optionButtonButton.onClick.AddListener(() => SelectOption(optionText.gameObject));
-                
-                _playerOptions.Add(optionText.gameObject, response);
-            }
+            // Get option components
+            TextMeshProUGUI optionText = optionButton.GetComponentInChildren<TextMeshProUGUI>();
+            Button optionButtonButton = optionButton.GetComponent<Button>();
+            
+            // Set text and add button listener
+            optionText.text = option.Text;
+            optionButtonButton.onClick.AddListener(() => SelectOption(optionText.gameObject));
+            
+            // Store gameobject and option dialogue node for later
+            _playerOptions.Add(optionText.gameObject, option);
         }
     }
 

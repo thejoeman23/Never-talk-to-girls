@@ -31,10 +31,17 @@ public class EndscreenManager : MonoBehaviour
         Instance = this;
     }
 
-    public void DisplayNewEndscreen(Sprite endscreenSprite)
+    public void DisplayNewEndscreen(EndNode endNode)
     {
+        if (endNode == null)
+            return;
+        if (endNode.Endscreen == null)
+            return;
+        
+        Sprite endscreenSprite = endNode.Endscreen;
         endscreenCanvas.SetActive(true);
 
+        // Spawn endscreen prefab (prefab sprite is null)
         GameObject preview = Instantiate(endscreenPrefab, endscreenCanvas.transform);
         RectTransform rect = preview.GetComponent<RectTransform>();
         if (rect == null)
@@ -48,6 +55,17 @@ public class EndscreenManager : MonoBehaviour
         if (img != null && endscreenSprite != null)
             img.sprite = endscreenSprite;
 
+        AnimateIn(rect);
+
+        AudioManager.Instance.PlaySfxClip(clip);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("IsDead", true);
+        
+        // Add listener
+        img.transform.GetComponentInChildren<Button>().onClick.AddListener(Reset);
+    }
+
+    private void AnimateIn(RectTransform rect)
+    {
         // Start oversized (like it's dropping in)
         rect.localScale = Vector3.one * overshootScale;
 
@@ -68,13 +86,8 @@ public class EndscreenManager : MonoBehaviour
 
         // Settle
         s.Append(rect.DOScale(1f, settleDuration).SetEase(Ease.OutSine));
-
-        AudioManager.Instance.PlaySfxClip(clip);
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("IsDead", true);
-        s.Play();
         
-        // Add listener
-        img.transform.GetComponentInChildren<Button>().onClick.AddListener(Reset);
+        s.Play();
     }
 
     private void Reset()

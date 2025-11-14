@@ -21,6 +21,8 @@ public class DialogueGraphView : GraphView
         this.AddManipulator(new RectangleSelector());
         
         this.graphViewChanged = OnGraphViewChanged;
+
+        // this.style.backgroundColor = new StyleColor(new Color(0.8f, 0.8f, 0.8f));
     }
     
     public DialogueNodeView CreateNode(DialogueNode data)
@@ -36,7 +38,7 @@ public class DialogueGraphView : GraphView
         inputPort.portName = "Input";
         node.inputContainer.Add(inputPort);
 
-        var outputPort = GeneratePort(node, Direction.Output, data is PromptNode ? Port.Capacity.Multi : Port.Capacity.Single);
+        var outputPort = GeneratePort(node, Direction.Output, data is BaseNode ? Port.Capacity.Multi : Port.Capacity.Single);
         outputPort.portName = "Next";
         node.outputContainer.Add(outputPort);
 
@@ -70,7 +72,7 @@ public class DialogueGraphView : GraphView
 
             if (startPort.node is DialogueNodeView portNodeView && port.node is DialogueNodeView startNodeView)
             {
-                if (startNodeView.Data is PromptNode && portNodeView.Data is PromptNode)
+                if (startNodeView.Data is BaseNode && portNodeView.Data is BaseNode)
                     return;
                 if (startNodeView.Data is ResponseNode && portNodeView.Data is ResponseNode)
                     return;
@@ -95,10 +97,10 @@ public class DialogueGraphView : GraphView
                 var output = edge.output.node is DialogueNodeView outputNodeView ? outputNodeView.Data: null;
                 
                 
-                if (output is PromptNode a && input is ResponseNode b)
+                if (output is BaseNode a && input is ResponseNode b)
                     a.Responses.Add(b);
-                else if (output is ResponseNode c && input is PromptNode d)
-                    c.NextPrompt = d;
+                else if (output is ResponseNode c && input is BaseNode d)
+                    c.nextBase = d;
             }
         }
         return graphViewChange;

@@ -15,7 +15,7 @@ public class DialogueNodeView : Node
     {
         Data = data;
 
-        title = Data is PromptNode ? "Prompt" : "Response";
+        title = Data is BaseNode ? "Prompt" : "Response";
         
         // Create SerializedObject for binding
         var so = new SerializedObject(data);

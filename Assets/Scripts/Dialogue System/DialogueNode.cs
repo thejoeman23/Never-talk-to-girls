@@ -1,17 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 [System.Serializable]
-public class DialogueNode : ScriptableObject// A base class with base variables that i want all nodes to have
+public class DialogueNode : BaseNode// A base class with base variables that i want all nodes to have
 {
-    [HideInInspector] public Vector2 Position;
-    [HideInInspector] public string GUID;
     public string Text;
-    public AudioClip Audio;
-    public UnityEvent Event;
-    public bool IsStart;
-    public bool IsEnd;
-    public Sprite EndSprite;
-    public AudioClip EndClip;
+    public AudioClip AudioClip;
+    public List<DialogueNode> NextNodes = new List<DialogueNode>();
 }

@@ -1,22 +1,43 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.AppUI.UI;
 using UnityEditor;
 using UnityEngine;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine.UIElements;
-using UnityEditor.UIElements;
+using Button = UnityEngine.UIElements.Button;
+using Toolbar = UnityEditor.UIElements.Toolbar;
 
 public class DialogueGraphWindow : EditorWindow
 {
     private DialogueGraphView _graphView;
     private DialogueGraph _currentGraph;
-
+    
+    public static Dictionary<DialogueGraphWindow, DialogueGraph> GraphsOpen = new();
+    
     public static void OpenGraph(DialogueGraph graph)
     {
+        if (GraphsOpen.ContainsValue(graph))
+        {
+            var existingPair = GraphsOpen.FirstOrDefault(kv => kv.Value == graph);
+            if (existingPair.Key != null)
+            {
+                existingPair.Key.Focus();
+                return;
+            }
+            else
+            {
+                GraphsOpen.Remove(existingPair.Key);
+            }
+        }
+        
         var window = CreateInstance<DialogueGraphWindow>();
         window.titleContent = new GUIContent(graph.name);
         window.LoadGraph(graph);
         window.Show();
+        
+        GraphsOpen.Add(window, graph);
     }
     
     private void LoadGraph(DialogueGraph save)
@@ -47,7 +68,7 @@ public class DialogueGraphWindow : EditorWindow
                 if (nodeData is ResponseNode responseNode)
                 {
                     Node output = node;
-                    Node input = FindNodeByData(responseNode.NextPrompt);
+                    Node input = FindNodeByData(responseNode.nextBase);
 
                     if (input == null)
                         continue;
@@ -64,7 +85,7 @@ public class DialogueGraphWindow : EditorWindow
                     _graphView.AddElement(newEdge);
                 }
                 // If its a Prompt then loop through the responses and make the connections
-                else if (nodeData is PromptNode promptNode)
+                else if (nodeData is BaseNode promptNode)
                 {
                     if (promptNode.Responses == null)
                         continue;
@@ -186,7 +207,7 @@ public class DialogueGraphWindow : EditorWindow
 
     private DialogueNode CreateNodeData(bool isPrompt)
     {
-        DialogueNode nodeData = isPrompt ? ScriptableObject.CreateInstance<PromptNode>() : ScriptableObject.CreateInstance<ResponseNode>();
+        DialogueNode nodeData = isPrompt ? ScriptableObject.CreateInstance<BaseNode>() : ScriptableObject.CreateInstance<ResponseNode>();
         nodeData.GUID = Guid.NewGuid().ToString();
         
         return nodeData;
