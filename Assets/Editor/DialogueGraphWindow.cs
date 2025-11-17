@@ -1,10 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.AppUI.UI;
 using UnityEditor;
 using UnityEngine;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine.UIElements;
 using Button = UnityEngine.UIElements.Button;
 using Toolbar = UnityEditor.UIElements.Toolbar;
@@ -40,6 +38,7 @@ public class DialogueGraphWindow : EditorWindow
         GraphsOpen.Add(window, graph);
     }
     
+    // Load the graph from the provided save SO
     private void LoadGraph(DialogueGraph save)
     {
         _currentGraph = save;
@@ -55,117 +54,60 @@ public class DialogueGraphWindow : EditorWindow
         {
             _graphView.CreateNode(nodeData);
         }
-
-        // Create the connections
-        foreach (var node in _graphView.nodes.ToList())
-        {
-            // Make sure the node we are looking at is a dialogue node
-            if (node is DialogueNodeView nodeView)
-            {
-                var nodeData = nodeView.Data;
-                
-                // If it's a response node, find it's connection (if applicable) and create it
-                if (nodeData is ResponseNode responseNode)
-                {
-                    Node output = node;
-                    Node input = FindNodeByData(responseNode.nextBase);
-
-                    if (input == null)
-                        continue;
-                    
-                    Edge newEdge = new Edge
-                    {
-                        input = input.inputContainer[0] as Port,
-                        output = output.outputContainer[0] as Port
-                    };
-
-                    newEdge.output?.Connect(newEdge);
-                    newEdge.input?.Connect(newEdge);
-
-                    _graphView.AddElement(newEdge);
-                }
-                // If its a Prompt then loop through the responses and make the connections
-                else if (nodeData is BaseNode promptNode)
-                {
-                    if (promptNode.Responses == null)
-                        continue;
-                    foreach (var response in promptNode.Responses)
-                    {
-                        Node output = node;
-                        Node input = FindNodeByData(response);
-
-                        if (input == null)
-                            continue;
-                        
-                        Edge newEdge = new Edge
-                        {
-                            input = input.inputContainer[0] as Port,
-                            output = output.outputContainer[0] as Port
-                        };
-
-                        newEdge.output?.Connect(newEdge);
-                        newEdge.input?.Connect(newEdge);
-
-                        _graphView.AddElement(newEdge);
-                    }
-                }
-            }
-        }
+        
+        _graphView.SpawnNodeConnections();
     }
-
+    
+    // Save the graph data to the graph SO
     private void SaveGraph()
     {
+        // If there's no graph loaded, do nothing
         if (_currentGraph == null)
             return;
-        
-        List<DialogueNode> oldNodes = new List<DialogueNode>(_currentGraph.nodes);        
+    
+        // Make a copy of the current nodes in the graph SO
+        List<BaseNode> oldNodes = new List<BaseNode>(_currentGraph.nodes);        
+        // Clear the graph SO's node list to rebuild it from the UI
         _currentGraph.nodes.Clear();
 
+        // Loop through all nodes currently in the graph view/window
         foreach (var node in _graphView.nodes.ToList())
         {
-            if (node is not DialogueNodeView nodeView)
+            // Skip anything that's not a NodeView (our UI wrapper for DialogueNode)
+            if (node is not NodeView nodeView)
                 continue;
-            
+        
+            // If this node has already been logged in the graph SO, update the position and re-add it to the graph SO
             if (oldNodes.Contains(nodeView.Data))
             {
-                oldNodes.Remove(nodeView.Data);
+                oldNodes.Remove(nodeView.Data); // Remove from the list so we know its been handled
                 
                 nodeView.Data.Position = node.GetPosition().position;
                 _currentGraph.nodes.Add(nodeView.Data);
             }
             else
             {
+                // If it's a new node, also store its UI position and add it to the graph SO
                 nodeView.Data.Position = node.GetPosition().position;
                 _currentGraph.nodes.Add(nodeView.Data);
-                
+            
+                // Add the node as an asset in the graph so it gets saved with the graph
                 AssetDatabase.AddObjectToAsset(nodeView.Data, _currentGraph);
-                EditorUtility.SetDirty(_currentGraph);
+                EditorUtility.SetDirty(_currentGraph); // Mark graph as modified
             }
         }
 
+        // The remaining nodes that were in the SO but no longer exist in the actual graph view/window get deleted
         foreach (var nodeData in oldNodes)
         {
-            AssetDatabase.RemoveObjectFromAsset(nodeData);
-            DestroyImmediate(nodeData, true);
+            AssetDatabase.RemoveObjectFromAsset(nodeData); // Remove from asset
+            DestroyImmediate(nodeData, true); // Destroy the object
         }
-        
+    
         AssetDatabase.SaveAssets();
     }
 
-    private Node FindNodeByData(DialogueNode targetData)
-    {
-        if (targetData == null)
-            return null;
-        
-        foreach (var node in _graphView.nodes.ToList())
-        {
-            if (node is DialogueNodeView nodeView && nodeView.Data == targetData)
-                return node;
-        }
-        
-        return null;
-    }
-
+    // No clue
     private void ConstructGraphView()
     {
         _graphView = new DialogueGraphView
@@ -176,10 +118,12 @@ public class DialogueGraphWindow : EditorWindow
         rootVisualElement.Add(_graphView);
     }
 
+    
     private void GenerateToolbar()
     {
         var toolbar = new Toolbar();
 
+        // Create save button
         var saveButton = new Button(() =>
         {
             SaveGraph();
@@ -188,28 +132,38 @@ public class DialogueGraphWindow : EditorWindow
         saveButton.text = "Save";
         toolbar.Add(saveButton);
         
-        var promptNodeButton = new Button(() =>
+        // Create start button
+        var startNodeButton = new Button(() =>
         {
-            _graphView.CreateNode(CreateNodeData(true));
+            _graphView.CreateNode(CreateNodeData<StartNode>());
         });
-        promptNodeButton.text = "Add Prompt Node";
-        toolbar.Add(promptNodeButton);
+        startNodeButton.text = "Add Start Node";
+        toolbar.Add(startNodeButton);
         
-        var responseNodeButton = new Button(() =>
+        // Create dialogue button
+        var dialogueNodeButton = new Button(() =>
         {
-            _graphView.CreateNode(CreateNodeData(false));
+            _graphView.CreateNode(CreateNodeData<DialogueNode>());
         });
-        responseNodeButton.text = "Add Response Node";
-        toolbar.Add(responseNodeButton);
-
+        dialogueNodeButton.text = "Add Dialogue Node";
+        toolbar.Add(dialogueNodeButton);
+        
+        // Create end button
+        var endNodeButton = new Button(() =>
+        {
+            _graphView.CreateNode(CreateNodeData<EndNode>());
+        });
+        endNodeButton.text = "Add End Node";
+        toolbar.Add(endNodeButton);
+        
         rootVisualElement.Add(toolbar);
     }
 
-    private DialogueNode CreateNodeData(bool isPrompt)
+    // Creates a new node data depending on the class type you want
+    private T CreateNodeData<T>() where T : BaseNode
     {
-        DialogueNode nodeData = isPrompt ? ScriptableObject.CreateInstance<BaseNode>() : ScriptableObject.CreateInstance<ResponseNode>();
+        T nodeData = CreateInstance<T>();
         nodeData.GUID = Guid.NewGuid().ToString();
-        
         return nodeData;
     }
 }

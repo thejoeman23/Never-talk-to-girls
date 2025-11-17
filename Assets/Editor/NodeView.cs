@@ -6,16 +6,21 @@ using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 using Color = UnityEngine.Color;
 
-public class DialogueNodeView : Node
+public class NodeView : Node
 {
     public string GUID;
-    public DialogueNode Data;
+    public BaseNode Data;
 
-    public DialogueNodeView(DialogueNode data)
+    public NodeView(BaseNode data)
     {
         Data = data;
 
-        title = Data is BaseNode ? "Prompt" : "Response";
+        if (Data is EndNode)
+            title =  "End";
+        else if (Data is StartNode)
+            title = "Start";
+        else
+            title = "Dialogue";
         
         // Create SerializedObject for binding
         var so = new SerializedObject(data);
@@ -25,8 +30,8 @@ public class DialogueNodeView : Node
         
         var scroll = new ScrollView();
         scroll.Add(inspector);
-        scroll.style.height = 200; // or whatever
-        scroll.style.width = 300;
+        scroll.style.height = 80;
+        scroll.style.width = data is StartNode ? 100 : 300;
         scroll.style.backgroundColor = new StyleColor(Color.gray2);
         mainContainer.Add(scroll);
 

@@ -3,7 +3,6 @@ using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 
 public class DialogueGraphView : GraphView
 {
@@ -25,36 +24,129 @@ public class DialogueGraphView : GraphView
         // this.style.backgroundColor = new StyleColor(new Color(0.8f, 0.8f, 0.8f));
     }
     
-    public DialogueNodeView CreateNode(DialogueNode data)
+    // Spawns a node on the graph
+    public NodeView CreateNode(BaseNode data)
     {
-        var node = new DialogueNodeView(data);
+        if (data == null)
+        {
+            Debug.LogError("Tried to spawn node, but BaseNode was null.");
+            return null;
+        }
         
-        Debug.Log(data == null ? "null" : "not null");
-        data.Position = data.Position == null ? Vector2.zero : data.Position;
+        var node = new NodeView(data);
         
         node.SetPosition(new Rect(data.Position, new Vector2(200, 150)));
+        
+        // Create an input port for Dialogue and End Nodes
+        if (data is DialogueNode || data is EndNode)
+        {
+            var inputPort = GeneratePort(node, Direction.Input);
+            inputPort.portName = "Input";
+            node.inputContainer.Add(inputPort);
+        }
 
-        var inputPort = GeneratePort(node, Direction.Input);
-        inputPort.portName = "Input";
-        node.inputContainer.Add(inputPort);
-
-        var outputPort = GeneratePort(node, Direction.Output, data is BaseNode ? Port.Capacity.Multi : Port.Capacity.Single);
-        outputPort.portName = "Next";
-        node.outputContainer.Add(outputPort);
+        // Create an output port for Dialogue and Start Nodes
+        if (data is DialogueNode || data is StartNode)
+        {
+            var outputPort = GeneratePort(node, Direction.Output);
+            outputPort.portName = "Output";
+            node.outputContainer.Add(outputPort);
+        }
 
         node.RefreshExpandedState();
         node.RefreshPorts();
         
+        // Adds node to graph
         AddElement(node);
         return node;
     }
 
-    private Port GeneratePort(DialogueNodeView node, Direction direction, Port.Capacity capacity = Port.Capacity.Single)
+    public void SpawnNodeConnections()
     {
-        return node.InstantiatePort(Orientation.Horizontal, direction, capacity, typeof(float));
+        foreach (var node in nodes.ToList())
+        {
+            if (node is not NodeView nodeView)
+                continue;
+
+            var nodeData = nodeView.Data;
+
+            if (nodeData is EndNode)
+                continue;
+
+            // Check if input port exists
+            if (nodeView.inputContainer.childCount == 0)
+                continue;
+            
+            var inputPort = nodeView.inputContainer[0] as Port;
+            if (inputPort == null)
+                continue;
+
+            List<Node> outputs = GetOutputsOfNodeData(nodeData);
+
+            foreach (var output in outputs)
+            {
+                if (output is not NodeView outputNodeView)
+                    continue;
+
+                // Check if output port exists
+                if (outputNodeView.outputContainer.childCount == 0)
+                    continue;
+                
+                var outputPort = outputNodeView.outputContainer[0] as Port;
+                if (outputPort == null)
+                    continue;
+
+                Edge newEdge = new Edge
+                {
+                    input = inputPort,
+                    output = outputPort
+                };
+
+                newEdge.output?.Connect(newEdge);
+                newEdge.input?.Connect(newEdge);
+
+                AddElement(newEdge);
+            }
+        }
     }
     
-    // Tell GraphView which ports can connect
+    // Returns a specific node
+    private Node FindNodeByData(BaseNode targetData)
+    {
+        if (targetData == null)
+            return null;
+        
+        foreach (var node in nodes.ToList())
+        {
+            if (node is NodeView nodeView && nodeView.Data == targetData)
+                return node;
+        }
+        
+        return null;
+    }
+
+    // Returns a list of the next nodes of a node.
+    private List<Node> GetOutputsOfNodeData(BaseNode nodeData)
+    {
+        List<Node> outputs = new List<Node>();
+        
+        if (nodeData is StartNode startNode)
+            foreach (var targetData in startNode.NextNodes)
+                outputs.Add(FindNodeByData(targetData));
+        else if (nodeData is DialogueNode dialogueNode)
+            foreach (var targetData in dialogueNode.NextNodes)
+                outputs.Add(FindNodeByData(targetData));
+
+        return outputs;
+    }
+    
+    // Creates port on a node
+    private Port GeneratePort(NodeView node, Direction direction, Port.Capacity capacity = Port.Capacity.Multi)
+    {
+        return node.InstantiatePort(Orientation.Vertical, direction, capacity, typeof(float));
+    }
+    
+    // Function takes in a node's port and returns a list of other ports that it can connect to
     public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
     {
         var compatiblePorts = new List<Port>();
@@ -70,16 +162,6 @@ public class DialogueGraphView : GraphView
             if (startPort.direction == port.direction)
                 return;
 
-            if (startPort.node is DialogueNodeView portNodeView && port.node is DialogueNodeView startNodeView)
-            {
-                if (startNodeView.Data is BaseNode && portNodeView.Data is BaseNode)
-                    return;
-                if (startNodeView.Data is ResponseNode && portNodeView.Data is ResponseNode)
-                    return;
-                if (startNodeView.Data.IsStart)
-                    return;
-            }
-
             compatiblePorts.Add(port);
         });
 
@@ -88,21 +170,28 @@ public class DialogueGraphView : GraphView
 
     private GraphViewChange OnGraphViewChanged(GraphViewChange graphViewChange)
     {
-        // Optional: log edges being created
-        if (graphViewChange.edgesToCreate != null)
+        if (graphViewChange.edgesToCreate == null)
+            return graphViewChange;
+        
+        foreach (var edge in graphViewChange.edgesToCreate)
         {
-            foreach (var edge in graphViewChange.edgesToCreate)
-            {
-                var input = edge.input.node is DialogueNodeView inputNodeView ? inputNodeView.Data : null;
-                var output = edge.output.node is DialogueNodeView outputNodeView ? outputNodeView.Data: null;
-                
-                
-                if (output is BaseNode a && input is ResponseNode b)
-                    a.Responses.Add(b);
-                else if (output is ResponseNode c && input is BaseNode d)
-                    c.nextBase = d;
-            }
+            // start (the node the edge came FROM)
+            var start = (edge.output.node as NodeView)?.Data;
+
+            // end (the node the edge goes TO)
+            var end = (edge.input.node as NodeView)?.Data;
+
+            if (start == null || end == null)
+                continue;
+
+            if (start is DialogueNode dn)
+                dn.NextNodes.Add(end);
+            else if (start is StartNode sn)
+                sn.NextNodes.Add(end);
+            
+            Debug.Log("Nodes Know theyre connected");
         }
+        
         return graphViewChange;
     }
 }

@@ -224,7 +224,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private void DisplayOptions(List<DialogueNode> options)
+    private void DisplayOptions(List<BaseNode> options)
     {
         if (_optionsCanvas == null)
         {
@@ -240,26 +240,30 @@ public class DialogueManager : MonoBehaviour
         // Enable options canvas
         _optionsCanvas.SetActive(true);
         
-        foreach (var option in options)
+        foreach (var optionBase in options)
         {
-            if (option == null)
+            if (optionBase == null)
                 continue;
-            
-            // Spawn option
+
+            if (optionBase is EndNode)
+            {
+                EndDialogue(optionBase as EndNode);
+                return;
+            }
+
+            DialogueNode option = optionBase as DialogueNode;
+
             GameObject optionButton = Instantiate(
                 _optionPrefab,
                 optionsParent
             );
             
-            // Get option components
             TextMeshProUGUI optionText = optionButton.GetComponentInChildren<TextMeshProUGUI>();
             Button optionButtonButton = optionButton.GetComponent<Button>();
             
-            // Set text and add button listener
             optionText.text = option.Text;
             optionButtonButton.onClick.AddListener(() => SelectOption(optionText.gameObject));
             
-            // Store gameobject and option dialogue node for later
             _playerOptions.Add(optionText.gameObject, option);
         }
     }
