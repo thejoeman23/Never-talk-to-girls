@@ -74,10 +74,10 @@ public class DialogueGraphView : GraphView
                 continue;
 
             // Check if input port exists
-            if (nodeView.inputContainer.childCount == 0)
+            if (nodeView.outputContainer.childCount == 0)
                 continue;
             
-            var inputPort = nodeView.inputContainer[0] as Port;
+            var inputPort = nodeView.outputContainer[0] as Port;
             if (inputPort == null)
                 continue;
 
@@ -89,10 +89,10 @@ public class DialogueGraphView : GraphView
                     continue;
 
                 // Check if output port exists
-                if (outputNodeView.outputContainer.childCount == 0)
+                if (outputNodeView.inputContainer.childCount == 0)
                     continue;
                 
-                var outputPort = outputNodeView.outputContainer[0] as Port;
+                var outputPort = outputNodeView.inputContainer[0] as Port;
                 if (outputPort == null)
                     continue;
 
@@ -136,6 +136,8 @@ public class DialogueGraphView : GraphView
         else if (nodeData is DialogueNode dialogueNode)
             foreach (var targetData in dialogueNode.NextNodes)
                 outputs.Add(FindNodeByData(targetData));
+        
+        Debug.Log($"Ouputs : {outputs.Count}");
 
         return outputs;
     }

@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class DialogueNode : BaseNode
 {
-    public string Text;
+    [TextArea(2,2)] public string Text;
     public AudioClip AudioClip;
     [HideInInspector] public List<BaseNode> NextNodes = new List<BaseNode>();
 }

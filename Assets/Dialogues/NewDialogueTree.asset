@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7553929748613772752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb2fa1fb8f643b5a1fd81b10a109e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EndNode
+  Position: {x: 660, y: 33.5}
+  GUID: 82ccac74-b138-4e59-b3c3-95458b7e5aa6
+  Endscreen: {fileID: 0}
+  AudioClip: {fileID: 0}
 --- !u!114 &-4731475700619938352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16,6 +32,24 @@ MonoBehaviour:
   GUID: 09a25ecd-7b97-4f3d-98a3-7b4732ee5184
   NextNodes:
   - {fileID: 7385454028668530612}
+  - {fileID: 7385454028668530612}
+--- !u!114 &-315589216935854992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e64ade65a4448e9945a169ab767395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  Position: {x: 630, y: 239}
+  GUID: 81d6d477-8742-4806-aab7-78f5aec81d8f
+  Text: 
+  AudioClip: {fileID: 0}
+  NextNodes: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,6 +66,8 @@ MonoBehaviour:
   nodes:
   - {fileID: -4731475700619938352}
   - {fileID: 7385454028668530612}
+  - {fileID: -7553929748613772752}
+  - {fileID: -315589216935854992}
 --- !u!114 &7385454028668530612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,4 +84,6 @@ MonoBehaviour:
   GUID: 79c070a5-5317-49c6-a4ae-394e6218f4c3
   Text: 
   AudioClip: {fileID: 0}
-  NextNodes: []
+  NextNodes:
+  - {fileID: -315589216935854992}
+  - {fileID: -7553929748613772752}

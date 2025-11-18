@@ -117,7 +117,6 @@ public class DialogueGraphWindow : EditorWindow
         _graphView.StretchToParentSize();
         rootVisualElement.Add(_graphView);
     }
-
     
     private void GenerateToolbar()
     {
@@ -135,7 +134,9 @@ public class DialogueGraphWindow : EditorWindow
         // Create start button
         var startNodeButton = new Button(() =>
         {
-            _graphView.CreateNode(CreateNodeData<StartNode>());
+            var newnode = CreateNodeData<StartNode>();
+            _graphView.CreateNode(newnode);
+            _currentGraph.start = newnode;
         });
         startNodeButton.text = "Add Start Node";
         toolbar.Add(startNodeButton);

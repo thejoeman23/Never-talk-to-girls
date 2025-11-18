@@ -30,14 +30,38 @@ public class NodeView : Node
         
         var scroll = new ScrollView();
         scroll.Add(inspector);
-        scroll.style.height = 80;
-        scroll.style.width = data is StartNode ? 100 : 300;
+        SetDimensions(scroll);
         scroll.style.backgroundColor = new StyleColor(Color.gray2);
         mainContainer.Add(scroll);
 
         RefreshExpandedState();
         RefreshPorts();
     }
-    
-    
+
+    // Sets dimensions of the node depending on what type of node it is
+    private void SetDimensions(ScrollView scroll)
+    {
+        // Default settings
+        int width = 300;
+        int height = 100;
+
+        if (Data is EndNode)
+        {
+            width = 300;
+            height = 100;
+        }
+        else if (Data is StartNode)
+        {
+            width = 200;
+            height = 100;
+        }
+        else if (Data is DialogueNode)
+        {
+            width = 300;
+            height = 100;
+        }
+
+        scroll.style.height = height;
+        scroll.style.width = width;
+    }
 }
