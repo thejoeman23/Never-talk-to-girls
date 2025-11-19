@@ -100,6 +100,8 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(.5f);
         }
         
+        HideAllCanvases();
+        
         if (node.NextNodes.Count == 0)
         {
             Debug.LogWarning("Dialogue node is not connected to anything. Ending Dialogue.");
@@ -107,7 +109,7 @@ public class DialogueManager : MonoBehaviour
         }
         else if (node.NextNodes.Count == 1)
         {
-            DisplayNode(node.NextNodes[0]);
+            StartCoroutine(DisplayNode(node.NextNodes[0]));
         }
         else
         {
@@ -130,19 +132,10 @@ public class DialogueManager : MonoBehaviour
     
     public void SelectOption(GameObject option)
     {
+        HideAllCanvases();
+        
         DialogueNode optionNode = _playerOptions[option];
         StartCoroutine(DisplayNode(optionNode));
-        
-        // Clear UI Options
-        foreach (var pair in _playerOptions)
-        {
-            Destroy(pair.Key.gameObject);
-        }
-        
-        // Clear option variables
-        _playerOptions.Clear();
-        
-        HideAllCanvases();
     }
     
     /////////////////////// Entering Visuals Section ///////////////////////
@@ -237,21 +230,24 @@ public class DialogueManager : MonoBehaviour
             .GetComponentInChildren<HorizontalLayoutGroup>()
             .transform;
         
+        // Ensures previous options and option buttons are removed
+        ClearPreviousOptions();
+        
         // Enable options canvas
         _optionsCanvas.SetActive(true);
         
-        foreach (var optionBase in options)
+        foreach (var optionNode in options)
         {
-            if (optionBase == null)
+            if (optionNode == null)
                 continue;
 
-            if (optionBase is EndNode)
+            if (optionNode is EndNode)
             {
-                EndDialogue(optionBase as EndNode);
+                EndDialogue(optionNode as EndNode);
                 return;
             }
 
-            DialogueNode option = optionBase as DialogueNode;
+            DialogueNode option = optionNode as DialogueNode;
 
             GameObject optionButton = Instantiate(
                 _optionPrefab,
@@ -285,8 +281,20 @@ public class DialogueManager : MonoBehaviour
         else
             canvas.SetActive(false); // fallback if component missing
     }
+
+    private void ClearPreviousOptions()
+    {
+        // Clear UI Options
+        foreach (var pair in _playerOptions)
+        {
+            Destroy(pair.Key.transform.parent.gameObject);
+        }
+        
+        // Clear option variables
+        _playerOptions.Clear();
+    }
     
-    public float GetMeshTopY(GameObject go)
+    private float GetMeshTopY(GameObject go)
     {
         SkinnedMeshRenderer mf = go.GetComponentInChildren<SkinnedMeshRenderer>();
         if (mf == null || mf.sharedMesh == null)

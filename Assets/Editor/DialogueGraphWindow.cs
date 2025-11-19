@@ -134,7 +134,7 @@ public class DialogueGraphWindow : EditorWindow
         // Create start button
         var startNodeButton = new Button(() =>
         {
-            var newnode = CreateNodeData<StartNode>();
+            StartNode newnode = CreateNodeData<StartNode>();
             _graphView.CreateNode(newnode);
             _currentGraph.start = newnode;
         });

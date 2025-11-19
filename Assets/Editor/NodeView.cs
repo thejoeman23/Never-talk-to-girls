@@ -1,5 +1,3 @@
-using System.Drawing;
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEditor.UIElements;

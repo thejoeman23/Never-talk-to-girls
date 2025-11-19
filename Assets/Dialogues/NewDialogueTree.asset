@@ -1,39 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7553929748613772752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb2fa1fb8f643b5a1fd81b10a109e67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EndNode
-  Position: {x: 660, y: 33.5}
-  GUID: 82ccac74-b138-4e59-b3c3-95458b7e5aa6
-  Endscreen: {fileID: 0}
-  AudioClip: {fileID: 0}
---- !u!114 &-4731475700619938352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c7d1cbe4d2947b089bfbef156d792a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StartNode
-  Position: {x: 152, y: 33.5}
-  GUID: 09a25ecd-7b97-4f3d-98a3-7b4732ee5184
-  NextNodes:
-  - {fileID: 7385454028668530612}
-  - {fileID: 7385454028668530612}
---- !u!114 &-315589216935854992
+--- !u!114 &-7825099536653253893
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,11 +12,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e64ade65a4448e9945a169ab767395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  Position: {x: 630, y: 239}
-  GUID: 81d6d477-8742-4806-aab7-78f5aec81d8f
-  Text: 
+  Position: {x: 343, y: 205}
+  GUID: 2da70b3b-014a-4579-8537-77238b6e983a
+  Text: B
   AudioClip: {fileID: 0}
-  NextNodes: []
+  NextNodes:
+  - {fileID: 2679261494255656663}
+--- !u!114 &-6729256517904618803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e64ade65a4448e9945a169ab767395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  Position: {x: 343, y: -18}
+  GUID: 130fa0d1-8f5b-4486-a245-94e957641111
+  Text: A
+  AudioClip: {fileID: 0}
+  NextNodes:
+  - {fileID: 3327113025958705824}
+--- !u!114 &-4223117503766631383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb2fa1fb8f643b5a1fd81b10a109e67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EndNode
+  Position: {x: 1616, y: 70.5}
+  GUID: 23838500-423a-4a3c-ae50-41cce5b4d66f
+  Endscreen: {fileID: 21300000, guid: c9098b6342f15d24b8467f447643ea19, type: 3}
+  AudioClip: {fileID: 8300000, guid: 62cebcb666082fa44aa66ca36a10a44e, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,13 +64,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b30528c463be3439b9a930e7d2c08bbc, type: 3}
   m_Name: NewDialogueTree
   m_EditorClassIdentifier: Assembly-CSharp::DialogueGraph
-  start: {fileID: 0}
+  start: {fileID: 119771991297954787}
   nodes:
-  - {fileID: -4731475700619938352}
-  - {fileID: 7385454028668530612}
-  - {fileID: -7553929748613772752}
-  - {fileID: -315589216935854992}
---- !u!114 &7385454028668530612
+  - {fileID: 119771991297954787}
+  - {fileID: -6729256517904618803}
+  - {fileID: 3327113025958705824}
+  - {fileID: 2679261494255656663}
+  - {fileID: 1696174703686175350}
+  - {fileID: 6398406965372379254}
+  - {fileID: -7825099536653253893}
+  - {fileID: -4223117503766631383}
+--- !u!114 &119771991297954787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c7d1cbe4d2947b089bfbef156d792a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StartNode
+  Position: {x: 67, y: 101.5}
+  GUID: a76fc82a-adbf-45e2-8101-d126b3d68e1b
+  NextNodes:
+  - {fileID: -6729256517904618803}
+  - {fileID: -7825099536653253893}
+--- !u!114 &1696174703686175350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80,10 +103,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e64ade65a4448e9945a169ab767395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
-  Position: {x: 301, y: 33.5}
-  GUID: 79c070a5-5317-49c6-a4ae-394e6218f4c3
-  Text: 
+  Position: {x: 1180, y: -18}
+  GUID: ad394586-b70c-4cf7-b992-baaf05d1dfcd
+  Text: Yeh
   AudioClip: {fileID: 0}
   NextNodes:
-  - {fileID: -315589216935854992}
-  - {fileID: -7553929748613772752}
+  - {fileID: -4223117503766631383}
+--- !u!114 &2679261494255656663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e64ade65a4448e9945a169ab767395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  Position: {x: 735.5, y: 205}
+  GUID: 18bb4238-b232-4958-b2d1-34c27fac8fe1
+  Text: Oh Diddy!
+  AudioClip: {fileID: 0}
+  NextNodes:
+  - {fileID: 6398406965372379254}
+  - {fileID: 1696174703686175350}
+--- !u!114 &3327113025958705824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e64ade65a4448e9945a169ab767395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  Position: {x: 735.5, y: -18}
+  GUID: d54ffc62-df13-4b72-acbb-ef2fc2ebf5d3
+  Text: Oh Really
+  AudioClip: {fileID: 0}
+  NextNodes:
+  - {fileID: 1696174703686175350}
+  - {fileID: 6398406965372379254}
+--- !u!114 &6398406965372379254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e64ade65a4448e9945a169ab767395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  Position: {x: 1180, y: 205}
+  GUID: b37505c5-1130-47a9-9a36-fe1e721b6878
+  Text: No
+  AudioClip: {fileID: 0}
+  NextNodes:
+  - {fileID: -4223117503766631383}

@@ -172,28 +172,46 @@ public class DialogueGraphView : GraphView
 
     private GraphViewChange OnGraphViewChanged(GraphViewChange graphViewChange)
     {
-        if (graphViewChange.edgesToCreate == null)
-            return graphViewChange;
-        
-        foreach (var edge in graphViewChange.edgesToCreate)
+        // Handle edge creation
+        if (graphViewChange.edgesToCreate != null)
         {
-            // start (the node the edge came FROM)
-            var start = (edge.output.node as NodeView)?.Data;
+            foreach (var edge in graphViewChange.edgesToCreate)
+            {
+                var start = (edge.output.node as NodeView)?.Data;
+                var end   = (edge.input.node as NodeView)?.Data;
 
-            // end (the node the edge goes TO)
-            var end = (edge.input.node as NodeView)?.Data;
+                if (start == null || end == null)
+                    continue;
 
-            if (start == null || end == null)
-                continue;
+                if (start is DialogueNode dn)
+                    dn.NextNodes.Add(end);
+                else if (start is StartNode sn)
+                    sn.NextNodes.Add(end);
+            }
 
-            if (start is DialogueNode dn)
-                dn.NextNodes.Add(end);
-            else if (start is StartNode sn)
-                sn.NextNodes.Add(end);
-            
-            Debug.Log("Nodes Know theyre connected");
+            // ⛔ THIS is the missing fix
+            // Skip edge removal when edges are being created
+            return graphViewChange;
         }
         
+        
+        if (graphViewChange.elementsToRemove == null)
+            return graphViewChange;
+
+        foreach (var element in graphViewChange.elementsToRemove)
+        {
+            if (element is not Edge edge)
+                continue;
+
+            var start = (edge.output.node as NodeView)?.Data;
+            var end   = (edge.input.node as NodeView)?.Data;
+
+            if (start is DialogueNode dn)
+                dn.NextNodes.Remove(end);
+            else if (start is StartNode sn)
+                sn.NextNodes.Remove(end);
+        }
+
         return graphViewChange;
     }
 }
