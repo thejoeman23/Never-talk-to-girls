@@ -33,6 +33,8 @@ public class EndscreenManager : MonoBehaviour
 
     public void DisplayNewEndscreen(EndNode endNode)
     {
+        GameManager.Instance.ChangeState(GameManager.GameState.GameOver);
+        
         if (endNode == null)
             return;
         if (endNode.Endscreen == null)

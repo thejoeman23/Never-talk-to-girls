@@ -788,7 +788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 260656389}
   m_Layer: 0
-  m_Name: SpawnedEmpty
+  m_Name: CameraHolder
   m_TagString: camerapos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1777,7 +1777,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1285478908}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: TransmitCharacter
+        m_MethodName: CreateNpcCanvas
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 712151229}
@@ -2912,6 +2912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1285478907}
   - component: {fileID: 1285478908}
+  - component: {fileID: 1285478910}
   - component: {fileID: 1285478909}
   m_Layer: 0
   m_Name: DialogueManager
@@ -2947,6 +2948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a0f37cc42f5d43988d2a29d12038827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  _confirmAction: {fileID: 804884378917797952, guid: a8c706443ecc14c29a6d670bff5818d3, type: 3}
   _onDialogueEnd:
     m_PersistentCalls:
       m_Calls:
@@ -2962,14 +2964,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _confirmAction: {fileID: 804884378917797952, guid: a8c706443ecc14c29a6d670bff5818d3, type: 3}
-  _optionPrefab: {fileID: 8138214400159047436, guid: 396494785ff0742879571e6102487c51, type: 3}
-  _textBubblePrefab: {fileID: 8138214400159047436, guid: 23c25ca19442345498a92efb3d209558, type: 3}
-  _textBubbleCanvasPrefab: {fileID: 4866498215340409683, guid: c193d32fe754344458787738d29c1755, type: 3}
-  _optionsCanvas: {fileID: 1245959996}
-  _verticalCanvasOffset: 10
-  _tweenTime: 0.1
-  _tweenEase: 1
+  _waitTimeIfAudioIsNull: 2
+  _paddingTime: 0.5
 --- !u!82 &1285478909
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3067,6 +3063,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1285478910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285478906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4b07778f4eb480ba3af3170b3113823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueVisualManager
+  _optionPrefab: {fileID: 8138214400159047436, guid: 396494785ff0742879571e6102487c51, type: 3}
+  _textBubblePrefab: {fileID: 8138214400159047436, guid: 23c25ca19442345498a92efb3d209558, type: 3}
+  _textBubbleCanvasPrefab: {fileID: 4866498215340409683, guid: c193d32fe754344458787738d29c1755, type: 3}
+  _optionsCanvas: {fileID: 1245959996}
+  _tweenTime: 0.1
+  _tweenEase: 1
 --- !u!1 &1287587414 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1181030191577443593, guid: 35321be56b14f6c48ac5e34afa8a96a6, type: 3}
@@ -3805,7 +3819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652530115}
   m_Layer: 0
-  m_Name: SpawnedEmpty
+  m_Name: PlayerHolder
   m_TagString: playerpos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6257,11 +6271,11 @@ PrefabInstance:
       addedObject: {fileID: 260656389}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 368564435546283198, guid: dd87c7e8cd3457347905d66a7813b156, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 712151232}
+      insertIndex: 1
+      addedObject: {fileID: 712151231}
     - targetCorrespondingSourceObject: {fileID: 368564435546283198, guid: dd87c7e8cd3457347905d66a7813b156, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 712151231}
+      addedObject: {fileID: 712151232}
   m_SourcePrefab: {fileID: 100100000, guid: dd87c7e8cd3457347905d66a7813b156, type: 3}
 --- !u!4 &5640144319638584087 stripped
 Transform:

@@ -13,8 +13,8 @@ public class WorldCanvas : MonoBehaviour
     
     private void OnEnable()
     {
-        _tweenTime = GameObject.Find("DialogueManager").GetComponent<DialogueManager>()._tweenTime;
-        _tweenEase = GameObject.Find("DialogueManager").GetComponent<DialogueManager>()._tweenEase;
+        _tweenTime = GameObject.Find("DialogueManager").GetComponent<DialogueVisualManager>()._tweenTime;
+        _tweenEase = GameObject.Find("DialogueManager").GetComponent<DialogueVisualManager>()._tweenEase;
 
         _tween?.Kill();
         _tween = transform.DOScale(_scale, _tweenTime).SetEase(_tweenEase).Play();
