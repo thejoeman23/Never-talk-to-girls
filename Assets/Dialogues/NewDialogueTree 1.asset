@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6447247105745402724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e64ade65a4448e9945a169ab767395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueNode
+  Position: {x: 289, y: 192.5}
+  GUID: f490cab0-2c1f-41b2-afeb-a08d8b4096a9
+  Text: 
+  AudioClip: {fileID: 0}
+  NextNodes: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30528c463be3439b9a930e7d2c08bbc, type: 3}
+  m_Name: NewDialogueTree 1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueGraph
+  start: {fileID: 3248217440798587370}
+  nodes:
+  - {fileID: 3248217440798587370}
+  - {fileID: -6447247105745402724}
+--- !u!114 &3248217440798587370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c7d1cbe4d2947b089bfbef156d792a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StartNode
+  Position: {x: 131, y: 213}
+  GUID: aa9b3a11-b206-4dd7-8936-6f78fe6e29f1
+  NextNodes:
+  - {fileID: -6447247105745402724}
