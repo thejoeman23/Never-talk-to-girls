@@ -1,0 +1,20 @@
+{
+    "asset": "cc3bf0b52998d450c95489e4f03630f6",
+    "fileName": "0198e37b-d407-76d4-ab0a-9613148bfe56.png",
+    "prompt": "A small cute puppy",
+    "negativePrompt": "",
+    "model": "242b56c1-2224-41c4-8949-2ba760bbfc69",
+    "modelName": "16-bit Pixel",
+    "customSeed": -1,
+    "w3CTraceId": "835d08d7d1fbe78804038de94fcbec8c",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
