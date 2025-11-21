@@ -13,27 +13,25 @@ public class NodeView : Node
     {
         Data = data;
 
-        if (Data is EndNode)
-            title =  "End";
-        else if (Data is StartNode)
-            title = "Start";
-        else
-            title = "Dialogue";
-        
-        // Create SerializedObject for binding
-        var so = new SerializedObject(data);
+        SetTitle(data);
 
-        // Draw full inspector for this ScriptableObject inside the node
-        var inspector = new InspectorElement(so);
-        
-        var scroll = new ScrollView();
-        scroll.Add(inspector);
-        SetDimensions(scroll);
-        scroll.style.backgroundColor = new StyleColor(Color.gray2);
-        mainContainer.Add(scroll);
+        if (data is not StartNode) // Dont draw inspector for the start node 
+        {
+            // Create SerializedObject for binding
+            var so = new SerializedObject(data);
 
-        RefreshExpandedState();
-        RefreshPorts();
+            // Draw full inspector for this ScriptableObject inside the node
+            var inspector = new InspectorElement(so);
+
+            var scroll = new ScrollView();
+            scroll.Add(inspector);
+            SetDimensions(scroll);
+            scroll.style.backgroundColor = new StyleColor(Color.gray2);
+            mainContainer.Add(scroll);
+
+            RefreshExpandedState();
+            RefreshPorts();
+        }
     }
 
     // Sets dimensions of the node depending on what type of node it is
@@ -61,5 +59,15 @@ public class NodeView : Node
 
         scroll.style.height = height;
         scroll.style.width = width;
+    }
+
+    private void SetTitle(BaseNode node)
+    {
+        if (node is DialogueNode)
+            title = "Dialogue";
+        else if (node is StartNode)
+            title = "Start";
+        else if (node is EndNode)
+            title = "End";
     }
 }
