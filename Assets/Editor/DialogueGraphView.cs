@@ -98,8 +98,8 @@ public class DialogueGraphView : GraphView
 
                 Edge newEdge = new Edge
                 {
-                    input = inputPort,
-                    output = outputPort
+                    input = outputPort, // These r switched around cuz i got the variable names mixed up but now its too late
+                    output = inputPort
                 };
 
                 newEdge.output?.Connect(newEdge);
@@ -145,7 +145,7 @@ public class DialogueGraphView : GraphView
     // Creates port on a node
     private Port GeneratePort(NodeView node, Direction direction, Port.Capacity capacity = Port.Capacity.Multi)
     {
-        return node.InstantiatePort(Orientation.Vertical, direction, capacity, typeof(float));
+        return node.InstantiatePort(Orientation.Horizontal, direction, capacity, typeof(float));
     }
     
     // Function takes in a node's port and returns a list of other ports that it can connect to
