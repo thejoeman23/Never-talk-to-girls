@@ -1,69 +1,75 @@
-using System;
 using UnityEngine;
-using System.Collections.Generic;
 using UnityEngine.InputSystem;
 
-public class Interactor : MonoBehaviour
+namespace InteractionSystem
 {
-    [SerializeField] InputActionReference interactKey;
-    [SerializeField] private float _interactRadius = 5;
-    
-    Interactable _nearestInteractableObject;
-
-    private void Start()
+    [AddComponentMenu("Interaction System/Interactor")]
+    public class Interactor : MonoBehaviour
     {
-        _nearestInteractableObject = null;
-    }
+        [Header("Input")]
+        [Tooltip("Input Action used to trigger interactions (e.g. Player/Interact).")]
+        [SerializeField] private InputActionReference interactKey;
 
-    // Update is called once per frame
-    void Update()
-    {
-        UpdateNearestInteractableObject();
+        [Header("Interaction Settings")]
+        [Tooltip("Maximum distance to search for interactable objects.")]
+        [SerializeField] private float interactRadius = 5f;
         
-        // If you press the interact button then interact
-        if (interactKey.action.triggered && _nearestInteractableObject != null)
-        { 
-            _nearestInteractableObject.Interact();
-        }
-    }
-    
-    void UpdateNearestInteractableObject()
-    {
-        // Finds all colliders in a specified radius around the player.
-        Vector3 spherePosition = transform.position - new Vector3(0, transform.localScale.y / 2, 0);
-        Collider[] colliders = Physics.OverlapSphere(spherePosition, _interactRadius);
+        [Header("Gizmos Settings")]
+        [Tooltip("Draw the Gizmos for the interactable objects.")]
+        [SerializeField] private bool showGizmos = true;
+        [SerializeField] private Color gizmosColor = Color.white;
 
-        // Loop through the list of all objects in the radius and find the nearest one that is Interactable
-        float nearestDistance = Mathf.Infinity;
-        Interactable nearestInteractableObject = null;
-        foreach (Collider collider in colliders)
+        private Interactable nearestInteractable;
+
+        private void Update()
         {
-            // Checks if the object contains an Interactable and if so assign it to the "interactable" variable
-            if (collider.gameObject.TryGetComponent<Interactable>(out Interactable interactable) && interactable._canInteract)
-            {
-                float distance = Vector3.Distance(collider.transform.position, transform.position);
+            UpdateNearestInteractable();
 
-                // Check if the distance between it and the player is closer than the previous closest object
-                if (distance < nearestDistance)
-                {
-                    // Set this object as the nearest Interactable
-                    nearestDistance = distance;
-                    nearestInteractableObject = interactable;
-                }
+            if (interactKey != null && interactKey.action.triggered && nearestInteractable != null)
+            {
+                nearestInteractable.Interact();
             }
         }
-        
-        // Update the variable if there is a difference between the two
-        if (nearestInteractableObject != _nearestInteractableObject)
-        {
-            _nearestInteractableObject = nearestInteractableObject;
-            PopupManager.Instance.ChangeInteractableObject(_nearestInteractableObject);
-        }
-    }
 
-    private void OnDrawGizmos() // Draw visuals in the scene view to show the interact radius
-    {
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(transform.position, _interactRadius);
+        private void UpdateNearestInteractable()
+        {
+            Vector3 spherePos = transform.position - new Vector3(0, transform.localScale.y / 2, 0);
+            Collider[] colliders = Physics.OverlapSphere(spherePos, interactRadius);
+
+            float nearestDist = Mathf.Infinity;
+            Interactable found = null;
+
+            foreach (Collider col in colliders)
+            {
+                if (col.TryGetComponent(out Interactable interactable) && interactable.CanInteract)
+                {
+                    float dist = Vector3.Distance(col.transform.position, transform.position);
+
+                    if (dist < nearestDist)
+                    {
+                        nearestDist = dist;
+                        found = interactable;
+                    }
+                }
+            }
+
+            if (found != nearestInteractable)
+            {
+                nearestInteractable = found;
+
+                // Optional popup integration
+                if (PopupManager.Instance != null)
+                    PopupManager.Instance.ChangeInteractableObject(nearestInteractable);
+            }
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            if (!showGizmos)
+                return;
+            
+            Gizmos.color = gizmosColor;
+            Gizmos.DrawWireSphere(transform.position, interactRadius);
+        }
     }
 }
