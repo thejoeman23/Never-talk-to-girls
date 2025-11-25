@@ -26,7 +26,7 @@ You can play the full prototype on itch.io with this link https://thejoeman23.it
 - "One of the __funniest games in the jam.__ Good voice acting as well :D"
 - "I really want to now how to win this, like __I have been  playing this for straight 30 minutes__"
 
-## Ok, actual feedback
+## Requested Features
 
 - Many users requested having more camera mobility
 - Indicators marking what branches of dialogue you've already done
