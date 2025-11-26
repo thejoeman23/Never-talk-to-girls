@@ -71,7 +71,7 @@ We plan on turning this project into a full, short game, targeting the streaming
     - Female Voice Actor
     - Secondary Artist
     - Game Designer
-- Greg Herman
+- [Greg Herman](https://github.com/Gregonator12)
     - Lead Artist
     - Story and Narrative
     - Game Designer
