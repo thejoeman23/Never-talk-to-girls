@@ -8,6 +8,13 @@ A small prototype of a comedy game where the player asks out girls at a club and
 
 You can play the full prototype on itch.io with this link https://thejoeman23.itch.io/never-talk-to-girls
 
+<p>
+  <img src="Readme References/4SQO-v.png" width="33%" />
+  <img src="Readme References/JTJw2s.png" width="33%" />
+  <img src="Readme References/uLNJIM.png" width="33%" />
+</p>
+
+
 
 ## Features
 
